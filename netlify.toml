@@ -58,8 +58,8 @@
   status = 301
   force  = true
 
-# Catch-all 404 fallback
+# Catch-all → proper 404 (NOT a 200 soft 404)
 [[redirects]]
   from   = "/*"
-  to     = "/index.html"
-  status = 200
+  to     = "/404.html"
+  status = 404
