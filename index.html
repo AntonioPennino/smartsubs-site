@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="it" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartSubs.pro | Best AI-Powered Captions for DaVinci Resolve</title>
+    <title>SmartSubs.pro | Il Miglior Plugin per Sottotitoli AI su DaVinci Resolve</title>
     
     <!-- Primary Meta Tags -->
-    <meta name="title" content="SmartSubs.pro | Best AI-Powered Captions for DaVinci Resolve">
-    <meta name="description" content="Generate viral word-by-word subtitles natively in DaVinci Resolve. Featuring OpenAI Whisper transcription and Google Gemini AI hook detection. No monthly fees.">
-    <meta name="keywords" content="DaVinci Resolve, AI Subtitles, Auto Captions, Whisper AI, Gemini AI, Video Editing, Resolve Plugin, TikTok Captions, Reels Subtitles">
+    <meta name="title" content="SmartSubs.pro | Il Miglior Plugin per Sottotitoli AI su DaVinci Resolve">
+    <meta name="description" content="Genera sottotitoli virali animati parola per parola direttamente in DaVinci Resolve. Trascrizione OpenAI Whisper e rilevamento hook con Google Gemini AI. Nessun abbonamento mensile.">
+    <meta name="keywords" content="plugin per sottotitoli, DaVinci Resolve, Sottotitoli AI, Caption Automatiche, Whisper AI, Gemini AI, Video Editing, Resolve Plugin, Sottotitoli TikTok, Reels Subtitles">
     <meta name="author" content="Antonio Pennino">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://smartsubs.pro/">
 
+    <!-- Geo Metadata for SEO -->
+    <meta name="geo.region" content="IT" />
+    <meta name="geo.placename" content="Italia" />
+    <meta name="geo.position" content="41.8719;12.5674" />
+    <meta name="ICBM" content="41.8719, 12.5674" />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://smartsubs.pro/">
-    <meta property="og:title" content="SmartSubs.pro | AI-Powered Captions for DaVinci Resolve">
-    <meta property="og:description" content="Stop exporting to CapCut. Get viral animated subtitles directly inside DaVinci Resolve with AI.">
-    <meta property="og:image" content="https://smartsubs.pro/og-image.png">
+    <meta property="og:title" content="SmartSubs.pro | Plugin Sottotitoli AI per DaVinci Resolve">
+    <meta property="og:description" content="Basta esportare su CapCut. Ottieni sottotitoli virali animati direttamente dentro DaVinci Resolve grazie all'intelligenza artificiale.">
+    <meta property="og:image" content="https://smartsubs.pro/assets/images/og-image.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://smartsubs.pro/">
-    <meta property="twitter:title" content="SmartSubs.pro | AI-Powered Captions for DaVinci Resolve">
-    <meta property="twitter:description" content="Stop exporting to CapCut. Get viral animated subtitles directly inside DaVinci Resolve with AI.">
-    <meta property="twitter:image" content="https://smartsubs.pro/og-image.png">
+    <meta property="twitter:title" content="SmartSubs.pro | Plugin Sottotitoli AI per DaVinci Resolve">
+    <meta property="twitter:description" content="Basta esportare su CapCut. Ottieni sottotitoli virali animati direttamente dentro DaVinci Resolve grazie all'intelligenza artificiale.">
+    <meta property="twitter:image" content="https://smartsubs.pro/assets/images/og-image.png">
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -53,25 +59,10 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
+    <!-- External Tailwind Config and Custom CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brandPurple: '#6D26D9',
-                        brandOrange: '#F97316',
-                        bgDark: '#111113',
-                        bgPanel: '#1E1E24'
-                    },
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                        display: ['Montserrat', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
+    <script src="assets/js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="bg-bgDark text-gray-200 font-sans antialiased selection:bg-brandOrange selection:text-white">
@@ -79,16 +70,16 @@
     <nav class="fixed w-full z-50 top-0 border-b border-white/10 bg-bgDark/80 backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3">
-                <img src="LogoTipo.svg" alt="SmartSubs Pro - AI Subtitles for DaVinci Resolve" class="h-10">
+                <img src="assets/images/LogoTipo.svg" alt="SmartSubs Pro - Plugin Sottotitoli AI per DaVinci Resolve" class="h-10">
             </a>
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="#features" class="hover:text-brandOrange transition-colors">Features</a>
-                <a href="#faq" class="hover:text-brandOrange transition-colors">FAQ</a>
-                <a href="#pricing" class="hover:text-brandOrange transition-colors">Pricing</a>
+                <a href="#features" class="hover:text-brandOrange transition-colors">Caratteristiche</a>
+                <a href="#faq" class="hover:text-brandOrange transition-colors">Domande Frequenti</a>
+                <a href="#pricing" class="hover:text-brandOrange transition-colors">Prezzi</a>
             </div>
             <a href="#pricing"
-                class="bg-brandOrange hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(249,115,22,0.4)]">
-                Get the Plugin
+                class="bg-brandOrange hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold transition-all transform hover:scale-105 shadow-btn-glow">
+                Scarica il Plugin
             </a>
         </div>
     </nav>
@@ -101,23 +92,21 @@
         <div class="max-w-5xl mx-auto text-center relative z-10">
             <div
                 class="inline-block border border-brandPurple/50 bg-brandPurple/10 text-brandPurple px-4 py-1.5 rounded-full text-sm font-semibold mb-6 tracking-wide">
-                DA VINCI RESOLVE 18.1+ COMPATIBLE
+                COMPATIBILE CON DA VINCI RESOLVE 18.1+
             </div>
             <h1 class="font-display text-5xl md:text-7xl font-extrabold text-white leading-tight mb-8">
-                Stop Exporting to CapCut for <span
-                    class="text-transparent bg-clip-text bg-gradient-to-r from-brandOrange to-yellow-400">Viral
-                    Captions.</span>
+                Basta esportare su CapCut per avere <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-brandOrange to-yellow-400">Sottotitoli Virali.</span>
             </h1>
             <p class="text-xl md:text-2xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
-                Generate word-by-word animated subtitles directly inside the Edit page. AI hook detection, custom Fusion
-                templates, and zero monthly fees.
+                Genera sottotitoli animati parola per parola direttamente nella pagina Edit. Rilevamento hook AI, template Fusion personalizzati e nessun costo mensile.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
                 <a href="#pricing"
-                    class="w-full sm:w-auto bg-brandOrange hover:bg-orange-600 text-white text-lg px-8 py-4 rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(249,115,22,0.5)]">
-                    Get SmartSubs Pro - $49
+                    class="w-full sm:w-auto bg-brandOrange hover:bg-orange-600 text-white text-lg px-8 py-4 rounded-full font-bold transition-all transform hover:scale-105 shadow-btn-glow-lg">
+                    Ottieni SmartSubs Pro - $49
                 </a>
-                <p class="text-sm text-gray-500 sm:ml-4">Works on Free & Studio versions.</p>
+                <p class="text-sm text-gray-500 sm:ml-4">Funziona su versioni Free e Studio.</p>
             </div>
 
             <div
@@ -126,16 +115,12 @@
                     class="absolute inset-0 bg-gradient-to-tr from-brandPurple/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
                 </div>
 
-                <div class="text-center relative z-10 p-10">
-                    <img src="Logo.svg" alt="SmartSubs Pro Plugin Icon"
-                        class="h-24 w-24 mx-auto mb-6 opacity-30 grayscale group-hover:grayscale-0 group-hover:opacity-60 transition-all">
-                    <p class="text-gray-500 font-mono text-base bg-black/40 px-4 py-2 rounded-lg">[ Insert your
-                        10-second DaVinci timeline demo GIF/Video here ]</p>
-                    <p class="text-xs text-gray-600 mt-2 font-mono">(Showing text nodes popping in synced with audio)
-                    </p>
+                <!-- Main Demo View -->
+                <div class="w-full h-full relative z-10">
+                    <img src="assets/images/SubsPro.gif" alt="Demo SmartSubs Pro su DaVinci Resolve" class="w-full h-full object-cover">
                 </div>
 
-                <div class="absolute inset-0 shadow-[inset_0_0_100px_rgba(0,0,0,0.5)]"></div>
+                <div class="absolute inset-0 shadow-inset-dark"></div>
             </div>
         </div>
     </section>
@@ -143,8 +128,8 @@
     <section id="features" class="py-24 px-6 bg-black/30 border-y border-white/5 relative z-10">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="font-display text-3xl md:text-5xl font-bold text-white mb-4">Engineered for Creators.</h2>
-                <p class="text-gray-400 text-lg">Everything you need to edit faster, natively.</p>
+                <h2 class="font-display text-3xl md:text-5xl font-bold text-white mb-4">Creato per i Content Creator.</h2>
+                <p class="text-gray-400 text-lg">Tutto ciò di cui hai bisogno per editare più velocemente, nativamente.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -158,9 +143,8 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Whisper AI Transcription</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">99.9% accurate transcription powered by OpenAI's
-                        Whisper. Perfectly synced down to the exact frame. Auto-translates to English.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Trascrizione Whisper AI</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Precisione del 99,9% grazie a OpenAI Whisper. Sincronizzazione perfetta al frame. Traduzione automatica.</p>
                 </div>
                 <div
                     class="bg-bgPanel p-8 rounded-2xl border border-white/5 hover:border-brandOrange/50 transition-colors">
@@ -171,9 +155,8 @@
                                 d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Gemini Hook Detection</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Stop highlighting manually. SmartSubs uses Google
-                        Gemini AI to analyze context and automatically emphasize high-impact power words.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Rilevamento Hook Gemini</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Basta evidenziare a mano. SmartSubs usa l'IA di Google Gemini per analizzare il contesto e enfatizzare le parole chiave ad alto impatto.</p>
                 </div>
                 <div
                     class="bg-bgPanel p-8 rounded-2xl border border-white/5 hover:border-brandPurple/50 transition-colors">
@@ -184,9 +167,8 @@
                                 d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Dual-Template System</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Design your own Text+ nodes. Use one template for
-                        standard text, and a bold one for Hooks. Complete creative freedom.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Sistema a Doppio Template</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Progetta i tuoi nodi Text+. Usa un template per il testo standard e uno più audace per gli Hook. Libertà creativa totale.</p>
                 </div>
             </div>
         </div>
@@ -195,28 +177,22 @@
     <section id="faq" class="py-24 px-6 relative z-10">
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="font-display text-3xl md:text-5xl font-bold text-white mb-4">Frequently Asked Questions</h2>
+                <h2 class="font-display text-3xl md:text-5xl font-bold text-white mb-4">Domande Frequenti</h2>
             </div>
 
             <div class="space-y-6">
                 <div class="bg-bgPanel p-6 rounded-2xl border border-white/5">
-                    <h3 class="text-lg font-bold text-white mb-2">Does this work on the Free version of DaVinci Resolve?
+                    <h3 class="text-lg font-bold text-white mb-2">Funziona sulla versione gratuita di DaVinci Resolve?
                     </h3>
-                    <p class="text-gray-400 text-sm">Yes! Unlike Resolve's native subtitles which lock you out of
-                        advanced features without Studio, SmartSubs Pro works perfectly on both DaVinci Resolve Free and
-                        Studio versions (18.1 and above).</p>
+                    <p class="text-gray-400 text-sm">Sì! A differenza dei sottotitoli nativi di Resolve che bloccano alcune funzioni avanzate nella versione free, SmartSubs Pro funziona perfettamente su entrambe le versioni (18.1 e superiori).</p>
                 </div>
                 <div class="bg-bgPanel p-6 rounded-2xl border border-white/5">
-                    <h3 class="text-lg font-bold text-white mb-2">Are there any hidden costs or API fees?</h3>
-                    <p class="text-gray-400 text-sm">No monthly fees. Whisper AI runs locally on your machine. If you
-                        choose to enable the advanced Gemini Hook Detection, you'll simply need to plug in a Google
-                        Gemini API key (which has a very generous free tier).</p>
+                    <h3 class="text-lg font-bold text-white mb-2">Ci sono costi nascosti o fee per le API?</h3>
+                    <p class="text-gray-400 text-sm">Nessun abbonamento mensile. Whisper AI gira localmente sulla tua macchina. Se usi l'AI per gli Hook di Gemini, ti basterà la tua chiave API Google (che ha una soglia gratuita molto generosa).</p>
                 </div>
                 <div class="bg-bgPanel p-6 rounded-2xl border border-white/5">
-                    <h3 class="text-lg font-bold text-white mb-2">Can I use my own fonts and Fusion animations?</h3>
-                    <p class="text-gray-400 text-sm">Absolutely. We don't lock you into standard formats. SmartSubs
-                        drops your custom Fusion templates directly into the timeline. If you can build it in Fusion,
-                        SmartSubs can animate it.</p>
+                    <h3 class="text-lg font-bold text-white mb-2">Posso usare i miei font e animazioni Fusion?</h3>
+                    <p class="text-gray-400 text-sm">Certamente. Non ti blocchiamo in formati standard. SmartSubs inserisce i tuoi template personalizzati direttamente nella timeline.</p>
                 </div>
             </div>
         </div>
@@ -224,18 +200,18 @@
 
     <section id="pricing" class="py-24 px-6 bg-black/30 border-t border-white/5 relative z-10">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">Own your workflow.</h2>
-            <p class="text-xl text-gray-400 mb-12">One-time payment. No SaaS subscriptions.</p>
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">Migliora il tuo workflow oggi.</h2>
+            <p class="text-xl text-gray-400 mb-12">Pagamento unico. Nessun abbonamento SaaS.</p>
 
             <div
-                class="bg-gradient-to-b from-bgPanel to-bgDark border border-brandOrange/30 rounded-3xl p-8 md:p-12 max-w-lg mx-auto shadow-[0_0_40px_rgba(249,115,22,0.15)] relative overflow-hidden">
+                class="bg-gradient-to-b from-bgPanel to-bgDark border border-brandOrange/30 rounded-3xl p-8 md:p-12 max-w-lg mx-auto shadow-panel-glow relative overflow-hidden">
                 <div class="absolute top-0 right-0 bg-brandOrange text-white text-xs font-bold px-4 py-1 rounded-bl-lg">
-                    LIFETIME DEAL</div>
+                    OFFERTA LIFETIME</div>
 
                 <h3 class="font-display text-2xl font-bold text-white mb-2">SmartSubs PRO</h3>
                 <div class="flex items-baseline justify-center gap-1 mb-8">
                     <span class="text-5xl font-extrabold text-white">$49</span>
-                    <span class="text-gray-400">/one-time</span>
+                    <span class="text-gray-400">/una volta</span>
                 </div>
 
                 <ul class="text-left space-y-4 mb-10 text-gray-300">
@@ -244,34 +220,34 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
                             </path>
                         </svg>
-                        Unlimited offline transcriptions
+                        Trascrizioni offline illimitate
                     </li>
                     <li class="flex items-center gap-3">
                         <svg class="w-5 h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
                             </path>
                         </svg>
-                        Advanced Gemini Hook AI
+                        IA Avanzata Gemini Hook
                     </li>
                     <li class="flex items-center gap-3">
                         <svg class="w-5 h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
                             </path>
                         </svg>
-                        Viral Word-by-Word & Standard modes
+                        Modalità Parola per Parola Virale
                     </li>
                     <li class="flex items-center gap-3">
                         <svg class="w-5 h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
                             </path>
                         </svg>
-                        Works on Free & Studio (Mac/Win)
+                        Compatibile con Mac/Win
                     </li>
                 </ul>
 
                 <button
                     class="w-full bg-brandOrange hover:bg-orange-600 text-white font-bold py-4 rounded-xl transition-colors text-lg transform hover:scale-105">
-                    Get Lifetime Access
+                    Ottieni Accesso a Vita
                 </button>
             </div>
         </div>
@@ -279,9 +255,9 @@
 
     <footer class="border-t border-white/10 bg-black/50 py-12 px-6 text-center text-sm text-gray-500 relative z-10">
         <div class="max-w-7xl mx-auto flex flex-col items-center justify-center gap-4">
-            <img src="LogoTipo.svg" alt="SmartSubs Pro Footer Logo"
+            <img src="assets/images/LogoTipo.svg" alt="SmartSubs Pro Logo Footer"
                 class="h-6 opacity-50 grayscale hover:grayscale-0 transition-all">
-            <p>&copy; 2026 SmartSubs.pro. All rights reserved. Not affiliated with Blackmagic Design.</p>
+            <p>&copy; 2026 SmartSubs.pro. Tutti i diritti riservati. Non affiliato con Blackmagic Design.</p>
         </div>
     </footer>
 
