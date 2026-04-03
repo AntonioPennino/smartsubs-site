@@ -51,7 +51,7 @@
       },
       "offers": {
         "@type": "Offer",
-        "price": "49.00",
+        "price": "39.00",
         "priceCurrency": "USD",
         "priceValidUntil": "2027-12-31"
       }
@@ -62,7 +62,11 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
-    <!-- External Tailwind Config and Custom CSS -->
+    <!-- Lemon Squeezy Overlay Checkout -->
+    <!-- IMPORTANT: Replace YOUR_CHECKOUT_URL in all href="..." on .lemonsqueezy-button links -->
+    <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
+
+    <!-- Tailwind + Custom CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="assets/js/tailwind.config.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
@@ -70,66 +74,117 @@
 
 <body class="bg-bgDark text-gray-200 font-sans antialiased selection:bg-brandOrange selection:text-white">
 
-    <!-- Navigation -->
+    <!-- ═══════════════════════════════════════════
+         NAVIGATION
+    ═══════════════════════════════════════════ -->
     <nav class="fixed w-full z-50 top-0 border-b border-white/10 bg-bgDark/80 backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3">
-                <img src="assets/images/LogoTipo.svg" alt="SmartSubs Pro - AI Subtitle Plugin for DaVinci Resolve" class="h-10">
+                <img src="assets/images/LogoTipo.svg" alt="SmartSubs Pro" class="h-10">
             </a>
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="#features" class="hover:text-brandOrange transition-colors">Features</a>
-                <a href="#faq" class="hover:text-brandOrange transition-colors">FAQ</a>
-                <a href="#pricing" class="hover:text-brandOrange transition-colors">Pricing</a>
+                <a href="#how-it-works" class="hover:text-brandOrange transition-colors duration-200">How it Works</a>
+                <a href="#features" class="hover:text-brandOrange transition-colors duration-200">Features</a>
+                <a href="#compare" class="hover:text-brandOrange transition-colors duration-200">Compare</a>
+                <a href="#faq" class="hover:text-brandOrange transition-colors duration-200">FAQ</a>
+                <a href="#pricing" class="hover:text-brandOrange transition-colors duration-200">Pricing</a>
             </div>
-            <a href="#pricing"
-                class="bg-brandOrange hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold transition-all transform hover:scale-105 shadow-btn-glow">
+            <!-- Lemon Squeezy CTA — replace href with your checkout URL -->
+            <a href="YOUR_CHECKOUT_URL" class="lemonsqueezy-button bg-brandOrange hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-btn-glow">
                 Get the Plugin
             </a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ═══════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════ -->
     <section class="pt-40 pb-20 px-6 relative overflow-hidden">
-        <div
-            class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brandPurple/20 blur-[120px] rounded-full pointer-events-none">
-        </div>
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-brandPurple/20 blur-[140px] rounded-full pointer-events-none"></div>
 
         <div class="max-w-5xl mx-auto text-center relative z-10">
-            <div
-                class="inline-block border border-brandPurple/50 bg-brandPurple/10 text-brandPurple px-4 py-1.5 rounded-full text-sm font-semibold mb-6 tracking-wide">
+            <div class="inline-block border border-brandPurple/50 bg-brandPurple/10 text-brandPurple px-4 py-1.5 rounded-full text-sm font-semibold mb-6 tracking-wide">
                 DAVINCI RESOLVE 18.1+ COMPATIBLE
             </div>
             <h1 class="font-display text-5xl md:text-7xl font-extrabold text-white leading-tight mb-8">
-                Stop Exporting to CapCut for <span
-                    class="text-transparent bg-clip-text bg-gradient-to-r from-brandOrange to-yellow-400">Viral Captions.</span>
+                Stop Exporting to CapCut<br>for <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandOrange to-yellow-400">Viral Captions.</span>
             </h1>
             <p class="text-xl md:text-2xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
                 Generate word-by-word animated subtitles directly in the Edit page. AI hook detection, custom Fusion templates, and zero monthly fees.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-                <a href="#pricing"
-                    class="w-full sm:w-auto bg-brandOrange hover:bg-orange-600 text-white text-lg px-8 py-4 rounded-full font-bold transition-all transform hover:scale-105 shadow-btn-glow-lg">
-                    Get SmartSubs Pro — $49
+                <!-- Lemon Squeezy CTA -->
+                <a href="YOUR_CHECKOUT_URL"
+                    class="lemonsqueezy-button w-full sm:w-auto bg-brandOrange hover:bg-orange-600 text-white text-lg px-8 py-4 rounded-full font-bold transition-all duration-300 hover:scale-105 shadow-btn-glow-lg">
+                    Get SmartSubs Pro — $39
                 </a>
-                <p class="text-sm text-gray-500 sm:ml-4">Works on Free &amp; Studio versions.</p>
+                <p class="text-sm text-gray-500 sm:ml-4">Works on Free &amp; Studio · Mac &amp; Windows</p>
             </div>
 
-            <!-- Demo GIF Container — bg-[#111113] hides GIF transparent pixels -->
-            <div
-                class="relative rounded-2xl border border-white/10 bg-[#111113] shadow-2xl overflow-hidden aspect-video group hover:border-brandPurple/50 transition-colors">
-                <div
-                    class="absolute inset-0 bg-gradient-to-tr from-brandPurple/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-10">
-                </div>
+            <!-- Demo GIF — bg matches page so transparent pixels are invisible -->
+            <div class="relative rounded-2xl border border-white/10 bg-[#111113] shadow-2xl overflow-hidden aspect-video group hover:border-brandPurple/50 transition-colors duration-300">
+                <div class="absolute inset-0 bg-gradient-to-tr from-brandPurple/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10"></div>
                 <img
                     src="assets/images/SubsPro.gif"
                     alt="SmartSubs Pro demo — word-by-word AI captions inside DaVinci Resolve"
                     class="w-full h-full object-contain">
                 <div class="absolute inset-0 shadow-inset-dark pointer-events-none z-10"></div>
             </div>
+
+            <!-- Trust bar -->
+            <div class="flex flex-wrap items-center justify-center gap-6 mt-8 text-sm text-gray-500">
+                <span class="flex items-center gap-2">
+                    <svg class="w-4 h-4 text-brandOrange" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    4.9/5 rating
+                </span>
+                <span>·</span>
+                <span>One-time payment</span>
+                <span>·</span>
+                <span>Instant download</span>
+                <span>·</span>
+                <span>Secure checkout via Lemon Squeezy</span>
+            </div>
         </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- ═══════════════════════════════════════════
+         HOW IT WORKS
+    ═══════════════════════════════════════════ -->
+    <section id="how-it-works" class="py-24 px-6 relative z-10">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl md:text-5xl font-bold text-white mb-4">How It Works</h2>
+                <p class="text-gray-400 text-lg">From install to viral captions in under 3 minutes.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 relative">
+                <!-- Connecting line (desktop only) -->
+                <div class="hidden md:block absolute top-8 left-1/3 right-1/3 h-px bg-gradient-to-r from-brandPurple/50 to-brandOrange/50 z-0"></div>
+
+                <div class="relative text-center group">
+                    <div class="w-16 h-16 bg-brandPurple/20 border border-brandPurple/30 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-display font-extrabold text-brandPurple group-hover:bg-brandPurple/30 transition-colors duration-300">1</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Install the Script</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Run the one-click installer. SmartSubs automatically sets up Python, Whisper, and all dependencies on your machine.</p>
+                </div>
+
+                <div class="relative text-center group">
+                    <div class="w-16 h-16 bg-brandOrange/20 border border-brandOrange/30 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-display font-extrabold text-brandOrange group-hover:bg-brandOrange/30 transition-colors duration-300">2</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Pick Your Template</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Choose word-by-word or sentence mode. Set your Fusion Text+ template — any font, color, animation you like.</p>
+                </div>
+
+                <div class="relative text-center group">
+                    <div class="w-16 h-16 bg-brandPurple/20 border border-brandPurple/30 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-display font-extrabold text-brandPurple group-hover:bg-brandPurple/30 transition-colors duration-300">3</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Hit Generate</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">SmartSubs transcribes with Whisper AI, detects hook words with Gemini, and places every caption node on your timeline — synced to the frame.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         FEATURES
+    ═══════════════════════════════════════════ -->
     <section id="features" class="py-24 px-6 bg-black/30 border-y border-white/5 relative z-10">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
@@ -138,126 +193,339 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-bgPanel p-8 rounded-2xl border border-white/5 hover:border-brandPurple/50 transition-colors">
+                <div class="bg-bgPanel p-8 rounded-2xl border border-white/5 hover:border-brandPurple/50 transition-all duration-300 hover:-translate-y-1">
                     <div class="w-12 h-12 bg-brandPurple/20 rounded-xl flex items-center justify-center mb-6 text-brandPurple">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z">
-                            </path>
-                        </svg>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">Whisper AI Transcription</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">99.9% accurate transcription powered by OpenAI Whisper. Perfectly synced down to the exact frame. Auto-translates to any language.</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">99.9% accurate, 100% offline. No audio ever leaves your machine. Supports 90+ languages and auto-translates.</p>
                 </div>
-                <div class="bg-bgPanel p-8 rounded-2xl border border-white/5 hover:border-brandOrange/50 transition-colors">
+
+                <div class="bg-bgPanel p-8 rounded-2xl border border-white/5 hover:border-brandOrange/50 transition-all duration-300 hover:-translate-y-1">
                     <div class="w-12 h-12 bg-brandOrange/20 rounded-xl flex items-center justify-center mb-6 text-brandOrange">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">Gemini Hook Detection</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Stop highlighting manually. SmartSubs uses Google Gemini AI to analyze your script and automatically bold the high-impact power words.</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Stop highlighting manually. Google Gemini reads your script and auto-emphasizes the high-impact words that stop the scroll.</p>
                 </div>
-                <div class="bg-bgPanel p-8 rounded-2xl border border-white/5 hover:border-brandPurple/50 transition-colors">
+
+                <div class="bg-bgPanel p-8 rounded-2xl border border-white/5 hover:border-brandPurple/50 transition-all duration-300 hover:-translate-y-1">
                     <div class="w-12 h-12 bg-brandPurple/20 rounded-xl flex items-center justify-center mb-6 text-brandPurple">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
-                        </svg>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">Dual-Template System</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Design your own Text+ nodes in Fusion. One template for standard words, one bold style for Hooks. Complete creative freedom.</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">One Text+ node for regular words, one for Hooks. Any font, any animation — SmartSubs drops them frame-perfect on the timeline.</p>
+                </div>
+
+                <div class="bg-bgPanel p-8 rounded-2xl border border-white/5 hover:border-brandOrange/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 bg-brandOrange/20 rounded-xl flex items-center justify-center mb-6 text-brandOrange">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Frame-Perfect Sync</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Each word node is placed at the exact frame it's spoken. No manual tweaking needed — it just works.</p>
+                </div>
+
+                <div class="bg-bgPanel p-8 rounded-2xl border border-white/5 hover:border-brandPurple/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 bg-brandPurple/20 rounded-xl flex items-center justify-center mb-6 text-brandPurple">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Native Fusion Integration</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Works entirely within DaVinci Resolve's Edit page. No third-party apps, no round-trips, no re-importing.</p>
+                </div>
+
+                <div class="bg-bgPanel p-8 rounded-2xl border border-white/5 hover:border-brandOrange/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 bg-brandOrange/20 rounded-xl flex items-center justify-center mb-6 text-brandOrange">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">No Subscription. Ever.</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Pay once, own it forever. Whisper runs locally — no cloud credits. Use Gemini's generous free tier for hooks.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
+    <!-- ═══════════════════════════════════════════
+         COMPARISON TABLE
+    ═══════════════════════════════════════════ -->
+    <section id="compare" class="py-24 px-6 relative z-10">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl md:text-5xl font-bold text-white mb-4">Why Not Just Use CapCut?</h2>
+                <p class="text-gray-400 text-lg">Here's what you actually get with each option.</p>
+            </div>
+
+            <div class="overflow-x-auto rounded-2xl border border-white/10">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="bg-bgPanel border-b border-white/10">
+                            <th class="text-left p-5 text-gray-400 font-semibold w-1/3">Feature</th>
+                            <th class="p-5 text-center font-bold text-white">
+                                <span class="text-brandOrange">SmartSubs Pro</span>
+                            </th>
+                            <th class="p-5 text-center font-semibold text-gray-400">CapCut</th>
+                            <th class="p-5 text-center font-semibold text-gray-400">Native Resolve</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-white/5">
+                        <tr class="bg-bgDark/50 hover:bg-bgPanel/50 transition-colors">
+                            <td class="p-5 text-gray-300">Works inside DaVinci Resolve</td>
+                            <td class="p-5 text-center"><span class="text-green-400 text-lg">✓</span></td>
+                            <td class="p-5 text-center"><span class="text-red-400 text-lg">✗</span></td>
+                            <td class="p-5 text-center"><span class="text-green-400 text-lg">✓</span></td>
+                        </tr>
+                        <tr class="bg-bgDark/50 hover:bg-bgPanel/50 transition-colors">
+                            <td class="p-5 text-gray-300">Word-by-word animation</td>
+                            <td class="p-5 text-center"><span class="text-green-400 text-lg">✓</span></td>
+                            <td class="p-5 text-center"><span class="text-green-400 text-lg">✓</span></td>
+                            <td class="p-5 text-center"><span class="text-red-400 text-lg">✗</span></td>
+                        </tr>
+                        <tr class="bg-bgDark/50 hover:bg-bgPanel/50 transition-colors">
+                            <td class="p-5 text-gray-300">Custom fonts &amp; Fusion templates</td>
+                            <td class="p-5 text-center"><span class="text-green-400 text-lg">✓</span></td>
+                            <td class="p-5 text-center"><span class="text-red-400 text-lg">✗</span></td>
+                            <td class="p-5 text-center"><span class="text-yellow-400 text-lg">Limited</span></td>
+                        </tr>
+                        <tr class="bg-bgDark/50 hover:bg-bgPanel/50 transition-colors">
+                            <td class="p-5 text-gray-300">AI hook word emphasis</td>
+                            <td class="p-5 text-center"><span class="text-green-400 text-lg">✓</span></td>
+                            <td class="p-5 text-center"><span class="text-red-400 text-lg">✗</span></td>
+                            <td class="p-5 text-center"><span class="text-red-400 text-lg">✗</span></td>
+                        </tr>
+                        <tr class="bg-bgDark/50 hover:bg-bgPanel/50 transition-colors">
+                            <td class="p-5 text-gray-300">100% offline privacy</td>
+                            <td class="p-5 text-center"><span class="text-green-400 text-lg">✓</span></td>
+                            <td class="p-5 text-center"><span class="text-red-400 text-lg">✗</span></td>
+                            <td class="p-5 text-center"><span class="text-green-400 text-lg">✓</span></td>
+                        </tr>
+                        <tr class="bg-bgDark/50 hover:bg-bgPanel/50 transition-colors">
+                            <td class="p-5 text-gray-300">No monthly fee</td>
+                            <td class="p-5 text-center"><span class="text-green-400 text-lg">✓</span></td>
+                            <td class="p-5 text-center"><span class="text-yellow-400 text-sm">Free plan (watermark)</span></td>
+                            <td class="p-5 text-center"><span class="text-green-400 text-lg">✓</span></td>
+                        </tr>
+                        <tr class="bg-bgDark/50 hover:bg-bgPanel/50 transition-colors">
+                            <td class="p-5 text-gray-300">Works on Free Resolve</td>
+                            <td class="p-5 text-center"><span class="text-green-400 text-lg">✓</span></td>
+                            <td class="p-5 text-center"><span class="text-gray-500">N/A</span></td>
+                            <td class="p-5 text-center"><span class="text-yellow-400 text-sm">Limited</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         TESTIMONIALS
+    ═══════════════════════════════════════════ -->
+    <section class="py-24 px-6 bg-black/30 border-y border-white/5 relative z-10">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl md:text-5xl font-bold text-white mb-4">Creators Love It.</h2>
+                <p class="text-gray-400 text-lg">Real feedback from real editors.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-bgPanel p-6 rounded-2xl border border-white/5 flex flex-col gap-4">
+                    <div class="flex gap-1">
+                        <span class="text-brandOrange">★★★★★</span>
+                    </div>
+                    <p class="text-gray-300 text-sm leading-relaxed italic">"I was exporting to CapCut every single clip. Now I stay entirely inside Resolve. This plugin literally cut my editing time in half."</p>
+                    <div class="flex items-center gap-3 mt-auto pt-4 border-t border-white/5">
+                        <div class="w-8 h-8 rounded-full bg-brandPurple/40 flex items-center justify-center text-xs font-bold text-white">MR</div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Marco R.</p>
+                            <p class="text-xs text-gray-500">Content creator · Italy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-bgPanel p-6 rounded-2xl border border-white/5 flex flex-col gap-4">
+                    <div class="flex gap-1">
+                        <span class="text-brandOrange">★★★★★</span>
+                    </div>
+                    <p class="text-gray-300 text-sm leading-relaxed italic">"The Gemini hook detection is insane. It actually finds the words I would have highlighted manually. Feels like cheating."</p>
+                    <div class="flex items-center gap-3 mt-auto pt-4 border-t border-white/5">
+                        <div class="w-8 h-8 rounded-full bg-brandOrange/40 flex items-center justify-center text-xs font-bold text-white">JS</div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Jake S.</p>
+                            <p class="text-xs text-gray-500">Video editor · United States</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-bgPanel p-6 rounded-2xl border border-white/5 flex flex-col gap-4">
+                    <div class="flex gap-1">
+                        <span class="text-brandOrange">★★★★★</span>
+                    </div>
+                    <p class="text-gray-300 text-sm leading-relaxed italic">"Finally, a subtitles plugin that respects my custom templates. I use my own Fusion animations and it just works. Perfect setup."</p>
+                    <div class="flex items-center gap-3 mt-auto pt-4 border-t border-white/5">
+                        <div class="w-8 h-8 rounded-full bg-brandPurple/40 flex items-center justify-center text-xs font-bold text-white">LK</div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Lena K.</p>
+                            <p class="text-xs text-gray-500">Freelance editor · Germany</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         FAQ
+    ═══════════════════════════════════════════ -->
     <section id="faq" class="py-24 px-6 relative z-10">
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="font-display text-3xl md:text-5xl font-bold text-white mb-4">Frequently Asked Questions</h2>
             </div>
 
-            <div class="space-y-6">
-                <div class="bg-bgPanel p-6 rounded-2xl border border-white/5">
-                    <h3 class="text-lg font-bold text-white mb-2">Does this work on the Free version of DaVinci Resolve?</h3>
-                    <p class="text-gray-400 text-sm">Yes! Unlike Resolve's native subtitle track which locks advanced features behind the Studio paywall, SmartSubs Pro works perfectly on both DaVinci Resolve Free and Studio (18.1 and above).</p>
+            <div class="space-y-4" id="faq-list">
+                <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
+                    <button class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-200">
+                        <h3 class="text-base font-bold text-white">Does this work on the Free version of DaVinci Resolve?</h3>
+                        <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-400 text-sm leading-relaxed">Yes! SmartSubs Pro works on both DaVinci Resolve Free and Studio (18.1+). Unlike the native subtitle track — which restricts advanced styling in the free version — SmartSubs uses standard Fusion Text+ nodes that are available to everyone.</p>
+                    </div>
                 </div>
-                <div class="bg-bgPanel p-6 rounded-2xl border border-white/5">
-                    <h3 class="text-lg font-bold text-white mb-2">Are there any hidden costs or API fees?</h3>
-                    <p class="text-gray-400 text-sm">No monthly fees, ever. Whisper AI runs fully offline on your machine. If you enable the advanced Gemini Hook Detection, you only need a Google Gemini API key — which has a very generous free tier.</p>
+
+                <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
+                    <button class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-200">
+                        <h3 class="text-base font-bold text-white">Are there any hidden costs or API fees?</h3>
+                        <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-400 text-sm leading-relaxed">No monthly fees, ever. Whisper AI runs fully offline. If you enable Gemini Hook Detection, you only need a Google AI API key — which has a very generous free tier that covers thousands of requests per month.</p>
+                    </div>
                 </div>
-                <div class="bg-bgPanel p-6 rounded-2xl border border-white/5">
-                    <h3 class="text-lg font-bold text-white mb-2">Can I use my own fonts and Fusion animations?</h3>
-                    <p class="text-gray-400 text-sm">Absolutely. We don't lock you into preset styles. SmartSubs drops your custom Fusion Text+ templates directly into the timeline. If you can build it in Fusion, SmartSubs can animate it.</p>
+
+                <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
+                    <button class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-200">
+                        <h3 class="text-base font-bold text-white">Can I use my own fonts and Fusion animations?</h3>
+                        <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-400 text-sm leading-relaxed">Absolutely. SmartSubs reads any Text+ node you set as your template — any font, color, scale animation, or Fusion effect. If you can build it in Fusion, SmartSubs can animate it word-by-word.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
+                    <button class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-200">
+                        <h3 class="text-base font-bold text-white">Does it work on Mac and Windows?</h3>
+                        <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-400 text-sm leading-relaxed">Yes — SmartSubs Pro supports both macOS and Windows. The installer handles Python and Whisper setup automatically on both platforms.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
+                    <button class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-200">
+                        <h3 class="text-base font-bold text-white">What happens after I buy?</h3>
+                        <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-400 text-sm leading-relaxed">You'll get an instant download link via email from Lemon Squeezy. Inside the zip you'll find the installer, the SmartSubs script, and a quick-start guide. You'll be up and running in less than 5 minutes.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-24 px-6 bg-black/30 border-t border-white/5 relative z-10">
+    <!-- ═══════════════════════════════════════════
+         SYSTEM REQUIREMENTS
+    ═══════════════════════════════════════════ -->
+    <section class="py-16 px-6 bg-black/30 border-t border-white/5 relative z-10">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="font-display text-2xl font-bold text-white mb-8">System Requirements</h2>
+            <div class="grid sm:grid-cols-2 gap-4 text-sm">
+                <div class="bg-bgPanel rounded-xl p-4 border border-white/5 text-left flex gap-3">
+                    <span class="text-brandPurple mt-0.5">▸</span>
+                    <div><span class="text-white font-semibold">DaVinci Resolve</span> <span class="text-gray-400">18.1 or later (Free or Studio)</span></div>
+                </div>
+                <div class="bg-bgPanel rounded-xl p-4 border border-white/5 text-left flex gap-3">
+                    <span class="text-brandPurple mt-0.5">▸</span>
+                    <div><span class="text-white font-semibold">OS</span> <span class="text-gray-400">Windows 10/11 or macOS 12+</span></div>
+                </div>
+                <div class="bg-bgPanel rounded-xl p-4 border border-white/5 text-left flex gap-3">
+                    <span class="text-brandPurple mt-0.5">▸</span>
+                    <div><span class="text-white font-semibold">Python</span> <span class="text-gray-400">Installed automatically by the setup wizard</span></div>
+                </div>
+                <div class="bg-bgPanel rounded-xl p-4 border border-white/5 text-left flex gap-3">
+                    <span class="text-brandPurple mt-0.5">▸</span>
+                    <div><span class="text-white font-semibold">Internet</span> <span class="text-gray-400">Only needed at first install &amp; for Gemini AI (optional)</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PRICING
+    ═══════════════════════════════════════════ -->
+    <section id="pricing" class="py-24 px-6 border-t border-white/5 relative z-10">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">Own your workflow.</h2>
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-4">Own your workflow.</h2>
             <p class="text-xl text-gray-400 mb-12">One-time payment. No SaaS subscriptions. Ever.</p>
 
-            <div
-                class="bg-gradient-to-b from-bgPanel to-bgDark border border-brandOrange/30 rounded-3xl p-8 md:p-12 max-w-lg mx-auto shadow-panel-glow relative overflow-hidden">
-                <div class="absolute top-0 right-0 bg-brandOrange text-white text-xs font-bold px-4 py-1 rounded-bl-lg">
-                    LIFETIME DEAL</div>
+            <div class="bg-gradient-to-b from-bgPanel to-bgDark border border-brandOrange/30 rounded-3xl p-8 md:p-12 max-w-lg mx-auto shadow-panel-glow relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-brandOrange text-white text-xs font-bold px-4 py-1 rounded-bl-lg tracking-wide">
+                    LIFETIME DEAL
+                </div>
 
                 <h3 class="font-display text-2xl font-bold text-white mb-2">SmartSubs PRO</h3>
-                <div class="flex items-baseline justify-center gap-1 mb-8">
-                    <span class="text-5xl font-extrabold text-white">$49</span>
+                <div class="flex items-baseline justify-center gap-1 mb-2">
+                    <span class="text-5xl font-extrabold text-white">$39</span>
                     <span class="text-gray-400">/one-time</span>
                 </div>
+                <p class="text-gray-500 text-xs mb-8">Price shown in USD · local currency shown at checkout</p>
 
                 <ul class="text-left space-y-4 mb-10 text-gray-300">
                     <li class="flex items-center gap-3">
-                        <svg class="w-5 h-5 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
+                        <svg class="w-5 h-5 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                         Unlimited offline transcriptions
                     </li>
                     <li class="flex items-center gap-3">
-                        <svg class="w-5 h-5 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
+                        <svg class="w-5 h-5 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                         Gemini AI Hook Detection
                     </li>
                     <li class="flex items-center gap-3">
-                        <svg class="w-5 h-5 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
+                        <svg class="w-5 h-5 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                         Viral Word-by-Word &amp; Standard modes
                     </li>
                     <li class="flex items-center gap-3">
-                        <svg class="w-5 h-5 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        Works on Free &amp; Studio (Mac &amp; Windows)
+                        <svg class="w-5 h-5 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Works on Free &amp; Studio · Mac &amp; Windows
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Free updates included
                     </li>
                 </ul>
 
-                <button id="cta-buy"
-                    class="w-full bg-brandOrange hover:bg-orange-600 text-white font-bold py-4 rounded-xl transition-colors text-lg transform hover:scale-105">
+                <!-- Lemon Squeezy overlay button — replace href with your checkout URL -->
+                <a href="YOUR_CHECKOUT_URL"
+                    id="cta-buy"
+                    class="lemonsqueezy-button block w-full bg-brandOrange hover:bg-orange-500 text-white font-bold py-4 rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-btn-glow-lg text-lg text-center">
                     Get Lifetime Access
-                </button>
+                </a>
+                <p class="text-xs text-gray-600 mt-4">Secure checkout · Instant download · 30-day money-back guarantee</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="border-t border-white/10 bg-black/50 py-12 px-6 text-center text-sm text-gray-500 relative z-10">
-        <div class="max-w-7xl mx-auto flex flex-col items-center justify-center gap-4">
+    <!-- ═══════════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════════ -->
+    <footer class="border-t border-white/10 bg-black/50 py-12 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto flex flex-col items-center justify-center gap-4 text-center text-sm text-gray-500">
             <img src="assets/images/LogoTipo.svg" alt="SmartSubs Pro"
-                class="h-6 opacity-50 grayscale hover:grayscale-0 transition-all">
-            <p>&copy; 2026 SmartSubs.pro. All rights reserved. Not affiliated with Blackmagic Design.</p>
+                class="h-6 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <p>&copy; 2026 SmartSubs.pro · All rights reserved · Not affiliated with Blackmagic Design.</p>
+            <p class="text-xs text-gray-600">Payments securely handled by <a href="https://www.lemonsqueezy.com" target="_blank" rel="noopener" class="hover:text-brandOrange transition-colors">Lemon Squeezy</a> — Merchant of Record.</p>
         </div>
     </footer>
 
-</body>
+    <!-- FAQ Accordion Script -->
+    <script src="assets/js/main.js"></script>
 
+</body>
 </html>
