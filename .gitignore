@@ -1,2 +1,8 @@
-# Git ignore the original GIF (too heavy — use WebM/MP4 instead)
+# Original GIF — use WebM/MP4 instead (see assets/images/SubsPro.webm)
 assets/images/SubsPro.gif
+
+# Tailwind compiled output — generated at build time by Netlify
+assets/css/output.css
+
+# Node dependencies
+node_modules/

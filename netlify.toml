@@ -2,6 +2,7 @@
 
 [build]
   publish = "."
+  command = "npm install && npm run build:css"
 
 # ─── Security & Performance Headers (all routes) ───────────────────────────
 [[headers]]

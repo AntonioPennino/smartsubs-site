@@ -1,0 +1,12 @@
+{
+  "name": "smartsubs-site",
+  "version": "1.0.0",
+  "description": "SmartSubs Pro landing page",
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --minify",
+    "dev": "tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
