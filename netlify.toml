@@ -3,23 +3,63 @@
 [build]
   publish = "."
 
-# Custom Headers for Security and Performance
+# ─── Security & Performance Headers (all routes) ───────────────────────────
 [[headers]]
   for = "/*"
-    [headers.values]
-      X-Frame-Options = "DENY"
-      X-XSS-Protection = "1; mode=block"
-      X-Content-Type-Options = "nosniff"
-      Referrer-Policy = "strict-origin-when-cross-origin"
-      Content-Security-Policy = "upgrade-insecure-requests"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "upgrade-insecure-requests"
+    # Tells browsers to always use HTTPS for 1 year
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 
-# Cache-Control for Static Assets (Images, SVGs)
+# ─── Cache: HTML — short TTL so deploys propagate fast ─────────────────────
 [[headers]]
-  for = "*.svg"
-    [headers.values]
-      Cache-Control = "public, max-age=31536000, immutable"
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# ─── Cache: CSS & JS — long TTL (Netlify busts cache on deploy) ────────────
+[[headers]]
+  for = "/assets/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "*.png"
-    [headers.values]
-      Cache-Control = "public, max-age=31536000, immutable"
+  for = "/assets/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# ─── Cache: Images & SVGs ───────────────────────────────────────────────────
+[[headers]]
+  for = "/assets/images/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/images/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# GIF is large — cache aggressively, it won't change often
+[[headers]]
+  for = "/assets/images/*.gif"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000, immutable"
+
+# ─── Redirects ──────────────────────────────────────────────────────────────
+# Redirect www → apex domain (set Primary Domain in Netlify DNS too)
+[[redirects]]
+  from = "https://www.smartsubs.pro/*"
+  to   = "https://smartsubs.pro/:splat"
+  status = 301
+  force  = true
+
+# Catch-all 404 fallback
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
