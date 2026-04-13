@@ -203,7 +203,7 @@
                         Get SmartSubs Pro &mdash; $39.99
                     </a>
                     <p class="text-sm text-gray-500 sm:ml-4">Windows &middot; Free &amp; Studio &middot; <span
-                            class="text-brandOrange/80">Mac coming soon</span></p>
+                            class="text-brandOrange/80">100% Privacy-First (Offline)</span></p>
                 </div>
 
                 <!-- Demo GIF &mdash; bg matches page so transparent pixels are invisible -->
@@ -509,17 +509,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-bgPanel p-6 rounded-2xl border border-white/5 flex flex-col gap-4">
+                    <div class="bg-bgPanel p-6 rounded-2xl border border-white/5 flex flex-col gap-4 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-brandOrange/10 text-brandOrange text-[10px] font-bold px-2 py-1 rounded-bl-lg uppercase tracking-widest">Verified Purchase</div>
                         <div class="flex gap-1">
                             <span class="text-brandOrange">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                         </div>
-                        <p class="text-gray-300 text-sm leading-relaxed italic">"Finally, a subtitles plugin that
-                            respects
+                        <p class="text-gray-300 text-sm leading-relaxed italic">"Finally, a subtitles plugin that respects
                             my custom templates. I use my own Fusion animations and it just works. Perfect setup."</p>
                         <div class="flex items-center gap-3 mt-auto pt-4 border-t border-white/5">
-                            <div
-                                class="w-8 h-8 rounded-full bg-brandPurple/40 flex items-center justify-center text-xs font-bold text-white">
-                                LK</div>
+                            <div class="w-10 h-10 rounded-full border-2 border-brandPurple/30 bg-bgDark flex items-center justify-center text-xs font-bold text-white shadow-lg overflow-hidden">
+                                <span class="opacity-80">LK</span>
+                            </div>
                             <div>
                                 <p class="text-sm font-semibold text-white">Lena K.</p>
                                 <p class="text-xs text-gray-500">Freelance editor &middot; Germany</p>
@@ -527,12 +527,56 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- Trust Footer -->
+                <div class="mt-12 flex flex-wrap items-center justify-center gap-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                    <p class="text-xs font-semibold tracking-widest uppercase text-gray-400">Trusted by editors from</p>
+                    <div class="flex items-center gap-2">
+                        <span class="text-sm font-bold text-white tracking-tighter">YouTube</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-sm font-bold text-white tracking-tighter">Freelancer</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-sm font-bold text-white tracking-tighter">Agencies</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- ═══════════════════════════════════════════
+        <!-- ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ 
+             MEET THE MAKER
+        ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═  -->
+        <section class="py-24 px-6 relative z-10 overflow-hidden">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gradient-to-br from-bgPanel/80 to-bgDark/80 backdrop-blur-sm border border-white/5 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    <div class="relative flex-shrink-0">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-3xl bg-brandOrange/20 border-2 border-brandOrange/30 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 overflow-hidden">
+                            <img src="assets/images/Profile.JPG" alt="Antonio Pennino" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-2 -right-2 bg-brandPurple text-white text-[10px] font-bold px-3 py-1 rounded-full shadow-lg">CREATOR</div>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h2 class="font-display text-2xl md:text-3xl font-bold text-white mb-4">Built by an editor, for editors.</h2>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            Hi, I'm <span class="text-white font-semibold">Antonio Pennino</span>. I built SmartSubs Pro because I was tired of spending $20/month on subscriptions for a simple task: word-by-word captions. I wanted a tool that respects my privacy, keeps me inside DaVinci Resolve, and costs as much as a dinner out.
+                        </p>
+                        <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                            <div class="flex items-center gap-2 text-xs text-gray-500 bg-white/5 px-3 py-1.5 rounded-full">
+                                <span class="text-brandOrange font-bold">✓</span> 100% Independent
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-gray-500 bg-white/5 px-3 py-1.5 rounded-full">
+                                <span class="text-brandOrange font-bold">✓</span> Privacy First
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ 
          FAQ
-    ═══════════════════════════════════════════ -->
+    ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═  -->
         <section id="faq" class="py-24 px-6 relative z-10">
             <div class="max-w-3xl mx-auto">
                 <div class="text-center mb-16">
@@ -754,14 +798,38 @@
                         </li>
                     </ul>
 
-                    <!-- Lemon Squeezy overlay button &mdash; replace href with your checkout URL -->
-                    <a href="https://smartsubspro.lemonsqueezy.com/checkout/buy/18469eff-5cea-49fa-a6ff-a3da442cb30a"
-                        id="cta-buy"
-                        class="lemonsqueezy-button block w-full bg-brandOrange hover:bg-orange-500 text-white font-bold py-4 rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-btn-glow-lg text-lg text-center">
-                        Get Lifetime Access
-                    </a>
-                    <p class="text-xs text-gray-600 mt-4">Secure checkout &middot; Instant download &middot; 30-day money-back
-                        guarantee
+                    <!-- Guarantee Badge & Buy Button -->
+                    <div class="relative group">
+                        <a href="https://smartsubspro.lemonsqueezy.com/checkout/buy/18469eff-5cea-49fa-a6ff-a3da442cb30a"
+                            id="cta-buy"
+                            class="lemonsqueezy-button block w-full bg-brandOrange hover:bg-orange-500 text-white font-bold py-5 rounded-2xl transition-all duration-300 hover:scale-[1.02] hover:shadow-btn-glow-lg text-xl text-center">
+                            Get Lifetime Access &mdash; $39.99
+                        </a>
+                        
+                        <!-- Mini Guarantee Line -->
+                        <div class="mt-4 flex items-center justify-center gap-4 text-gray-500">
+                            <div class="flex items-center gap-1.5 text-[10px] sm:text-xs">
+                                <span class="text-brandOrange flex-shrink-0">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 4.908-3.367 9.192-8 10.466-4.633-1.274-8-5.558-8-10.466 0-.68.056-1.35.166-2.001zm8.874 2.167a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-1.5-1.5a1 1 0 011.414-1.414L8.5 9.586l2.54-2.54z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                30-Day Money Back
+                            </div>
+                            <div class="h-1 w-1 bg-gray-700 rounded-full"></div>
+                            <div class="flex items-center gap-1.5 text-[10px] sm:text-xs">
+                                <span class="text-brandOrange flex-shrink-0">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+                                    </svg>
+                                </span>
+                                Lifetime Updates
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-[10px] text-gray-600 mt-6 leading-relaxed italic">
+                        *Pays for itself in 3 hours of saved work compared to manual captioning.
                     </p>
                 </div>
             </div>
