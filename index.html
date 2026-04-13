@@ -250,33 +250,42 @@
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-8 relative">
-                    <!-- Connecting line (desktop only) -->
+                    <!-- Connecting line (desktop only) - Extended and centered -->
                     <div
-                        class="hidden md:block absolute top-8 left-1/3 right-1/3 h-px bg-gradient-to-r from-brandPurple/50 to-brandOrange/50 z-0">
+                        class="hidden md:block absolute top-8 left-[15%] right-[15%] h-[2px] bg-gradient-to-r from-brandPurple/20 via-brandOrange/40 to-brandPurple/20 z-0">
                     </div>
 
-                    <div class="relative text-center group">
+                    <div class="relative text-center group z-10">
                         <div
-                            class="w-16 h-16 bg-brandPurple/20 border border-brandPurple/30 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-display font-extrabold text-brandPurple group-hover:bg-brandPurple/30 transition-colors duration-300">
-                            1</div>
+                            class="w-16 h-16 bg-bgDark border border-brandPurple/30 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-display font-extrabold text-brandPurple shadow-[0_0_20px_rgba(139,92,246,0.1)] group-hover:border-brandPurple transition-all duration-300 relative z-10">
+                            <!-- Glow effect behind number -->
+                            <div class="absolute inset-0 bg-brandPurple/10 rounded-2xl -z-10"></div>
+                            1
+                        </div>
                         <h3 class="text-lg font-bold text-white mb-2">Install the Script</h3>
                         <p class="text-gray-400 text-sm leading-relaxed">Run the one-click installer. SmartSubs
                             automatically sets up Python, Whisper, and all dependencies on your machine.</p>
                     </div>
 
-                    <div class="relative text-center group">
+                    <div class="relative text-center group z-10">
                         <div
-                            class="w-16 h-16 bg-brandOrange/20 border border-brandOrange/30 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-display font-extrabold text-brandOrange group-hover:bg-brandOrange/30 transition-colors duration-300">
-                            2</div>
+                            class="w-16 h-16 bg-bgDark border border-brandOrange/30 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-display font-extrabold text-brandOrange shadow-[0_0_20px_rgba(249,115,22,0.1)] group-hover:border-brandOrange transition-all duration-300 relative z-10">
+                            <!-- Glow effect behind number -->
+                            <div class="absolute inset-0 bg-brandOrange/10 rounded-2xl -z-10"></div>
+                            2
+                        </div>
                         <h3 class="text-lg font-bold text-white mb-2">Pick Your Template</h3>
                         <p class="text-gray-400 text-sm leading-relaxed">Choose word-by-word or sentence mode. Set your
                             Fusion Text+ template &mdash; any font, color, animation you like.</p>
                     </div>
 
-                    <div class="relative text-center group">
+                    <div class="relative text-center group z-10">
                         <div
-                            class="w-16 h-16 bg-brandPurple/20 border border-brandPurple/30 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-display font-extrabold text-brandPurple group-hover:bg-brandPurple/30 transition-colors duration-300">
-                            3</div>
+                            class="w-16 h-16 bg-bgDark border border-brandPurple/30 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-display font-extrabold text-brandPurple shadow-[0_0_20px_rgba(139,92,246,0.1)] group-hover:border-brandPurple transition-all duration-300 relative z-10">
+                            <!-- Glow effect behind number -->
+                            <div class="absolute inset-0 bg-brandPurple/10 rounded-2xl -z-10"></div>
+                            3
+                        </div>
                         <h3 class="text-lg font-bold text-white mb-2">Hit Generate</h3>
                         <p class="text-gray-400 text-sm leading-relaxed">SmartSubs transcribes with Whisper AI, detects
                             hook
