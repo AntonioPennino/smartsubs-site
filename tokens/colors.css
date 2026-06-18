@@ -1,0 +1,80 @@
+/* ============================================================
+   SmartSubs Pro — Color Tokens
+   Dark, neon-glow brand: purple + orange on near-black.
+   ============================================================ */
+
+:root {
+  /* ---- Brand core ---- */
+  --brand-purple: #6D26D9;   /* primary brand — waveform bars, badges */
+  --brand-purple-600: #5B1FB5;
+  --brand-purple-400: #8B5CF6; /* lighter glow violet */
+  --brand-orange: #F97316;   /* action / CTA — the energy color */
+  --brand-orange-500: #F97316;
+  --brand-orange-600: #EA580C; /* CTA hover */
+  --brand-yellow: #FACC15;   /* gradient tail (orange→yellow headline accent) */
+
+  /* ---- Warm Paper Theme Colors ---- */
+  --paper: #F6F4F0;        /* warm off-white page */
+  --paper-2: #FFFFFF;      /* cards */
+  --paper-sunken: #EDEAE3; /* wells, alt bands */
+  --ink: #14130F;          /* near-black text */
+  --ink-2: #46443D;        /* body */
+  --ink-3: #76736A;        /* muted */
+  --line: rgba(20,19,15,0.10);
+  --line-soft: rgba(20,19,15,0.06);
+
+  /* ---- Surfaces (near-black stack) ---- */
+  --bg-base: #111113;        /* page background */
+  --bg-panel: #1E1E24;       /* cards, panels, inputs */
+  --bg-panel-2: #26262E;     /* raised / hovered panel */
+  --bg-black: #000000;       /* section bands use black/30 over base */
+  --bg-sunken: #0A0A0C;      /* deepest wells, video frame */
+
+  /* ---- Text ---- */
+  --text-strong: #FFFFFF;    /* headings */
+  --text-body: #E5E7EB;      /* gray-200 — primary body on dark */
+  --text-muted: #9CA3AF;     /* gray-400 — secondary copy */
+  --text-subtle: #6B7280;    /* gray-500 — captions, meta */
+  --text-faint: #4B5563;     /* gray-600 — footnotes, disabled */
+
+  /* ---- Hairlines & borders (alpha over dark) ---- */
+  --border-faint: rgba(255, 255, 255, 0.05);  /* default card edge */
+  --border-subtle: rgba(255, 255, 255, 0.10); /* nav, table, dividers */
+  --border-purple: rgba(109, 38, 217, 0.30);  /* accent card edge */
+  --border-purple-strong: rgba(109, 38, 217, 0.50);
+  --border-orange: rgba(249, 115, 22, 0.30);  /* pricing / featured edge */
+
+  /* ---- Tint washes (used as fills behind icons / badges) ---- */
+  --tint-purple: rgba(109, 38, 217, 0.20);
+  --tint-purple-soft: rgba(109, 38, 217, 0.10);
+  --tint-orange: rgba(249, 115, 22, 0.20);
+  --tint-orange-soft: rgba(249, 115, 22, 0.10);
+
+  /* ---- Semantic status ---- */
+  --success: #4ADE80;        /* green-400 — check marks */
+  --warning: #FACC15;        /* yellow-400 — "Limited" */
+  --danger:  #F87171;        /* red-400 — cross marks */
+  --info:    #8B5CF6;
+
+  /* ============ Semantic aliases ============ */
+  --surface-page: var(--bg-base);
+  --surface-card: var(--bg-panel);
+  --surface-raised: var(--bg-panel-2);
+  --surface-input: var(--bg-panel);
+
+  --action-primary: var(--brand-orange);
+  --action-primary-hover: var(--brand-orange-600);
+  --action-accent: var(--brand-purple);
+
+  --on-action: #FFFFFF;
+  --focus-ring: var(--brand-orange);
+
+  /* Selection (site uses orange bg, white text) */
+  --selection-bg: var(--brand-orange);
+  --selection-fg: #FFFFFF;
+}
+
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-fg);
+}

@@ -1,0 +1,66 @@
+/* ============================================================
+   SmartSubs Pro — Spacing, Radii, Shadows, Glows
+   ============================================================ */
+
+:root {
+  /* ---- Spacing scale (0.25rem base, Tailwind-aligned) ---- */
+  --space-1: 0.25rem;   /* 4 */
+  --space-2: 0.5rem;    /* 8 */
+  --space-3: 0.75rem;   /* 12 */
+  --space-4: 1rem;      /* 16 */
+  --space-5: 1.25rem;   /* 20 */
+  --space-6: 1.5rem;    /* 24 — default card padding rhythm */
+  --space-8: 2rem;      /* 32 — card padding (p-8) */
+  --space-10: 2.5rem;   /* 40 */
+  --space-12: 3rem;     /* 48 */
+  --space-16: 4rem;     /* 64 */
+  --space-20: 5rem;     /* 80 */
+  --space-24: 6rem;     /* 96 — section vertical padding (py-24) */
+
+  /* ---- Container ---- */
+  --container-max: 80rem;   /* max-w-7xl */
+  --container-prose: 48rem; /* max-w-3xl — text columns */
+  --gutter: 1.5rem;         /* px-6 page gutter */
+
+  /* ---- Radii ---- */
+  --radius-sm: 0.5rem;    /* 8 — chips, small wells */
+  --radius-md: 0.75rem;   /* 12 — inputs, icon tiles (rounded-xl) */
+  --radius-lg: 1rem;      /* 16 — cards (rounded-2xl) */
+  --radius-xl: 1.5rem;    /* 24 — feature panels (rounded-3xl) */
+  --radius-pill: 9999px;  /* buttons, badges */
+
+  /* ---- Elevation shadows ---- */
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+  --shadow-inset-dark: inset 0 0 100px rgba(0, 0, 0, 0.5); /* vignette over media */
+
+  /* ---- Neon glows (signature) ---- */
+  --glow-orange: 0 0 15px rgba(249, 115, 22, 0.40);     /* CTA resting */
+  --glow-orange-lg: 0 0 20px rgba(249, 115, 22, 0.50);  /* CTA hover */
+  --glow-purple: 0 0 20px rgba(139, 92, 246, 0.10);     /* step / accent tiles */
+  --glow-panel: 0 0 40px rgba(249, 115, 22, 0.15);      /* featured pricing panel */
+
+  /* ---- Atmospheric blobs (radial brand fog behind hero) ---- */
+  --blob-purple: radial-gradient(circle, rgba(109,38,217,0.20), transparent 70%); /* @kind other */
+  --blob-blur: 140px;
+
+  /* ---- Signature gradients ---- */
+  --gradient-headline: linear-gradient(90deg, var(--brand-orange), var(--brand-yellow));
+  --gradient-rule: linear-gradient(90deg, rgba(109,38,217,0.2), rgba(249,115,22,0.4), rgba(109,38,217,0.2)); /* @kind other */
+  --gradient-panel: linear-gradient(to bottom, var(--bg-panel), var(--bg-base));
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --dur-fast: 200ms;  /* @kind other */
+  --dur-base: 300ms;  /* @kind other */
+  --dur-slow: 500ms;  /* @kind other */
+
+  /* ---- Backdrop blur ---- */
+  --blur-nav: 12px; /* @kind other */
+
+  /* ---- Semantic aliases ---- */
+  --card-padding: var(--space-8);
+  --card-radius: var(--radius-lg);
+  --card-border: 1px solid var(--border-faint);
+}

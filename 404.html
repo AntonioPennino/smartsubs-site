@@ -3,12 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="assets/images/Logo.svg">
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo-mark.svg">
     <title>Page Not Found | SmartSubs Pro</title>
     <meta name="robots" content="noindex, follow">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="assets/js/tailwind.config.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandPurple: '#6D26D9',
+                        brandOrange: '#F97316',
+                        bgDark: '#111113',
+                        bgPanel: '#1E1E24'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body class="bg-bgDark text-gray-200 font-sans min-h-screen flex items-center justify-center px-6">
     <div class="text-center max-w-lg">
