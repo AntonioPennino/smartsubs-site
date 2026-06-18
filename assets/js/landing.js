@@ -95,3 +95,21 @@ if (presetChips.length > 0) {
     presetChips[activeIndex].classList.add('active');
   }, 1500);
 }
+
+// resolve UI mockup interactivity
+document.querySelectorAll('.resolve-sidebar .sidebar-item').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelectorAll('.resolve-sidebar .sidebar-item').forEach(i => i.classList.remove('active'));
+    item.classList.add('active');
+  });
+});
+
+document.querySelectorAll('.settings-checkbox').forEach(cb => {
+  cb.addEventListener('click', () => {
+    const box = cb.querySelector('.checkbox-box');
+    if (box) {
+      const checked = box.classList.toggle('checked');
+      box.textContent = checked ? '✔' : '';
+    }
+  });
+});

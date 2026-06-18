@@ -125,12 +125,13 @@
                     <p class="section-number">Section 3</p>
                     <h2 class="section-title">Optional AI Services (Google Gemini API)</h2>
                     <p>
-                        The Software offers an optional "Gemini Hook Detection" feature to automatically highlight high-impact words in your timeline.
+                        The Software offers an optional "Gemini Hook Detection" feature to automatically highlight high-impact words in your timeline by analyzing vocal intonation and emphasis.
                     </p>
                     <ul>
-                        <li><strong>Text-only submission:</strong> If (and only if) you enable this feature, the text transcript of your audio (not the raw audio files) is sent to Google Gemini APIs to analyze and identify hook words.</li>
-                        <li><strong>API Keys:</strong> You must configure the Software with your own Google Gemini API key. We do not collect, store, or have access to your API keys.</li>
-                        <li><strong>Third-Party Terms:</strong> The processing of this text data by Google is governed by Google LLC's own terms and policies. We recommend reading the <a href="https://ai.google.dev/terms" target="_blank" rel="noopener" class="highlight">Google AI Terms of Service</a>.</li>
+                        <li><strong>Multimodal Audio Processing:</strong> If (and only if) you enable this feature, the Software exports a temporary, localized <code>.wav</code> audio file of the voice track from your DaVinci Resolve timeline and uploads it directly to Google Gemini APIs. This allows Gemini to analyze actual speech features (pitch variations, volume shifts, syllable elongation, and speed) rather than relying on a simple text-only script scan.</li>
+                        <li><strong>Immediate Data Deletion:</strong> The temporary audio file is protected under strict <code>try...finally</code> script blocks and is deleted permanently from Google's servers immediately after the emphasis analysis completes. We do not store, access, or log any audio files.</li>
+                        <li><strong>API Keys:</strong> You must configure the Software with your own Google Gemini API key. We do not collect, store, or have access to your API key.</li>
+                        <li><strong>Third-Party Terms:</strong> Google processes this audio data as an independent processor. By using this optional feature, you agree to the <a href="https://ai.google.dev/terms" target="_blank" rel="noopener" class="highlight">Google AI Terms of Service</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="highlight">Google Privacy Policy</a>.</li>
                     </ul>
                 </section>
 
