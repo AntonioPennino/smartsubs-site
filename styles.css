@@ -5,6 +5,6 @@
    ============================================================ */
 
 @import url("./tokens/fonts.css");
-@import url("./tokens/colors.css");
+@import url("./tokens/colors.css?v=2");
 @import url("./tokens/typography.css");
 @import url("./tokens/spacing.css");

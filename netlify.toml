@@ -54,6 +54,11 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+[[headers]]
+  for = "/assets/images/*.mp4"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
 # ─── Redirects ──────────────────────────────────────────────────────────────
 # Redirect www → apex domain (set Primary Domain in Netlify DNS too)
 [[redirects]]

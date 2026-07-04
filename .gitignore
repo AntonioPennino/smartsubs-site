@@ -6,3 +6,6 @@ assets/css/output.css
 
 # Node dependencies
 node_modules/
+
+# Local Claude Code dev-preview config
+.claude/

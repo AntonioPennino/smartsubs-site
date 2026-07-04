@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /assets/js/
 
 Sitemap: https://smartsubs.netlify.app/sitemap.xml

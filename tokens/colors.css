@@ -13,15 +13,19 @@
   --brand-orange-600: #EA580C; /* CTA hover */
   --brand-yellow: #FACC15;   /* gradient tail (orange→yellow headline accent) */
 
-  /* ---- Warm Paper Theme Colors ---- */
-  --paper: #F6F4F0;        /* warm off-white page */
-  --paper-2: #FFFFFF;      /* cards */
-  --paper-sunken: #EDEAE3; /* wells, alt bands */
-  --ink: #14130F;          /* near-black text */
-  --ink-2: #46443D;        /* body */
-  --ink-3: #76736A;        /* muted */
-  --line: rgba(20,19,15,0.10);
-  --line-soft: rgba(20,19,15,0.06);
+  /* ---- Page theme aliases (dark) ----
+     Named "paper/ink" for historical reasons, but wired to the dark
+     surface stack so the whole site renders on near-black, matching
+     the original high-converting design and the DaVinci Resolve UI
+     the mockup panel already mimics. */
+  --paper: var(--bg-base);         /* page background */
+  --paper-2: var(--bg-panel-2);    /* cards — brighter than page, "floats" */
+  --paper-sunken: var(--bg-sunken);/* wells, alt bands — recessed, darkest */
+  --ink: var(--text-strong);       /* headings */
+  --ink-2: var(--text-body);       /* body */
+  --ink-3: var(--text-muted);      /* muted */
+  --line: var(--border-subtle);
+  --line-soft: var(--border-faint);
 
   /* ---- Surfaces (near-black stack) ---- */
   --bg-base: #111113;        /* page background */
