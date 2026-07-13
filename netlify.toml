@@ -2,6 +2,8 @@
 
 [build]
   publish = "."
+  # Compile Tailwind (output.css is gitignored and generated here at deploy time)
+  command = "npm install && npm run build:css"
 
 # ─── Security & Performance Headers (all routes) ───────────────────────────
 [[headers]]
