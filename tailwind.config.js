@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./index.html",
     "./404.html",
+    "./guide/**/*.html",
     "./assets/js/main.js"
   ],
   theme: {
