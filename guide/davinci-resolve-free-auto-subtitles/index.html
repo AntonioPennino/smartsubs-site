@@ -100,7 +100,7 @@
     <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
 
     <link rel="stylesheet" href="/assets/css/output.css?v=4">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css?v=2">
     <!-- Umami: privacy-friendly, cookieless analytics (EU region) -->
     <script defer src="https://eu.umami.is/script.js" data-website-id="9e712322-9991-4dbd-9856-86b6557ea207"></script>
 </head>
@@ -234,7 +234,7 @@
             <!-- Comparison -->
             <h2 class="font-display text-2xl font-bold text-white mt-12 mb-4">Which option fits you?</h2>
             <div class="overflow-x-auto rounded-2xl border border-white/10 mb-6">
-                <table class="w-full text-sm">
+                <table class="w-full text-sm cmp-table">
                     <thead>
                         <tr class="bg-bgPanel border-b border-white/10">
                             <th class="text-left p-4 text-gray-400 font-semibold">What you need</th>
@@ -246,33 +246,33 @@
                     <tbody class="divide-y divide-white/5">
                         <tr class="bg-bgDark/50">
                             <td class="p-4 text-gray-300">Works on free Resolve</td>
-                            <td class="p-4 text-center"><span class="text-green-400">&#10003;</span></td>
-                            <td class="p-4 text-center"><span class="text-green-400">&#10003;</span></td>
-                            <td class="p-4 text-center"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center" data-label="External SRT"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center" data-label="Free plugin"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center us-col" data-label="SmartSubs Pro"><span class="text-green-400">&#10003;</span></td>
                         </tr>
                         <tr class="bg-bgDark/50">
                             <td class="p-4 text-gray-300">Price</td>
-                            <td class="p-4 text-center text-gray-400">Free</td>
-                            <td class="p-4 text-center text-gray-400">Free</td>
-                            <td class="p-4 text-center text-gray-400">$39.99 once</td>
+                            <td class="p-4 text-center text-gray-400" data-label="External SRT">Free</td>
+                            <td class="p-4 text-center text-gray-400" data-label="Free plugin">Free</td>
+                            <td class="p-4 text-center text-gray-400 us-col" data-label="SmartSubs Pro">$39.99 once</td>
                         </tr>
                         <tr class="bg-bgDark/50">
                             <td class="p-4 text-gray-300">Stay inside Resolve</td>
-                            <td class="p-4 text-center"><span class="text-red-400">&#10007;</span></td>
-                            <td class="p-4 text-center"><span class="text-green-400">&#10003;</span></td>
-                            <td class="p-4 text-center"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center" data-label="External SRT"><span class="text-red-400">&#10007;</span></td>
+                            <td class="p-4 text-center" data-label="Free plugin"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center us-col" data-label="SmartSubs Pro"><span class="text-green-400">&#10003;</span></td>
                         </tr>
                         <tr class="bg-bgDark/50">
                             <td class="p-4 text-gray-300">Word-by-word on your own Text+ template</td>
-                            <td class="p-4 text-center"><span class="text-red-400">&#10007;</span></td>
-                            <td class="p-4 text-center"><span class="text-yellow-400 text-xs">Not the focus</span></td>
-                            <td class="p-4 text-center"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center" data-label="External SRT"><span class="text-red-400">&#10007;</span></td>
+                            <td class="p-4 text-center" data-label="Free plugin"><span class="text-yellow-400 text-xs">Not the focus</span></td>
+                            <td class="p-4 text-center us-col" data-label="SmartSubs Pro"><span class="text-green-400">&#10003;</span></td>
                         </tr>
                         <tr class="bg-bgDark/50">
                             <td class="p-4 text-gray-300">Emphasis from your actual voice</td>
-                            <td class="p-4 text-center"><span class="text-red-400">&#10007;</span></td>
-                            <td class="p-4 text-center"><span class="text-red-400">&#10007;</span></td>
-                            <td class="p-4 text-center"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center" data-label="External SRT"><span class="text-red-400">&#10007;</span></td>
+                            <td class="p-4 text-center" data-label="Free plugin"><span class="text-red-400">&#10007;</span></td>
+                            <td class="p-4 text-center us-col" data-label="SmartSubs Pro"><span class="text-green-400">&#10003;</span></td>
                         </tr>
                     </tbody>
                 </table>

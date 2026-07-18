@@ -100,7 +100,7 @@
     <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
 
     <link rel="stylesheet" href="/assets/css/output.css?v=4">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css?v=2">
     <!-- Umami: privacy-friendly, cookieless analytics (EU region) -->
     <script defer src="https://eu.umami.is/script.js" data-website-id="9e712322-9991-4dbd-9856-86b6557ea207"></script>
 </head>
@@ -219,7 +219,7 @@
             <!-- Comparison table -->
             <h2 class="font-display text-2xl font-bold text-white mt-12 mb-4">Which method should you use?</h2>
             <div class="overflow-x-auto rounded-2xl border border-white/10 mb-6">
-                <table class="w-full text-sm">
+                <table class="w-full text-sm cmp-table">
                     <thead>
                         <tr class="bg-bgPanel border-b border-white/10">
                             <th class="text-left p-4 text-gray-400 font-semibold">What you need</th>
@@ -231,33 +231,33 @@
                     <tbody class="divide-y divide-white/5">
                         <tr class="bg-bgDark/50">
                             <td class="p-4 text-gray-300">Works on Free Resolve</td>
-                            <td class="p-4 text-center"><span class="text-red-400">&#10007;</span></td>
-                            <td class="p-4 text-center"><span class="text-green-400">&#10003;</span></td>
-                            <td class="p-4 text-center"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center" data-label="Built-in (Studio)"><span class="text-red-400">&#10007;</span></td>
+                            <td class="p-4 text-center" data-label="Manual Text+"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center us-col" data-label="SmartSubs Pro"><span class="text-green-400">&#10003;</span></td>
                         </tr>
                         <tr class="bg-bgDark/50">
                             <td class="p-4 text-gray-300">Automatic transcription</td>
-                            <td class="p-4 text-center"><span class="text-green-400">&#10003;</span></td>
-                            <td class="p-4 text-center"><span class="text-red-400">&#10007;</span></td>
-                            <td class="p-4 text-center"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center" data-label="Built-in (Studio)"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center" data-label="Manual Text+"><span class="text-red-400">&#10007;</span></td>
+                            <td class="p-4 text-center us-col" data-label="SmartSubs Pro"><span class="text-green-400">&#10003;</span></td>
                         </tr>
                         <tr class="bg-bgDark/50">
                             <td class="p-4 text-gray-300">Word-by-word animation</td>
-                            <td class="p-4 text-center"><span class="text-red-400">&#10007;</span></td>
-                            <td class="p-4 text-center"><span class="text-yellow-400 text-xs">Manual</span></td>
-                            <td class="p-4 text-center"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center" data-label="Built-in (Studio)"><span class="text-red-400">&#10007;</span></td>
+                            <td class="p-4 text-center" data-label="Manual Text+"><span class="text-yellow-400 text-xs">Manual</span></td>
+                            <td class="p-4 text-center us-col" data-label="SmartSubs Pro"><span class="text-green-400">&#10003;</span></td>
                         </tr>
                         <tr class="bg-bgDark/50">
                             <td class="p-4 text-gray-300">Auto-translate (90+ languages)</td>
-                            <td class="p-4 text-center"><span class="text-red-400">&#10007;</span></td>
-                            <td class="p-4 text-center"><span class="text-red-400">&#10007;</span></td>
-                            <td class="p-4 text-center"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center" data-label="Built-in (Studio)"><span class="text-red-400">&#10007;</span></td>
+                            <td class="p-4 text-center" data-label="Manual Text+"><span class="text-red-400">&#10007;</span></td>
+                            <td class="p-4 text-center us-col" data-label="SmartSubs Pro"><span class="text-green-400">&#10003;</span></td>
                         </tr>
                         <tr class="bg-bgDark/50">
                             <td class="p-4 text-gray-300">100% offline</td>
-                            <td class="p-4 text-center"><span class="text-green-400">&#10003;</span></td>
-                            <td class="p-4 text-center"><span class="text-green-400">&#10003;</span></td>
-                            <td class="p-4 text-center"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center" data-label="Built-in (Studio)"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center" data-label="Manual Text+"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center us-col" data-label="SmartSubs Pro"><span class="text-green-400">&#10003;</span></td>
                         </tr>
                     </tbody>
                 </table>
