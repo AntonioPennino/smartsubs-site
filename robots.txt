@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://smartsubs.netlify.app/sitemap.xml
+Sitemap: https://smartsubs-06l.pages.dev/sitemap.xml

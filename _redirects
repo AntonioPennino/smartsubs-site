@@ -1,0 +1,5 @@
+# Redirect www → apex domain
+https://www.smartsubs-06l.pages.dev/* https://smartsubs-06l.pages.dev/:splat 301
+
+# Catch-all → proper 404
+/* /404.html 404
