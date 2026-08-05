@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://smartsubs-06l.pages.dev/sitemap.xml
+Sitemap: https://smartsubspro.com/sitemap.xml
