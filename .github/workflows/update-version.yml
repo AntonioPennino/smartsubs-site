@@ -1,0 +1,65 @@
+name: Update Version JSON
+
+on:
+  repository_dispatch:
+    types: [update-version]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version tag (e.g. 2.7.0 or v2.7.0)'
+        required: true
+      title:
+        description: 'Release title'
+        required: false
+      notes:
+        description: 'Release notes / changelog'
+        required: false
+
+jobs:
+  update-version-files:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout site repository
+        uses: actions/checkout@v4
+
+      - name: Update version.json and api/version.json
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            
+            const payload = context.payload.client_payload || {};
+            const inputs = context.payload.inputs || {};
+            
+            const rawVersion = payload.version || inputs.version || '2.7.0';
+            const cleanVersion = rawVersion.replace(/^v/, '');
+            const title = payload.title || inputs.title || `SmartSubs Pro v${cleanVersion}`;
+            const notes = payload.notes || inputs.notes || '';
+            const today = new Date().toISOString().split('T')[0];
+            
+            const versionData = {
+              version: cleanVersion,
+              release_date: today,
+              title: title,
+              notes: notes,
+              download_url: "https://app.lemonsqueezy.com/my-orders"
+            };
+
+            const jsonString = JSON.stringify(versionData, null, 2) + '\n';
+            
+            fs.writeFileSync('version.json', jsonString);
+            
+            if (!fs.existsSync('api')) {
+              fs.mkdirSync('api', { recursive: true });
+            }
+            fs.writeFileSync('api/version.json', jsonString);
+
+            console.log('Updated version.json and api/version.json with:', versionData);
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: auto-update version.json"
+          file_pattern: "version.json api/version.json"

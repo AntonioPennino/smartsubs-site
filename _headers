@@ -12,6 +12,15 @@
 /*.html
   Cache-Control: public, max-age=0, must-revalidate
 
+# ─── Cache & CORS: Version endpoints ───────────────────────────────────────
+/version.json
+  Cache-Control: public, max-age=0, must-revalidate
+  Access-Control-Allow-Origin: *
+
+/api/version.json
+  Cache-Control: public, max-age=0, must-revalidate
+  Access-Control-Allow-Origin: *
+
 # ─── Cache: CSS & JS — long TTL ─────────────────────────────────────────────
 /styles.css
   Cache-Control: public, max-age=31536000, immutable
