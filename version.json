@@ -1,7 +1,7 @@
 {
-  "version": "2.7.0",
+  "version": "2.8.0",
   "release_date": "2026-08-17",
-  "title": "SmartSubs Pro v2.7.0 — Sentence Karaoke & Pill Background",
-  "notes": "• Active Word Sentence Karaoke (Real-time highlight)\n• Pill Box Background with custom opacity\n• Lemon Squeezy License Protection & DRM\n• In-App Update Notifications",
+  "title": "v2.8.0 - Lemon Squeezy Licensing, DRM Protection & In-App Updater",
+  "notes": "## SmartSubs Pro v2.8.0 — Lemon Squeezy Licensing, DRM Protection & In-App Updater\n\n### 🚀 What's New in v2.8.0:\n1. **Lemon Squeezy License Verification & DRM Protection**:\n   - Official integration with Lemon Squeezy License Keys API (`/v1/licenses/activate`, `/v1/licenses/validate`, `/v1/licenses/deactivate`).\n   - Hardware-bound machine fingerprinting (SHA-256 + HMAC cryptographic seal) to prevent license file copying.\n   - Automatic immediate software lock upon refund or license revocation.\n   - 14-day offline grace period for video editors working on-the-go.\n   - In-app license activation modal and device management (with 1-click device deactivation to transfer seats).\n2. **In-App Auto-Update Notifications**:\n   - Automatic version checking powered by `smartsubspro.com/api/version.json`.\n   - License-gated update alerts: only active, verified customers receive update notifications and direct download links.\n3. **Automated Site Synchronization**:\n   - GitHub Actions automated dispatch workflow to sync site release notes and versions immediately upon release.\n",
   "download_url": "https://app.lemonsqueezy.com/my-orders"
 }
