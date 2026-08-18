@@ -3,5 +3,8 @@
   "release_date": "2026-08-18",
   "title": "SmartSubs Pro v2.8.4",
   "notes": "Direct 1-Click Update for Windows and macOS (Intel & Apple Silicon)",
-  "download_url": "https://app.lemonsqueezy.com/my-orders"
+  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.8.4/SmartSubs-Pro-Windows-v2.8.4.zip",
+  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.8.4/SmartSubs-Pro-Windows-v2.8.4.zip",
+  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.8.4/SmartSubs-Pro-macOS-arm64-v2.8.4.zip",
+  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.8.4/SmartSubs-Pro-macOS-x64-v2.8.4.zip"
 }
