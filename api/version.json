@@ -1,7 +1,7 @@
 {
-  "version": "2.8.2",
-  "release_date": "2026-08-17",
-  "title": "v2.8.2 - License Modal Activation & UI Fix",
-  "notes": "### Fixed in v2.8.2:\n- Fixed a JavaScript error in initStyleControls that prevented initLicenseControls from attaching click events\n- Top-right 'Activate License' button now opens the modal reliably\n- Modal close button (X), backdrop click, and Escape key now close the modal\n- Activation button and Enter key execute the license activation immediately",
+  "version": "2.8.3",
+  "release_date": "2026-08-18",
+  "title": "v2.8.3 - Sentence Karaoke Active Word Highlight Fix",
+  "notes": "### Fixed in v2.8.3:\n- Fixed Lua table iteration and CharacterLevelStyling modifier attachment in Fusion Text+ nodes\n- Active word highlighting now correctly colors each spoken word in Sentence Karaoke mode in real-time\n- Background pill box and character range offsets sync properly with timeline playback",
   "download_url": "https://app.lemonsqueezy.com/my-orders"
 }
