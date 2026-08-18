@@ -33,18 +33,26 @@ jobs:
             const payload = context.payload.client_payload || {};
             const inputs = context.payload.inputs || {};
             
-            const rawVersion = payload.version || inputs.version || '2.7.0';
+            const rawVersion = payload.version || inputs.version || '2.8.5';
             const cleanVersion = rawVersion.replace(/^v/, '');
             const title = payload.title || inputs.title || `SmartSubs Pro v${cleanVersion}`;
             const notes = payload.notes || inputs.notes || '';
             const today = new Date().toISOString().split('T')[0];
+            
+            const download_url_win = payload.download_url_win || `https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v${cleanVersion}/SmartSubs-Pro-Windows-v${cleanVersion}.zip`;
+            const download_url_mac_arm64 = payload.download_url_mac_arm64 || `https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v${cleanVersion}/SmartSubs-Pro-macOS-arm64-v${cleanVersion}.zip`;
+            const download_url_mac_x64 = payload.download_url_mac_x64 || `https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v${cleanVersion}/SmartSubs-Pro-macOS-x64-v${cleanVersion}.zip`;
+            const download_url = payload.download_url || download_url_win;
             
             const versionData = {
               version: cleanVersion,
               release_date: today,
               title: title,
               notes: notes,
-              download_url: "https://app.lemonsqueezy.com/my-orders"
+              download_url: download_url,
+              download_url_win: download_url_win,
+              download_url_mac_arm64: download_url_mac_arm64,
+              download_url_mac_x64: download_url_mac_x64
             };
 
             const jsonString = JSON.stringify(versionData, null, 2) + '\n';
@@ -61,5 +69,5 @@ jobs:
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: auto-update version.json"
+          commit_message: "chore: auto-update version.json to v${{ github.event.client_payload.version || github.event.inputs.version }}"
           file_pattern: "version.json api/version.json"
