@@ -1,10 +1,10 @@
 {
-  "version": "2.9.0",
-  "release_date": "2026-08-20",
-  "title": "SmartSubs Pro v2.9.0",
-  "notes": "Word-by-word karaoke highlighting that renders reliably (Character Level Styling), sharper subtitle timing via stable-ts alignment, cleaner review (one editable line per sentence), Size slider fix, and stability fixes.",
-  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.0/SmartSubs-Pro-Windows-v2.9.0.zip",
-  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.0/SmartSubs-Pro-Windows-v2.9.0.zip",
-  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.0/SmartSubs-Pro-macOS-arm64-v2.9.0.zip",
-  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.0/SmartSubs-Pro-macOS-x64-v2.9.0.zip"
+  "version": "2.9.1",
+  "release_date": "2026-09-01",
+  "title": "SmartSubs Pro v2.9.1",
+  "notes": "Much lighter install: the bundled AI engine is now ~60% smaller (no change to functionality). Plus reliable word-by-word karaoke, sharper subtitle timing via stable-ts, and a cleaner review.",
+  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.1/SmartSubs-Pro-Windows-v2.9.1.zip",
+  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.1/SmartSubs-Pro-Windows-v2.9.1.zip",
+  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.1/SmartSubs-Pro-macOS-arm64-v2.9.1.zip",
+  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.1/SmartSubs-Pro-macOS-x64-v2.9.1.zip"
 }
