@@ -1,10 +1,10 @@
 {
-  "version": "2.9.2",
+  "version": "2.9.3",
   "release_date": "2026-09-03",
-  "title": "SmartSubs Pro v2.9.2",
-  "notes": "Your real installed fonts now appear in the picker, each with the styles it actually has, so subtitles never fail to render on a missing weight. Plus hardened local-server security, a Check-for-updates button, a guided Gemini key setup, and a Gemini-key save fix.",
-  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.2/SmartSubs-Pro-Windows-v2.9.2.zip",
-  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.2/SmartSubs-Pro-Windows-v2.9.2.zip",
-  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.2/SmartSubs-Pro-macOS-arm64-v2.9.2.zip",
-  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.2/SmartSubs-Pro-macOS-x64-v2.9.2.zip"
+  "title": "SmartSubs Pro v2.9.3",
+  "notes": "The Outline, Shadow, Tracking and Line-Spacing controls now actually work and show in the live preview, which also reflects the real font size and weight so it matches the result. Plus graceful recovery if an AI-model download is interrupted.",
+  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.3/SmartSubs-Pro-Windows-v2.9.3.zip",
+  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.3/SmartSubs-Pro-Windows-v2.9.3.zip",
+  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.3/SmartSubs-Pro-macOS-arm64-v2.9.3.zip",
+  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.3/SmartSubs-Pro-macOS-x64-v2.9.3.zip"
 }
