@@ -1,10 +1,10 @@
 {
-  "version": "2.9.1",
-  "release_date": "2026-09-01",
-  "title": "SmartSubs Pro v2.9.1",
-  "notes": "Much lighter install: the bundled AI engine is now ~60% smaller (no change to functionality). Plus reliable word-by-word karaoke, sharper subtitle timing via stable-ts, and a cleaner review.",
-  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.1/SmartSubs-Pro-Windows-v2.9.1.zip",
-  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.1/SmartSubs-Pro-Windows-v2.9.1.zip",
-  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.1/SmartSubs-Pro-macOS-arm64-v2.9.1.zip",
-  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.1/SmartSubs-Pro-macOS-x64-v2.9.1.zip"
+  "version": "2.9.2",
+  "release_date": "2026-09-03",
+  "title": "SmartSubs Pro v2.9.2",
+  "notes": "Your real installed fonts now appear in the picker, each with the styles it actually has, so subtitles never fail to render on a missing weight. Plus hardened local-server security, a Check-for-updates button, a guided Gemini key setup, and a Gemini-key save fix.",
+  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.2/SmartSubs-Pro-Windows-v2.9.2.zip",
+  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.2/SmartSubs-Pro-Windows-v2.9.2.zip",
+  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.2/SmartSubs-Pro-macOS-arm64-v2.9.2.zip",
+  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.2/SmartSubs-Pro-macOS-x64-v2.9.2.zip"
 }
