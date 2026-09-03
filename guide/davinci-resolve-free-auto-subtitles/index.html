@@ -86,7 +86,7 @@
           {
             "@type": "Question",
             "name": "How do I get animated word-by-word captions on the free version?",
-            "acceptedAnswer": { "@type": "Answer", "text": "The native subtitle track shows one static line at a time, so animated word-by-word captions require Fusion Text+ nodes. You can build them by hand, which is slow, or use a plugin such as SmartSubs Pro that places each word on the frame it is spoken using your own animated Text+ template. SmartSubs Pro runs on free Resolve up to version 19.0, since Blackmagic removed the plugin window system (Fusion UI Manager) from free 19.1 onward; on newer free versions Studio is required." }
+            "acceptedAnswer": { "@type": "Answer", "text": "The native subtitle track shows one static line at a time, so animated word-by-word captions require Fusion Text+ nodes. You can build them by hand, which is slow, or use a plugin such as SmartSubs Pro that places each word on the frame it is spoken using your own animated Text+ template. SmartSubs Pro runs on free Resolve, any version from 18 onward, including 19.1, 20 and later. Its interface opens in your web browser, so it does not need the Fusion UI Manager that Blackmagic removed from free 19.1." }
           }
         ]
       }
@@ -222,7 +222,7 @@
                 <a href="/" class="text-brandOrange hover:underline">SmartSubs Pro</a> automates that specific job. It
                 transcribes locally with Whisper, then takes a Text+ template
                 <strong class="text-white">you designed</strong> and drops every word onto the timeline in your font and
-                your animation. It runs on Studio (any version) and on free Resolve up to version 19.0, and it can also translate the captions into 90+ languages, and use
+                your animation. It runs on both Studio and free Resolve, any version, and it can also translate the captions into 90+ languages, and use
                 Gemini to emphasize the words you actually stressed when speaking.
             </p>
             <p class="text-gray-400 leading-relaxed mb-4">
@@ -248,7 +248,7 @@
                             <td class="p-4 text-gray-300">Works on free Resolve</td>
                             <td class="p-4 text-center" data-label="External SRT"><span class="text-green-400">&#10003;</span></td>
                             <td class="p-4 text-center" data-label="Free plugin"><span class="text-green-400">&#10003;</span></td>
-                            <td class="p-4 text-center us-col" data-label="SmartSubs Pro"><span class="text-yellow-400 text-xs">Up to 19.0</span></td>
+                            <td class="p-4 text-center us-col" data-label="SmartSubs Pro"><span class="text-green-400">&#10003;</span></td>
                         </tr>
                         <tr class="bg-bgDark/50">
                             <td class="p-4 text-gray-300">Price</td>
@@ -368,9 +368,10 @@
                         <p class="text-gray-400 text-sm leading-relaxed">The native subtitle track shows one static line
                             at a time, so animated word-by-word captions require Fusion Text+ nodes. You can build them
                             by hand, which is slow, or use a plugin such as SmartSubs Pro that places each word on the
-                            frame it is spoken using your own animated Text+ template. It runs on free Resolve
-                            <strong class="text-white">up to version 19.0</strong>; from free 19.1 Blackmagic removed
-                            the plugin window system, so newer free versions need Studio.</p>
+                            frame it is spoken using your own animated Text+ template. It runs on free Resolve,
+                            <strong class="text-white">any version</strong>, including 19.1, 20 and later, because its
+                            interface opens in your web browser instead of relying on the Fusion UI Manager that
+                            Blackmagic removed from free 19.1.</p>
                     </div>
                 </div>
             </div>
