@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/Logo.svg">
+    <link rel="shortcut icon" href="/assets/images/Logo.svg">
+    <title>How to Install and Activate SmartSubs Pro in DaVinci Resolve</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="How to Install and Activate SmartSubs Pro in DaVinci Resolve">
+    <meta name="description"
+        content="Step-by-step setup for SmartSubs Pro: install on Windows or macOS, find the plugin in Resolve, and activate your license key. Works on Studio and free Resolve, any version.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://smartsubspro.com/guide/install-smartsubs-pro-davinci-resolve/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://smartsubspro.com/guide/install-smartsubs-pro-davinci-resolve/">
+    <meta property="og:site_name" content="SmartSubs Pro">
+    <meta property="og:title" content="How to Install and Activate SmartSubs Pro in DaVinci Resolve">
+    <meta property="og:description"
+        content="Install on Windows or macOS, find the plugin in Resolve, and activate your license key. Works on Studio and free Resolve, any version.">
+    <meta property="og:image" content="https://smartsubspro.com/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="SmartSubs Pro, AI captions for DaVinci Resolve">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://smartsubspro.com/guide/install-smartsubs-pro-davinci-resolve/">
+    <meta name="twitter:title" content="How to Install and Activate SmartSubs Pro in DaVinci Resolve">
+    <meta name="twitter:description"
+        content="Install on Windows or macOS, find the plugin in Resolve, and activate your license key.">
+    <meta name="twitter:image" content="https://smartsubspro.com/assets/images/og-image.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Install and Activate SmartSubs Pro in DaVinci Resolve",
+        "description": "Install SmartSubs Pro on Windows or macOS, open it inside DaVinci Resolve, and activate your license key.",
+        "image": "https://smartsubspro.com/assets/images/og-image.png",
+        "totalTime": "PT5M",
+        "step": [
+          { "@type": "HowToStep", "name": "Install the plugin", "text": "On Windows run SmartSubs_Installer.exe. On macOS double-click install.command and approve it once in System Settings, Privacy and Security.", "url": "https://smartsubspro.com/guide/install-smartsubs-pro-davinci-resolve/#install" },
+          { "@type": "HowToStep", "name": "Open it in Resolve", "text": "Restart DaVinci Resolve, open a timeline, then go to Workspace, Scripts, Utility, SmartSubs Pro. The interface opens in your web browser.", "url": "https://smartsubspro.com/guide/install-smartsubs-pro-davinci-resolve/#open" },
+          { "@type": "HowToStep", "name": "Activate your license", "text": "Paste the license key from your purchase email and click Activate. After that the plugin works offline for 14 days between checks.", "url": "https://smartsubspro.com/guide/install-smartsubs-pro-davinci-resolve/#activate" }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://smartsubspro.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://smartsubspro.com/guide/" },
+          { "@type": "ListItem", "position": 3, "name": "Install and activate SmartSubs Pro", "item": "https://smartsubspro.com/guide/install-smartsubs-pro-davinci-resolve/" }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where do I find my SmartSubs Pro license key?",
+            "acceptedAnswer": { "@type": "Answer", "text": "It is in the confirmation email you received after buying through Lemon Squeezy, and in your Lemon Squeezy receipt page. The key is a string of letters and numbers separated by dashes. Paste it into the activation screen the first time you open the plugin." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use SmartSubs Pro on more than one computer?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Your license can be activated on more than one machine. If you replace a computer or run out of activations, deactivate the old machine from inside the plugin, then activate the new one with the same key." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does SmartSubs Pro need an internet connection?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Only for the first activation and for the occasional license check. After you activate, the plugin keeps working offline for 14 days between checks, so a plane or a studio with no internet is fine. Transcription itself always runs locally on your machine." }
+          },
+          {
+            "@type": "Question",
+            "name": "The plugin does not appear in the Scripts menu. What do I do?",
+            "acceptedAnswer": { "@type": "Answer", "text": "On Windows, fully close and reopen DaVinci Resolve after installing. On macOS, install Python from python.org (the plugin needs it, and the macOS or Homebrew Python is not detected by Resolve), then quit Resolve with Command Q and reopen it. The plugin lives under Workspace, Scripts, Utility, SmartSubs Pro." }
+          }
+        ]
+      }
+    ]
+    </script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
+
+    <link rel="stylesheet" href="/assets/css/output.css?v=8">
+    <link rel="stylesheet" href="/assets/css/style.css?v=2">
+    <!-- Umami: privacy-friendly, cookieless analytics (EU region) -->
+    <script defer src="https://eu.umami.is/script.js" data-website-id="9e712322-9991-4dbd-9856-86b6557ea207"></script>
+</head>
+
+<body class="bg-bgDark text-gray-200 font-sans antialiased selection:bg-brandOrange selection:text-white">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 top-0 border-b border-white/10 bg-bgDark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3">
+                <img src="/assets/images/LogoTipo.svg" alt="SmartSubs Pro" class="h-10">
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="/#how-it-works" class="hover:text-brandOrange transition-colors duration-200">How it Works</a>
+                <a href="/#features" class="hover:text-brandOrange transition-colors duration-200">Features</a>
+                <a href="/#compare" class="hover:text-brandOrange transition-colors duration-200">Compare</a>
+                <a href="/guide/" class="hover:text-brandOrange transition-colors duration-200">Guides</a>
+                <a href="/#pricing" class="hover:text-brandOrange transition-colors duration-200">Pricing</a>
+            </div>
+            <a href="https://smartsubspro.lemonsqueezy.com/checkout/buy/18469eff-5cea-49fa-a6ff-a3da442cb30a"
+                class="lemonsqueezy-button hidden md:inline-flex bg-brandOrange hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-btn-glow">
+                Get the Plugin
+            </a>
+        </div>
+    </nav>
+
+    <main id="main-content" class="pt-32 pb-20 px-6">
+        <article class="max-w-3xl mx-auto">
+
+            <!-- Breadcrumb -->
+            <nav aria-label="Breadcrumb" class="text-xs text-gray-500 mb-8">
+                <a href="/" class="hover:text-brandOrange">Home</a>
+                <span class="mx-2">&rsaquo;</span>
+                <a href="/guide/" class="hover:text-brandOrange">Guides</a>
+                <span class="mx-2">&rsaquo;</span>
+                <span class="text-gray-300">Install and activate SmartSubs Pro</span>
+            </nav>
+
+            <header class="mb-10">
+                <span
+                    class="inline-block border border-brandPurple/50 bg-brandPurple/10 text-brandPurple px-3 py-1 rounded-full text-xs font-semibold mb-5 tracking-wide">
+                    SETUP GUIDE
+                </span>
+                <h1 class="font-display text-3xl md:text-5xl font-extrabold text-white leading-tight mb-5">
+                    How to Install and Activate SmartSubs Pro in DaVinci Resolve
+                </h1>
+                <p class="text-sm text-gray-500">By Antonio Pennino &middot; Updated September 2026 &middot; 5 min read</p>
+            </header>
+
+            <!-- Direct answer -->
+            <div class="bg-bgPanel border border-white/5 rounded-2xl p-6 mb-10">
+                <p class="text-gray-300 leading-relaxed">
+                    <strong class="text-white">Short version:</strong> run the installer for your platform, restart
+                    DaVinci Resolve, then open <strong class="text-white">Workspace &rsaquo; Scripts &rsaquo; Utility
+                        &rsaquo; SmartSubs Pro</strong>. The plugin opens in your web browser and asks for your license
+                    key the first time. Paste the key from your purchase email, click activate, and you are done. It
+                    works on both Studio and free Resolve, any version from 18 onward.
+                </p>
+            </div>
+
+            <!-- Step 1 -->
+            <h2 id="install" class="font-display text-2xl font-bold text-white mt-12 mb-4">Step 1, install the plugin</h2>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                The installer copies the plugin into Resolve and sets up the bundled AI engine. You never install
+                Python libraries, Whisper or PyTorch yourself, they come inside the package.
+            </p>
+
+            <h3 class="font-display text-lg font-bold text-white mt-6 mb-3">On Windows</h3>
+            <ol class="list-decimal list-inside space-y-2 text-gray-400 mb-4 marker:text-brandOrange">
+                <li>Unzip the download and run <span class="text-gray-200">SmartSubs_Installer.exe</span>.</li>
+                <li>If Windows shows <em>"Windows protected your PC"</em>, that is SmartScreen reacting to an
+                    independent publisher. Click <strong class="text-white">More info &rsaquo; Run anyway</strong>.</li>
+                <li>Let it finish, it takes a few seconds.</li>
+            </ol>
+
+            <h3 class="font-display text-lg font-bold text-white mt-6 mb-3">On macOS</h3>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                SmartSubs is not signed with an Apple developer certificate yet, so macOS blocks the first launch. You
+                only do this once:
+            </p>
+            <ol class="list-decimal list-inside space-y-2 text-gray-400 mb-4 marker:text-brandOrange">
+                <li>Unzip the package and double-click <span class="text-gray-200">install.command</span>.</li>
+                <li>macOS says it <em>"cannot verify that it is free of malware"</em>. Click <strong
+                        class="text-white">Done</strong>, not "Move to Trash".</li>
+                <li>Open <strong class="text-white">System Settings &rsaquo; Privacy &amp; Security</strong>, scroll to
+                    the Security section, and click <strong class="text-white">Open Anyway</strong> next to
+                    install.command.</li>
+                <li>Double-click <span class="text-gray-200">install.command</span> again, it now runs and asks for your
+                    Mac password to install the engine.</li>
+            </ol>
+            <div class="bg-bgPanel border border-brandOrange/20 rounded-xl p-5 mb-4">
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    <strong class="text-white">macOS needs Python from python.org.</strong> DaVinci Resolve uses it to
+                    run any script. Install the official package (version 3.9 to 3.12) from
+                    <a href="https://www.python.org/downloads/" target="_blank" rel="noopener"
+                        class="text-brandOrange hover:underline">python.org</a>. The Python that ships with macOS or
+                    with Homebrew is <strong class="text-white">not</strong> detected by Resolve, so the plugin will not
+                    appear until the python.org build is installed.
+                </p>
+            </div>
+
+            <!-- Step 2 -->
+            <h2 id="open" class="font-display text-2xl font-bold text-white mt-12 mb-4">Step 2, open it inside Resolve</h2>
+            <ol class="list-decimal list-inside space-y-2 text-gray-400 mb-4 marker:text-brandOrange">
+                <li>Fully quit and reopen DaVinci Resolve so it picks up the new script.</li>
+                <li>Open a <strong class="text-white">project and a timeline</strong> that contains speech.</li>
+                <li>Go to <strong class="text-white">Workspace &rsaquo; Scripts &rsaquo; Utility &rsaquo; SmartSubs
+                        Pro</strong>.</li>
+            </ol>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                The SmartSubs interface opens in your <strong class="text-white">web browser</strong> as a new tab,
+                rather than as a window inside Resolve. That is deliberate, it is what lets the plugin run on the free
+                edition too, including Resolve 19.1, 20 and later, where Blackmagic removed the older in-app scripting
+                window system.
+            </p>
+
+            <!-- Step 3 -->
+            <h2 id="activate" class="font-display text-2xl font-bold text-white mt-12 mb-4">Step 3, activate your license</h2>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                The first time you open SmartSubs Pro it asks for your license key.
+            </p>
+            <ol class="list-decimal list-inside space-y-2 text-gray-400 mb-4 marker:text-brandOrange">
+                <li>Find the key in the <strong class="text-white">confirmation email</strong> from your purchase, or on
+                    your Lemon Squeezy receipt page. It looks like a long string with dashes.</li>
+                <li>Paste it into the activation field and click <strong class="text-white">Activate</strong>.</li>
+                <li>That is it. The plugin confirms the license and unlocks.</li>
+            </ol>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                A few things worth knowing about the license:
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-gray-400 mb-4 marker:text-brandOrange">
+                <li><strong class="text-white">It works offline.</strong> After activation the plugin keeps working for
+                    14 days between online checks, so no internet on set is not a problem.</li>
+                <li><strong class="text-white">More than one computer.</strong> Your key can be activated on more than
+                    one machine. To move it, open the plugin on the old computer and deactivate, then activate on the
+                    new one with the same key.</li>
+                <li><strong class="text-white">It is tied to the machine, not a file.</strong> Copying the license file
+                    to another computer will not work, activation is the supported way to add a machine.</li>
+            </ul>
+
+            <!-- Trouble -->
+            <h2 class="font-display text-2xl font-bold text-white mt-12 mb-4">If something does not line up</h2>
+            <div class="overflow-x-auto rounded-2xl border border-white/10 mb-6">
+                <table class="w-full text-sm cmp-table">
+                    <thead>
+                        <tr class="bg-bgPanel border-b border-white/10">
+                            <th class="text-left p-4 text-gray-400 font-semibold">Symptom</th>
+                            <th class="text-left p-4 text-gray-400 font-semibold">Fix</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-white/5">
+                        <tr class="bg-bgDark/50">
+                            <td class="p-4 text-gray-300" data-label="Symptom">Plugin missing from the Scripts menu (Windows)</td>
+                            <td class="p-4 text-gray-400" data-label="Fix">Fully close and reopen Resolve after installing.</td>
+                        </tr>
+                        <tr class="bg-bgDark/50">
+                            <td class="p-4 text-gray-300" data-label="Symptom">Plugin missing from the Scripts menu (macOS)</td>
+                            <td class="p-4 text-gray-400" data-label="Fix">Install Python from python.org, then quit Resolve with Command Q and reopen.</td>
+                        </tr>
+                        <tr class="bg-bgDark/50">
+                            <td class="p-4 text-gray-300" data-label="Symptom">The SmartSubs window never appears</td>
+                            <td class="p-4 text-gray-400" data-label="Fix">It opens in your browser. Check a browser tab did not get blocked, then run it again.</td>
+                        </tr>
+                        <tr class="bg-bgDark/50">
+                            <td class="p-4 text-gray-300" data-label="Symptom">"Standalone engine not installed"</td>
+                            <td class="p-4 text-gray-400" data-label="Fix">The AI engine did not finish installing. Run the installer again.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                Still stuck? I answer support myself, usually within a day on weekdays. Write to
+                <a href="mailto:antonio.pennino.mail@gmail.com" class="text-brandOrange hover:underline">antonio.pennino.mail@gmail.com</a>
+                and include the log files from the folder <span class="text-gray-200">SmartSubs</span> in your app data,
+                they tell me exactly what happened.
+            </p>
+
+            <!-- CTA -->
+            <div class="bg-gradient-to-b from-bgPanel to-bgDark border border-brandOrange/30 rounded-3xl p-8 my-12 text-center">
+                <h2 class="font-display text-2xl font-bold text-white mb-3">Do not have it yet?</h2>
+                <p class="text-gray-400 mb-6 max-w-xl mx-auto">SmartSubs Pro brings AI transcription, translation and
+                    word-by-word animated captions to DaVinci Resolve. One-time payment, no subscription.</p>
+                <a href="https://smartsubspro.lemonsqueezy.com/checkout/buy/18469eff-5cea-49fa-a6ff-a3da442cb30a"
+                    class="lemonsqueezy-button inline-block bg-brandOrange hover:bg-orange-500 text-white font-bold px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-[1.02]">
+                    Get SmartSubs Pro for $39.99
+                </a>
+                <p class="text-xs text-gray-600 mt-4">30-day money-back guarantee &middot; Windows &amp; macOS</p>
+            </div>
+
+            <!-- FAQ -->
+            <h2 class="font-display text-2xl font-bold text-white mt-12 mb-6">Frequently asked questions</h2>
+            <div class="space-y-4" id="faq-list">
+                <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
+                    <h3 class="m-0">
+                        <button id="faq-btn-1" aria-expanded="false" aria-controls="faq-ans-1"
+                            class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-200">
+                            <span class="text-base font-bold text-white">Where do I find my SmartSubs Pro license
+                                key?</span>
+                            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div id="faq-ans-1" role="region" aria-labelledby="faq-btn-1" class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-400 text-sm leading-relaxed">It is in the confirmation email you received
+                            after buying through Lemon Squeezy, and on your Lemon Squeezy receipt page. The key is a
+                            string of letters and numbers separated by dashes. Paste it into the activation screen the
+                            first time you open the plugin.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
+                    <h3 class="m-0">
+                        <button id="faq-btn-2" aria-expanded="false" aria-controls="faq-ans-2"
+                            class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-200">
+                            <span class="text-base font-bold text-white">Can I use SmartSubs Pro on more than one
+                                computer?</span>
+                            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div id="faq-ans-2" role="region" aria-labelledby="faq-btn-2" class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-400 text-sm leading-relaxed">Yes. Your license can be activated on more than
+                            one machine. If you replace a computer or run out of activations, deactivate the old machine
+                            from inside the plugin, then activate the new one with the same key.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
+                    <h3 class="m-0">
+                        <button id="faq-btn-3" aria-expanded="false" aria-controls="faq-ans-3"
+                            class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-200">
+                            <span class="text-base font-bold text-white">Does SmartSubs Pro need an internet
+                                connection?</span>
+                            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div id="faq-ans-3" role="region" aria-labelledby="faq-btn-3" class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-400 text-sm leading-relaxed">Only for the first activation and for the
+                            occasional license check. After you activate, the plugin keeps working offline for 14 days
+                            between checks, so a plane or a studio with no internet is fine. Transcription itself always
+                            runs locally on your machine.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
+                    <h3 class="m-0">
+                        <button id="faq-btn-4" aria-expanded="false" aria-controls="faq-ans-4"
+                            class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-200">
+                            <span class="text-base font-bold text-white">The plugin does not appear in the Scripts menu.
+                                What do I do?</span>
+                            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div id="faq-ans-4" role="region" aria-labelledby="faq-btn-4" class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-400 text-sm leading-relaxed">On Windows, fully close and reopen DaVinci
+                            Resolve after installing. On macOS, install Python from python.org (the plugin needs it, and
+                            the macOS or Homebrew Python is not detected by Resolve), then quit Resolve with Command Q
+                            and reopen it. The plugin lives under Workspace, Scripts, Utility, SmartSubs Pro.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related -->
+            <div class="mt-12 pt-8 border-t border-white/10">
+                <p class="text-sm text-gray-500 mb-3">Related guides</p>
+                <a href="/guide/karaoke-captions-davinci-resolve/"
+                    class="text-brandOrange hover:underline font-semibold">How to Make Karaoke (Word-by-Word) Captions in
+                    DaVinci Resolve</a>
+                <p class="mt-2">
+                    <a href="/guide/customize-subtitle-style-davinci-resolve/"
+                        class="text-brandOrange hover:underline font-semibold">How to Customize Your Subtitle Style
+                        (Text+ Templates)</a>
+                </p>
+                <p class="mt-6"><a href="/" class="text-gray-400 hover:text-brandOrange text-sm">&larr; Back to
+                        SmartSubs Pro</a></p>
+            </div>
+
+        </article>
+    </main>
+
+    <footer class="border-t border-white/10 bg-black/50 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col items-center justify-center gap-4 text-center text-sm text-gray-500">
+            <img src="/assets/images/LogoTipo.svg" alt="SmartSubs Pro" class="h-6 opacity-50">
+            <p>&copy; 2026 SmartSubs Pro &middot; Developed by <a href="https://antoniopennino.it/" target="_blank"
+                    class="hover:text-brandOrange transition-colors decoration-dotted underline-offset-4 underline">Antonio
+                    Pennino</a> &middot; Not affiliated with Blackmagic Design.</p>
+            <div class="flex items-center gap-4 text-xs text-gray-600">
+                <a href="/terms.html" class="hover:text-brandOrange transition-colors">Terms &amp; Conditions</a>
+                <span>&middot;</span>
+                <a href="/privacy.html" class="hover:text-brandOrange transition-colors">Privacy Policy</a>
+                <span>&middot;</span>
+                <a href="mailto:antonio.pennino.mail@gmail.com" class="hover:text-brandOrange transition-colors">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/Logo.svg">
+    <link rel="shortcut icon" href="/assets/images/Logo.svg">
+    <title>How to Customize Your Subtitle Style in DaVinci Resolve (Text+ Templates)</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="How to Customize Your Subtitle Style in DaVinci Resolve (Text+ Templates)">
+    <meta name="description"
+        content="Change the font, colours, size and animation of your captions in DaVinci Resolve by editing Text+ templates. How SmartSubs Pro keeps your style and applies it to every caption.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://smartsubspro.com/guide/customize-subtitle-style-davinci-resolve/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://smartsubspro.com/guide/customize-subtitle-style-davinci-resolve/">
+    <meta property="og:site_name" content="SmartSubs Pro">
+    <meta property="og:title" content="How to Customize Your Subtitle Style in DaVinci Resolve (Text+ Templates)">
+    <meta property="og:description"
+        content="Change the font, colours, size and animation of your captions by editing Text+ templates, and let SmartSubs Pro apply your style to every caption.">
+    <meta property="og:image" content="https://smartsubspro.com/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="SmartSubs Pro, AI captions for DaVinci Resolve">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://smartsubspro.com/guide/customize-subtitle-style-davinci-resolve/">
+    <meta name="twitter:title" content="How to Customize Your Subtitle Style in DaVinci Resolve (Text+ Templates)">
+    <meta name="twitter:description"
+        content="Change the font, colours, size and animation of your captions by editing Text+ templates.">
+    <meta name="twitter:image" content="https://smartsubspro.com/assets/images/og-image.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Customize Your Subtitle Style in DaVinci Resolve",
+        "description": "Edit the Text+ templates SmartSubs Pro uses so every caption comes out in your own font, colours, size and animation.",
+        "image": "https://smartsubspro.com/assets/images/og-image.png",
+        "totalTime": "PT10M",
+        "step": [
+          { "@type": "HowToStep", "name": "Find the templates", "text": "SmartSubs Pro creates two Text+ templates in your Media Pool, Sub_Simple and Sub_Hook, and recreates them if they are missing." },
+          { "@type": "HowToStep", "name": "Edit the look", "text": "Open a template in the Fusion page and change the font, colour, size, outline and animation on the Text+ node." },
+          { "@type": "HowToStep", "name": "Generate", "text": "Run SmartSubs Pro. It builds every caption from your edited template, so your style carries through automatically." }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://smartsubspro.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://smartsubspro.com/guide/" },
+          { "@type": "ListItem", "position": 3, "name": "Customize subtitle style", "item": "https://smartsubspro.com/guide/customize-subtitle-style-davinci-resolve/" }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I change the font and colours of captions made by SmartSubs Pro?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. The captions are built from Text+ templates in your Media Pool, Sub_Simple and Sub_Hook. Edit those templates in the Fusion page and every caption SmartSubs Pro generates follows your font, colour, size, outline and animation." }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the Sub_Simple and Sub_Hook templates?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sub_Simple is the standard caption style and Sub_Hook is the highlighted or keyword style. SmartSubs Pro creates both automatically if they are missing, and you are free to restyle them however you want." }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does my font look wrong or the caption disappears?",
+            "acceptedAnswer": { "@type": "Answer", "text": "That usually happens when a font style is selected that the font does not actually have, for example Bold on a font shipped only in Regular. Recent versions of SmartSubs Pro read your real installed fonts and their real styles, and fall back to a valid style so the caption never renders blank." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use my own Text+ template instead of the built-in ones?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Design your own Text+ template, save it to the Media Pool, and point SmartSubs Pro at it in the General tab. As long as it is a Text+ based template, the plugin will drive it word by word." }
+          }
+        ]
+      }
+    ]
+    </script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
+
+    <link rel="stylesheet" href="/assets/css/output.css?v=8">
+    <link rel="stylesheet" href="/assets/css/style.css?v=2">
+    <!-- Umami: privacy-friendly, cookieless analytics (EU region) -->
+    <script defer src="https://eu.umami.is/script.js" data-website-id="9e712322-9991-4dbd-9856-86b6557ea207"></script>
+</head>
+
+<body class="bg-bgDark text-gray-200 font-sans antialiased selection:bg-brandOrange selection:text-white">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 top-0 border-b border-white/10 bg-bgDark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3">
+                <img src="/assets/images/LogoTipo.svg" alt="SmartSubs Pro" class="h-10">
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="/#how-it-works" class="hover:text-brandOrange transition-colors duration-200">How it Works</a>
+                <a href="/#features" class="hover:text-brandOrange transition-colors duration-200">Features</a>
+                <a href="/#compare" class="hover:text-brandOrange transition-colors duration-200">Compare</a>
+                <a href="/guide/" class="hover:text-brandOrange transition-colors duration-200">Guides</a>
+                <a href="/#pricing" class="hover:text-brandOrange transition-colors duration-200">Pricing</a>
+            </div>
+            <a href="https://smartsubspro.lemonsqueezy.com/checkout/buy/18469eff-5cea-49fa-a6ff-a3da442cb30a"
+                class="lemonsqueezy-button hidden md:inline-flex bg-brandOrange hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-btn-glow">
+                Get the Plugin
+            </a>
+        </div>
+    </nav>
+
+    <main id="main-content" class="pt-32 pb-20 px-6">
+        <article class="max-w-3xl mx-auto">
+
+            <!-- Breadcrumb -->
+            <nav aria-label="Breadcrumb" class="text-xs text-gray-500 mb-8">
+                <a href="/" class="hover:text-brandOrange">Home</a>
+                <span class="mx-2">&rsaquo;</span>
+                <a href="/guide/" class="hover:text-brandOrange">Guides</a>
+                <span class="mx-2">&rsaquo;</span>
+                <span class="text-gray-300">Customize subtitle style</span>
+            </nav>
+
+            <header class="mb-10">
+                <span
+                    class="inline-block border border-brandPurple/50 bg-brandPurple/10 text-brandPurple px-3 py-1 rounded-full text-xs font-semibold mb-5 tracking-wide">
+                    STYLING GUIDE
+                </span>
+                <h1 class="font-display text-3xl md:text-5xl font-extrabold text-white leading-tight mb-5">
+                    How to Customize Your Subtitle Style in DaVinci Resolve
+                </h1>
+                <p class="text-sm text-gray-500">By Antonio Pennino &middot; Updated September 2026 &middot; 5 min read</p>
+            </header>
+
+            <!-- Direct answer -->
+            <div class="bg-bgPanel border border-white/5 rounded-2xl p-6 mb-10">
+                <p class="text-gray-300 leading-relaxed">
+                    <strong class="text-white">Short answer:</strong> your caption look lives in
+                    <strong class="text-white">Text+ templates</strong> in the Media Pool. SmartSubs Pro ships two,
+                    <span class="text-gray-200">Sub_Simple</span> and <span class="text-gray-200">Sub_Hook</span>. Edit
+                    those in the Fusion page, font, colour, size, outline, animation, and every caption the plugin
+                    generates comes out in your style. You design the look once, the plugin reuses it.
+                </p>
+            </div>
+
+            <!-- Two templates -->
+            <h2 class="font-display text-2xl font-bold text-white mt-12 mb-4">The two templates SmartSubs Pro uses</h2>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                Rather than lock you into a preset look, SmartSubs Pro drives <strong class="text-white">your own Text+
+                    templates</strong>. It creates two of them in your Media Pool the first time you run it, and
+                recreates them if they ever go missing:
+            </p>
+            <div class="overflow-x-auto rounded-2xl border border-white/10 mb-6">
+                <table class="w-full text-sm cmp-table">
+                    <thead>
+                        <tr class="bg-bgPanel border-b border-white/10">
+                            <th class="text-left p-4 text-gray-400 font-semibold">Template</th>
+                            <th class="text-left p-4 text-gray-400 font-semibold">What it is for</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-white/5">
+                        <tr class="bg-bgDark/50">
+                            <td class="p-4 text-gray-300" data-label="Template"><span class="text-gray-200">Sub_Simple</span></td>
+                            <td class="p-4 text-gray-400" data-label="What it is for">The standard subtitle style, your everyday caption look.</td>
+                        </tr>
+                        <tr class="bg-bgDark/50">
+                            <td class="p-4 text-gray-300" data-label="Template"><span class="text-gray-200">Sub_Hook</span></td>
+                            <td class="p-4 text-gray-400" data-label="What it is for">The highlighted or keyword style, used to make chosen words stand out.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Edit -->
+            <h2 class="font-display text-2xl font-bold text-white mt-12 mb-4">Editing the look in Fusion</h2>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                A template is just a Text+ node, so you style it the same way you would any Text+:
+            </p>
+            <ol class="list-decimal list-inside space-y-2 text-gray-400 mb-4 marker:text-brandOrange">
+                <li>In the Media Pool, drag <span class="text-gray-200">Sub_Simple</span> onto a timeline, select it, and
+                    open the <strong class="text-white">Fusion</strong> page.</li>
+                <li>Click the <strong class="text-white">Text+</strong> node and use the Inspector to change the font,
+                    size, colour, tracking, outline, drop shadow and background.</li>
+                <li>Add or adjust any animation you want, a pop-in scale, a fade, a slide.</li>
+                <li>Save the change back to the Media Pool template, then delete the test clip.</li>
+            </ol>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                From then on, SmartSubs Pro builds captions from the edited template, so
+                <strong class="text-white">whatever you set is preserved</strong>. Change your mind later? Edit the
+                template again and re-generate, no need to touch individual captions.
+            </p>
+
+            <!-- Font picker -->
+            <h2 class="font-display text-2xl font-bold text-white mt-12 mb-4">Fonts, without the invisible-text trap</h2>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                A classic DaVinci gotcha is picking a font weight the font does not actually have, say Bold on a font
+                that only ships Regular, and the Text+ renders <strong class="text-white">blank</strong>. SmartSubs Pro
+                reads your <strong class="text-white">real installed fonts and their real styles</strong>, so the style
+                menu only offers weights that exist, and it falls back to a valid style rather than letting a caption
+                disappear. If a caption ever comes out empty, it is almost always this, and picking a weight the font
+                genuinely has fixes it.
+            </p>
+
+            <!-- Own template -->
+            <h2 class="font-display text-2xl font-bold text-white mt-12 mb-4">Using your own template</h2>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                Prefer to start from a template you already built, or one from a pack you bought? Save your Text+ based
+                template into the Media Pool and point SmartSubs Pro at it in the <strong class="text-white">General
+                    tab</strong>. As long as it is Text+ based, the plugin will drive it word by word just like the
+                built-in ones. That is how you get the automation of the plugin with a look that is entirely yours.
+            </p>
+
+            <!-- CTA -->
+            <div class="bg-gradient-to-b from-bgPanel to-bgDark border border-brandOrange/30 rounded-3xl p-8 my-12 text-center">
+                <h2 class="font-display text-2xl font-bold text-white mb-3">Your style, on autopilot</h2>
+                <p class="text-gray-400 mb-6 max-w-xl mx-auto">SmartSubs Pro transcribes your audio and builds every
+                    caption from your own Text+ template. Design once, generate in minutes. One-time payment.</p>
+                <a href="https://smartsubspro.lemonsqueezy.com/checkout/buy/18469eff-5cea-49fa-a6ff-a3da442cb30a"
+                    class="lemonsqueezy-button inline-block bg-brandOrange hover:bg-orange-500 text-white font-bold px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-[1.02]">
+                    Get SmartSubs Pro for $39.99
+                </a>
+                <p class="text-xs text-gray-600 mt-4">30-day money-back guarantee &middot; Studio or free Resolve, any version</p>
+            </div>
+
+            <!-- FAQ -->
+            <h2 class="font-display text-2xl font-bold text-white mt-12 mb-6">Frequently asked questions</h2>
+            <div class="space-y-4" id="faq-list">
+                <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
+                    <h3 class="m-0">
+                        <button id="faq-btn-1" aria-expanded="false" aria-controls="faq-ans-1"
+                            class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-200">
+                            <span class="text-base font-bold text-white">Can I change the font and colours of captions
+                                made by SmartSubs Pro?</span>
+                            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div id="faq-ans-1" role="region" aria-labelledby="faq-btn-1" class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-400 text-sm leading-relaxed">Yes. The captions are built from Text+ templates
+                            in your Media Pool, Sub_Simple and Sub_Hook. Edit those templates in the Fusion page and
+                            every caption SmartSubs Pro generates follows your font, colour, size, outline and
+                            animation.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
+                    <h3 class="m-0">
+                        <button id="faq-btn-2" aria-expanded="false" aria-controls="faq-ans-2"
+                            class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-200">
+                            <span class="text-base font-bold text-white">What are the Sub_Simple and Sub_Hook
+                                templates?</span>
+                            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div id="faq-ans-2" role="region" aria-labelledby="faq-btn-2" class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-400 text-sm leading-relaxed">Sub_Simple is the standard caption style and
+                            Sub_Hook is the highlighted or keyword style. SmartSubs Pro creates both automatically if
+                            they are missing, and you are free to restyle them however you want.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
+                    <h3 class="m-0">
+                        <button id="faq-btn-3" aria-expanded="false" aria-controls="faq-ans-3"
+                            class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-200">
+                            <span class="text-base font-bold text-white">Why does my font look wrong or the caption
+                                disappears?</span>
+                            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div id="faq-ans-3" role="region" aria-labelledby="faq-btn-3" class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-400 text-sm leading-relaxed">That usually happens when a font style is
+                            selected that the font does not actually have, for example Bold on a font shipped only in
+                            Regular. Recent versions of SmartSubs Pro read your real installed fonts and their real
+                            styles, and fall back to a valid style so the caption never renders blank.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
+                    <h3 class="m-0">
+                        <button id="faq-btn-4" aria-expanded="false" aria-controls="faq-ans-4"
+                            class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-200">
+                            <span class="text-base font-bold text-white">Can I use my own Text+ template instead of the
+                                built-in ones?</span>
+                            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div id="faq-ans-4" role="region" aria-labelledby="faq-btn-4" class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-400 text-sm leading-relaxed">Yes. Design your own Text+ template, save it to
+                            the Media Pool, and point SmartSubs Pro at it in the General tab. As long as it is a Text+
+                            based template, the plugin will drive it word by word.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related -->
+            <div class="mt-12 pt-8 border-t border-white/10">
+                <p class="text-sm text-gray-500 mb-3">Related guides</p>
+                <a href="/guide/karaoke-captions-davinci-resolve/"
+                    class="text-brandOrange hover:underline font-semibold">How to Make Karaoke (Word-by-Word) Captions
+                    in DaVinci Resolve</a>
+                <p class="mt-2">
+                    <a href="/guide/install-smartsubs-pro-davinci-resolve/"
+                        class="text-brandOrange hover:underline font-semibold">How to Install and Activate SmartSubs
+                        Pro</a>
+                </p>
+                <p class="mt-6"><a href="/" class="text-gray-400 hover:text-brandOrange text-sm">&larr; Back to
+                        SmartSubs Pro</a></p>
+            </div>
+
+        </article>
+    </main>
+
+    <footer class="border-t border-white/10 bg-black/50 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col items-center justify-center gap-4 text-center text-sm text-gray-500">
+            <img src="/assets/images/LogoTipo.svg" alt="SmartSubs Pro" class="h-6 opacity-50">
+            <p>&copy; 2026 SmartSubs Pro &middot; Developed by <a href="https://antoniopennino.it/" target="_blank"
+                    class="hover:text-brandOrange transition-colors decoration-dotted underline-offset-4 underline">Antonio
+                    Pennino</a> &middot; Not affiliated with Blackmagic Design.</p>
+            <div class="flex items-center gap-4 text-xs text-gray-600">
+                <a href="/terms.html" class="hover:text-brandOrange transition-colors">Terms &amp; Conditions</a>
+                <span>&middot;</span>
+                <a href="/privacy.html" class="hover:text-brandOrange transition-colors">Privacy Policy</a>
+                <span>&middot;</span>
+                <a href="mailto:antonio.pennino.mail@gmail.com" class="hover:text-brandOrange transition-colors">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
