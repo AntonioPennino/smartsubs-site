@@ -1,10 +1,10 @@
 {
-  "version": "2.9.4",
-  "release_date": "2026-09-03",
-  "title": "SmartSubs Pro v2.9.4",
-  "notes": "The style preview now shows the current timeline frame as its background, so you see your subtitles on the real footage at the right position and size. Plus a fix so a Regular-only font (like Monoton) no longer errors on emphasis clips, and the installer warns if Python (required by DaVinci Resolve) is missing.",
-  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.4/SmartSubs-Pro-Windows-v2.9.4.zip",
-  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.4/SmartSubs-Pro-Windows-v2.9.4.zip",
-  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.4/SmartSubs-Pro-macOS-arm64-v2.9.4.zip",
-  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.4/SmartSubs-Pro-macOS-x64-v2.9.4.zip"
+  "version": "2.9.5",
+  "release_date": "2026-09-04",
+  "title": "SmartSubs Pro v2.9.5",
+  "notes": "A big usability update. Drag the caption onto the real timeline frame in the Style preview to place it (with a 3x3 quick-align grid), search your fonts with a live box, and see an animated word-by-word preview for Sentence Karaoke. Template names are now a dropdown that finds the Text+ clips in your Media Pool. The progress bar no longer freezes during transcription: it moves and shows an estimated time left. Plus a cleaner menu and a more accurate preview size.",
+  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.5/SmartSubs-Pro-Windows-v2.9.5.zip",
+  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.5/SmartSubs-Pro-Windows-v2.9.5.zip",
+  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.5/SmartSubs-Pro-macOS-arm64-v2.9.5.zip",
+  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.5/SmartSubs-Pro-macOS-x64-v2.9.5.zip"
 }
