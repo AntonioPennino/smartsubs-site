@@ -8,11 +8,8 @@
     <link rel="shortcut icon" href="/assets/images/Logo.svg">
     <title>Media Offline (404) | SmartSubs Pro</title>
     <meta name="robots" content="noindex, follow">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+    <link rel="preload" href="/assets/fonts/Montserrat.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/css/fonts.css?v=1">
     <link rel="stylesheet" href="/assets/css/output.css?v=9">
     <link rel="stylesheet" href="/assets/css/style.css?v=2">
     <!-- Umami: privacy-friendly, cookieless analytics (Umami Cloud, GDPR-compliant) -->
@@ -38,8 +35,8 @@
             <div class="rounded-2xl border border-white/10 overflow-hidden shadow-2xl mb-10">
                 <!-- viewer header -->
                 <div class="bg-[#19191c] px-4 h-9 flex items-center justify-between border-b border-black/50">
-                    <span class="text-[11px] font-medium text-gray-500">Viewer</span>
-                    <span class="text-[11px] font-mono text-gray-600">01:00:04:04</span>
+                    <span class="text-[11px] font-medium text-gray-400">Viewer</span>
+                    <span class="text-[11px] font-mono text-gray-400">01:00:04:04</span>
                 </div>
 
                 <!-- MEDIA OFFLINE -->
@@ -51,11 +48,11 @@
                 </div>
 
                 <!-- transport bar -->
-                <div class="bg-[#19191c] h-12 flex items-center justify-center gap-6 border-t border-black/50 text-gray-600">
+                <div class="bg-[#19191c] h-12 flex items-center justify-center gap-6 border-t border-black/50 text-gray-400">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M8.445 14.832A1 1 0 0010 14v-2.798l5.445 3.63A1 1 0 0017 14V6a1 1 0 00-1.555-.832L10 8.798V6a1 1 0 00-1.555-.832l-6 4a1 1 0 000 1.664l6 4z" />
                     </svg>
-                    <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                    <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
                     </svg>
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -89,13 +86,13 @@
                 </a>
             </div>
 
-            <p class="text-xs text-gray-600 italic mt-12">
+            <p class="text-xs text-gray-400 italic mt-12">
                 Also currently offline: your render cache, the good take, and that B-roll you swear you imported.
             </p>
         </div>
     </main>
 
-    <footer class="border-t border-white/10 py-8 px-6 text-center text-xs text-gray-600">
+    <footer class="border-t border-white/10 py-8 px-6 text-center text-xs text-gray-400">
         <p>&copy; 2026 SmartSubs Pro &middot; Not affiliated with Blackmagic Design.</p>
     </footer>
 </body>

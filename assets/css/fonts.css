@@ -1,9 +1,4 @@
-/* ============================================================
-   SmartSubs Pro — Fonts
-   Display: Montserrat (700/800) · Body: Poppins (300–600)
-   Self-hosted (SIL OFL 1.1), latin subset. No external requests.
-   ============================================================ */
-
+/* Self-hosted fonts (Montserrat, Poppins) - SIL OFL 1.1. Latin subset. */
 @font-face{font-family:'Montserrat';font-style:normal;font-weight:700 800;font-display:swap;src:url(/assets/fonts/Montserrat.woff2) format('woff2')}
 @font-face{font-family:'Poppins';font-style:normal;font-weight:300;font-display:swap;src:url(/assets/fonts/Poppins-300.woff2) format('woff2')}
 @font-face{font-family:'Poppins';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/Poppins-400.woff2) format('woff2')}

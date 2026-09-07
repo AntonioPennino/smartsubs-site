@@ -88,11 +88,8 @@
     ]
     </script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+    <link rel="preload" href="/assets/fonts/Montserrat.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/css/fonts.css?v=1">
     <link rel="stylesheet" href="/assets/css/output.css?v=9">
     <link rel="stylesheet" href="/assets/css/style.css?v=2">
     <!-- Umami: privacy-friendly, cookieless analytics (Umami Cloud, GDPR-compliant) -->
@@ -123,7 +120,7 @@
     <main class="pt-32 pb-20 px-6">
         <div class="max-w-3xl mx-auto">
 
-            <nav aria-label="Breadcrumb" class="text-xs text-gray-500 mb-8">
+            <nav aria-label="Breadcrumb" class="text-xs text-gray-400 mb-8">
                 <a href="/" class="hover:text-brandOrange">Home</a>
                 <span class="mx-2">&rsaquo;</span>
                 <span class="text-gray-300">Guides</span>
@@ -209,12 +206,12 @@
     </main>
 
     <footer class="border-t border-white/10 bg-black/50 py-12 px-6">
-        <div class="max-w-7xl mx-auto flex flex-col items-center justify-center gap-4 text-center text-sm text-gray-500">
+        <div class="max-w-7xl mx-auto flex flex-col items-center justify-center gap-4 text-center text-sm text-gray-400">
             <img src="/assets/images/LogoTipo.svg" alt="SmartSubs Pro" width="66" height="24" class="h-6 opacity-50">
             <p>&copy; 2026 SmartSubs Pro &middot; Developed by <a href="https://antoniopennino.it/" target="_blank"
                     class="hover:text-brandOrange transition-colors decoration-dotted underline-offset-4 underline">Antonio
                     Pennino</a> &middot; Not affiliated with Blackmagic Design.</p>
-            <div class="flex items-center gap-4 text-xs text-gray-600">
+            <div class="flex items-center gap-4 text-xs text-gray-400">
                 <a href="/terms.html" class="hover:text-brandOrange transition-colors">Terms &amp; Conditions</a>
                 <span>&middot;</span>
                 <a href="/privacy.html" class="hover:text-brandOrange transition-colors">Privacy Policy</a>
