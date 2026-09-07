@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       colors: {
         brandPurple: '#6D26D9',
+        brandPurpleLight: '#8B5CF6',
         brandOrange: '#F97316',
         bgDark: '#111113',
         bgPanel: '#1E1E24'
