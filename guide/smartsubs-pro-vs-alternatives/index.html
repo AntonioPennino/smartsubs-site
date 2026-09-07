@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/Logo.svg">
+    <link rel="shortcut icon" href="/assets/images/Logo.svg">
+    <title>SmartSubs Pro vs the Alternatives (Honest Comparison)</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="SmartSubs Pro vs the Alternatives (Honest Comparison)">
+    <meta name="description"
+        content="An honest comparison of DaVinci Resolve subtitle tools: AutoSubs, Magic Subtitles, the native Studio tool and SmartSubs Pro. What each is best at, and when not to buy.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://smartsubspro.com/guide/smartsubs-pro-vs-alternatives/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://smartsubspro.com/guide/smartsubs-pro-vs-alternatives/">
+    <meta property="og:site_name" content="SmartSubs Pro">
+    <meta property="og:title" content="SmartSubs Pro vs the Alternatives (Honest Comparison)">
+    <meta property="og:description"
+        content="AutoSubs, Magic Subtitles, the native Studio tool and SmartSubs Pro compared fairly. What each is best at, and when not to buy.">
+    <meta property="og:image" content="https://smartsubspro.com/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="SmartSubs Pro, AI captions for DaVinci Resolve">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://smartsubspro.com/guide/smartsubs-pro-vs-alternatives/">
+    <meta name="twitter:title" content="SmartSubs Pro vs the Alternatives (Honest Comparison)">
+    <meta name="twitter:description"
+        content="AutoSubs, Magic Subtitles, the native Studio tool and SmartSubs Pro compared fairly.">
+    <meta name="twitter:image" content="https://smartsubspro.com/assets/images/og-image.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "SmartSubs Pro vs the Alternatives: an Honest Comparison",
+        "description": "A fair comparison of subtitle tools for DaVinci Resolve, AutoSubs, Magic Subtitles, the native Studio feature and SmartSubs Pro, covering what each is best at and when not to buy.",
+        "image": "https://smartsubspro.com/assets/images/og-image.png",
+        "author": { "@type": "Person", "name": "Antonio Pennino", "url": "https://antoniopennino.it/" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "SmartSubs Pro",
+          "logo": { "@type": "ImageObject", "url": "https://smartsubspro.com/assets/images/og-image.png" }
+        },
+        "datePublished": "2026-09-08",
+        "dateModified": "2026-09-08",
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://smartsubspro.com/guide/smartsubs-pro-vs-alternatives/" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://smartsubspro.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://smartsubspro.com/guide/" },
+          { "@type": "ListItem", "position": 3, "name": "SmartSubs Pro vs the alternatives", "item": "https://smartsubspro.com/guide/smartsubs-pro-vs-alternatives/" }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the best free alternative to SmartSubs Pro?",
+            "acceptedAnswer": { "@type": "Answer", "text": "AutoSubs, by Tom Moroney. It is free and open source, transcribes locally with Whisper, supports many languages and speaker detection, and lets you style the subtitles. If you want a solid subtitle track without spending anything, start there." }
+          },
+          {
+            "@type": "Question",
+            "name": "How is SmartSubs Pro different from Magic Subtitles?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Both add animated subtitles inside DaVinci Resolve. Magic Subtitles generates its animated style using Resolve's own transcription engine. SmartSubs Pro bundles its own Whisper engine (so it runs on free Resolve at any version), and instead of a fixed style it drives your own Fusion Text+ template word by word, so the captions match a look you designed." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need DaVinci Resolve Studio for these tools?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The native Create Subtitles from Audio feature is Studio only. AutoSubs and SmartSubs Pro both run on the free edition because they bring their own Whisper engine. Magic Subtitles offers a free Lite tier for the free edition." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is SmartSubs Pro worth it if AutoSubs is free?",
+            "acceptedAnswer": { "@type": "Answer", "text": "If you only need a plain or lightly styled subtitle track, AutoSubs is free and excellent, and you should use it. SmartSubs Pro is worth paying for when you specifically want word-by-word animation on your own Text+ template, AI emphasis on the words you actually stressed, and direct support from a working video editor." }
+          }
+        ]
+      }
+    ]
+    </script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
+
+    <link rel="stylesheet" href="/assets/css/output.css?v=8">
+    <link rel="stylesheet" href="/assets/css/style.css?v=2">
+    <!-- Umami: privacy-friendly, cookieless analytics (Umami Cloud, GDPR-compliant) -->
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="ea0b081b-f6ec-41f0-9c6b-7089dd37f3c4"></script>
+</head>
+
+<body class="bg-bgDark text-gray-200 font-sans antialiased selection:bg-brandOrange selection:text-white">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 top-0 border-b border-white/10 bg-bgDark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3">
+                <img src="/assets/images/LogoTipo.svg" alt="SmartSubs Pro" class="h-10">
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="/#how-it-works" class="hover:text-brandOrange transition-colors duration-200">How it Works</a>
+                <a href="/#features" class="hover:text-brandOrange transition-colors duration-200">Features</a>
+                <a href="/#compare" class="hover:text-brandOrange transition-colors duration-200">Compare</a>
+                <a href="/guide/" class="hover:text-brandOrange transition-colors duration-200">Guides</a>
+                <a href="/#pricing" class="hover:text-brandOrange transition-colors duration-200">Pricing</a>
+            </div>
+            <a href="https://smartsubspro.lemonsqueezy.com/checkout/buy/18469eff-5cea-49fa-a6ff-a3da442cb30a"
+                data-umami-event="cta-nav" class="lemonsqueezy-button hidden md:inline-flex bg-brandOrange hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-btn-glow">
+                Get the Plugin
+            </a>
+        </div>
+    </nav>
+
+    <main id="main-content" class="pt-32 pb-20 px-6">
+        <article class="max-w-3xl mx-auto">
+
+            <!-- Breadcrumb -->
+            <nav aria-label="Breadcrumb" class="text-xs text-gray-500 mb-8">
+                <a href="/" class="hover:text-brandOrange">Home</a>
+                <span class="mx-2">&rsaquo;</span>
+                <a href="/guide/" class="hover:text-brandOrange">Guides</a>
+                <span class="mx-2">&rsaquo;</span>
+                <span class="text-gray-300">SmartSubs Pro vs the alternatives</span>
+            </nav>
+
+            <header class="mb-10">
+                <span
+                    class="inline-block border border-brandPurple/50 bg-brandPurple/10 text-brandPurple px-3 py-1 rounded-full text-xs font-semibold mb-5 tracking-wide">
+                    HONEST COMPARISON
+                </span>
+                <h1 class="font-display text-3xl md:text-5xl font-extrabold text-white leading-tight mb-5">
+                    SmartSubs Pro vs the Alternatives
+                </h1>
+                <p class="text-sm text-gray-500">By Antonio Pennino &middot; Updated September 2026 &middot; 7 min read</p>
+            </header>
+
+            <!-- Direct answer -->
+            <div class="bg-bgPanel border border-white/5 rounded-2xl p-6 mb-10">
+                <p class="text-gray-300 leading-relaxed">
+                    <strong class="text-white">Straight up:</strong> there are good subtitle tools for DaVinci Resolve,
+                    and some of them are free. I built SmartSubs Pro, so I am not neutral, but I would rather you buy the
+                    right tool than the wrong one. Below is a fair look at the real options,
+                    <strong class="text-white">AutoSubs</strong>, <strong class="text-white">Magic Subtitles</strong>,
+                    the <strong class="text-white">native Studio feature</strong>, and SmartSubs Pro, including where
+                    the free ones win and when you should not pay me anything.
+                </p>
+            </div>
+
+            <!-- AutoSubs -->
+            <h2 class="font-display text-2xl font-bold text-white mt-12 mb-4">AutoSubs, the best free option</h2>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                <a href="https://tom-moroney.com/auto-subs/" target="_blank" rel="noopener"
+                    class="text-brandOrange hover:underline">AutoSubs</a> by Tom Moroney is free and open source. It
+                transcribes your timeline <strong class="text-white">locally with Whisper</strong>, the same engine
+                family SmartSubs uses, supports many languages and speaker detection, has a subtitle editor, and lets
+                you style the output. It runs on both free and Studio Resolve.
+            </p>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                <strong class="text-white">Pick it when:</strong> you want a solid, private subtitle track without
+                spending anything. It is genuinely good, and for a lot of people it is all they need.
+            </p>
+
+            <!-- Magic Subtitles -->
+            <h2 class="font-display text-2xl font-bold text-white mt-12 mb-4">Magic Subtitles, animated styles from Resolve's engine</h2>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                <a href="https://www.mralextech.com/magicsubtitleslite" target="_blank" rel="noopener"
+                    class="text-brandOrange hover:underline">Magic Subtitles</a> by MrAlexTech generates animated
+                subtitles on your timeline. It builds its script from
+                <strong class="text-white">Resolve's own transcription engine</strong> and feeds keyframes into a Text+
+                node, works offline, and comes as a free Lite tier plus a paid Pro. It is aimed at short, punchy content.
+            </p>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                <strong class="text-white">Pick it when:</strong> you like its ready-made animated look and want
+                something that leans on Resolve's built-in transcription.
+            </p>
+
+            <!-- Native -->
+            <h2 class="font-display text-2xl font-bold text-white mt-12 mb-4">The native Studio feature</h2>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                DaVinci Resolve <strong class="text-white">Studio</strong> has <em>Create Subtitles from Audio</em>
+                built in. It is reliable for a standard subtitle track, but it is
+                <strong class="text-white">Studio only</strong>, produces one static line at a time, and does no
+                animation, no word-by-word, and no translation into other languages.
+            </p>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                <strong class="text-white">Pick it when:</strong> you already own Studio and only need plain,
+                broadcast-style subtitles.
+            </p>
+
+            <!-- SmartSubs -->
+            <h2 class="font-display text-2xl font-bold text-white mt-12 mb-4">Where SmartSubs Pro genuinely differs</h2>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                SmartSubs Pro is not trying to be the cheapest, it is built for one specific job: turning your voice
+                into <strong class="text-white">animated word-by-word captions on a look you designed</strong>. The
+                things that actually set it apart:
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-gray-400 mb-4 marker:text-brandOrange">
+                <li><strong class="text-white">Your own Text+ template.</strong> Instead of a fixed style, it drives a
+                    Fusion Text+ template you built, word by word, so the captions are yours, not a preset everyone
+                    recognizes.</li>
+                <li><strong class="text-white">AI emphasis from your actual voice.</strong> An optional Gemini step
+                    listens to pitch, volume and pacing to highlight the words you really stressed, not just keywords
+                    guessed from text.</li>
+                <li><strong class="text-white">Its own bundled Whisper engine.</strong> It does not depend on Resolve's
+                    transcription, so it runs on <strong class="text-white">free Resolve at any version</strong>, all
+                    locally and offline.</li>
+                <li><strong class="text-white">Direct support from a working editor.</strong> When you email support,
+                    you reach me, Antonio, a video editor who uses this on real projects, usually within a day on
+                    weekdays.</li>
+                <li><strong class="text-white">One-time price.</strong> $39.99 once, no subscription.</li>
+            </ul>
+
+            <!-- Comparison -->
+            <h2 class="font-display text-2xl font-bold text-white mt-12 mb-4">Side by side</h2>
+            <div class="overflow-x-auto rounded-2xl border border-white/10 mb-6">
+                <table class="w-full text-sm cmp-table">
+                    <thead>
+                        <tr class="bg-bgPanel border-b border-white/10">
+                            <th class="text-left p-4 text-gray-400 font-semibold">What matters</th>
+                            <th class="p-4 text-center font-semibold text-gray-400">AutoSubs</th>
+                            <th class="p-4 text-center font-semibold text-gray-400">Magic Subtitles</th>
+                            <th class="p-4 text-center font-bold"><span class="text-brandOrange">SmartSubs Pro</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-white/5">
+                        <tr class="bg-bgDark/50">
+                            <td class="p-4 text-gray-300">Price</td>
+                            <td class="p-4 text-center text-gray-400" data-label="AutoSubs">Free, open source</td>
+                            <td class="p-4 text-center text-gray-400" data-label="Magic Subtitles">Free Lite + paid Pro</td>
+                            <td class="p-4 text-center text-gray-400 us-col" data-label="SmartSubs Pro">$39.99 once</td>
+                        </tr>
+                        <tr class="bg-bgDark/50">
+                            <td class="p-4 text-gray-300">Local, offline transcription</td>
+                            <td class="p-4 text-center" data-label="AutoSubs"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center" data-label="Magic Subtitles"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center us-col" data-label="SmartSubs Pro"><span class="text-green-400">&#10003;</span></td>
+                        </tr>
+                        <tr class="bg-bgDark/50">
+                            <td class="p-4 text-gray-300">Transcription engine</td>
+                            <td class="p-4 text-center text-gray-400" data-label="AutoSubs">Whisper (bundled)</td>
+                            <td class="p-4 text-center text-gray-400" data-label="Magic Subtitles">Resolve's engine</td>
+                            <td class="p-4 text-center text-gray-400 us-col" data-label="SmartSubs Pro">Whisper (bundled)</td>
+                        </tr>
+                        <tr class="bg-bgDark/50">
+                            <td class="p-4 text-gray-300">Works on free Resolve</td>
+                            <td class="p-4 text-center" data-label="AutoSubs"><span class="text-green-400">&#10003;</span></td>
+                            <td class="p-4 text-center text-gray-400" data-label="Magic Subtitles">Lite tier</td>
+                            <td class="p-4 text-center us-col" data-label="SmartSubs Pro"><span class="text-green-400">Any version</span></td>
+                        </tr>
+                        <tr class="bg-bgDark/50">
+                            <td class="p-4 text-gray-300">Word-by-word on your own Text+ template</td>
+                            <td class="p-4 text-center text-gray-400" data-label="AutoSubs">Own styles</td>
+                            <td class="p-4 text-center text-gray-400" data-label="Magic Subtitles">Its own animated style</td>
+                            <td class="p-4 text-center us-col" data-label="SmartSubs Pro"><span class="text-green-400">&#10003;</span></td>
+                        </tr>
+                        <tr class="bg-bgDark/50">
+                            <td class="p-4 text-gray-300">AI emphasis from your voice</td>
+                            <td class="p-4 text-center" data-label="AutoSubs"><span class="text-gray-500">No</span></td>
+                            <td class="p-4 text-center" data-label="Magic Subtitles"><span class="text-gray-500">No</span></td>
+                            <td class="p-4 text-center us-col" data-label="SmartSubs Pro"><span class="text-green-400">&#10003;</span></td>
+                        </tr>
+                        <tr class="bg-bgDark/50">
+                            <td class="p-4 text-gray-300">Support</td>
+                            <td class="p-4 text-center text-gray-400" data-label="AutoSubs">Community</td>
+                            <td class="p-4 text-center text-gray-400" data-label="Magic Subtitles">Developer</td>
+                            <td class="p-4 text-center text-gray-400 us-col" data-label="SmartSubs Pro">Developer, a real editor</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- When not to buy -->
+            <h2 class="font-display text-2xl font-bold text-white mt-12 mb-4">When not to buy SmartSubs Pro</h2>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                I would rather say this than have you refund later. <strong class="text-white">Do not buy it</strong> if
+                you only need a plain subtitle track, AutoSubs does that for free and does it well. Do not buy it if you
+                are happy with Magic Subtitles' ready-made look. SmartSubs earns its price only when you want the
+                captions to follow <strong class="text-white">your own animated design</strong>, with emphasis pulled
+                from how you actually spoke, and a person on the other end of support.
+            </p>
+
+            <!-- CTA -->
+            <div class="bg-gradient-to-b from-bgPanel to-bgDark border border-brandOrange/30 rounded-3xl p-8 my-12 text-center">
+                <h2 class="font-display text-2xl font-bold text-white mb-3">Want captions that look like yours?</h2>
+                <p class="text-gray-400 mb-6 max-w-xl mx-auto">SmartSubs Pro turns your voice into word-by-word animated
+                    captions on your own Text+ template, locally and offline. One-time payment, no subscription.</p>
+                <a href="https://smartsubspro.lemonsqueezy.com/checkout/buy/18469eff-5cea-49fa-a6ff-a3da442cb30a"
+                    data-umami-event="cta-buy" class="lemonsqueezy-button inline-block bg-brandOrange hover:bg-orange-500 text-white font-bold px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-[1.02]">
+                    Get SmartSubs Pro for $39.99
+                </a>
+                <p class="text-xs text-gray-600 mt-4">30-day money-back guarantee &middot; Studio or free Resolve, any version</p>
+            </div>
+
+            <!-- FAQ -->
+            <h2 class="font-display text-2xl font-bold text-white mt-12 mb-6">Frequently asked questions</h2>
+            <div class="space-y-4" id="faq-list">
+                <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
+                    <h3 class="m-0">
+                        <button id="faq-btn-1" aria-expanded="false" aria-controls="faq-ans-1"
+                            class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-200">
+                            <span class="text-base font-bold text-white">What is the best free alternative to SmartSubs
+                                Pro?</span>
+                            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div id="faq-ans-1" role="region" aria-labelledby="faq-btn-1" class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-400 text-sm leading-relaxed">AutoSubs, by Tom Moroney. It is free and open
+                            source, transcribes locally with Whisper, supports many languages and speaker detection, and
+                            lets you style the subtitles. If you want a solid subtitle track without spending anything,
+                            start there.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
+                    <h3 class="m-0">
+                        <button id="faq-btn-2" aria-expanded="false" aria-controls="faq-ans-2"
+                            class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-200">
+                            <span class="text-base font-bold text-white">How is SmartSubs Pro different from Magic
+                                Subtitles?</span>
+                            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div id="faq-ans-2" role="region" aria-labelledby="faq-btn-2" class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-400 text-sm leading-relaxed">Both add animated subtitles inside DaVinci
+                            Resolve. Magic Subtitles generates its animated style using Resolve's own transcription
+                            engine. SmartSubs Pro bundles its own Whisper engine (so it runs on free Resolve at any
+                            version), and instead of a fixed style it drives your own Fusion Text+ template word by word,
+                            so the captions match a look you designed.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
+                    <h3 class="m-0">
+                        <button id="faq-btn-3" aria-expanded="false" aria-controls="faq-ans-3"
+                            class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-200">
+                            <span class="text-base font-bold text-white">Do I need DaVinci Resolve Studio for these
+                                tools?</span>
+                            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div id="faq-ans-3" role="region" aria-labelledby="faq-btn-3" class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-400 text-sm leading-relaxed">The native Create Subtitles from Audio feature
+                            is Studio only. AutoSubs and SmartSubs Pro both run on the free edition because they bring
+                            their own Whisper engine. Magic Subtitles offers a free Lite tier for the free edition.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
+                    <h3 class="m-0">
+                        <button id="faq-btn-4" aria-expanded="false" aria-controls="faq-ans-4"
+                            class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-200">
+                            <span class="text-base font-bold text-white">Is SmartSubs Pro worth it if AutoSubs is
+                                free?</span>
+                            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div id="faq-ans-4" role="region" aria-labelledby="faq-btn-4" class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-400 text-sm leading-relaxed">If you only need a plain or lightly styled
+                            subtitle track, AutoSubs is free and excellent, and you should use it. SmartSubs Pro is
+                            worth paying for when you specifically want word-by-word animation on your own Text+
+                            template, AI emphasis on the words you actually stressed, and direct support from a working
+                            video editor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related -->
+            <div class="mt-12 pt-8 border-t border-white/10">
+                <p class="text-sm text-gray-500 mb-3">Related guides</p>
+                <a href="/guide/karaoke-captions-davinci-resolve/"
+                    class="text-brandOrange hover:underline font-semibold">How to Make Karaoke (Word-by-Word) Captions
+                    in DaVinci Resolve</a>
+                <p class="mt-2">
+                    <a href="/guide/davinci-resolve-free-auto-subtitles/"
+                        class="text-brandOrange hover:underline font-semibold">Auto Subtitles on the Free Version of
+                        DaVinci Resolve</a>
+                </p>
+                <p class="mt-6"><a href="/" class="text-gray-400 hover:text-brandOrange text-sm">&larr; Back to
+                        SmartSubs Pro</a></p>
+            </div>
+
+        </article>
+    </main>
+
+    <footer class="border-t border-white/10 bg-black/50 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col items-center justify-center gap-4 text-center text-sm text-gray-500">
+            <img src="/assets/images/LogoTipo.svg" alt="SmartSubs Pro" class="h-6 opacity-50">
+            <p>&copy; 2026 SmartSubs Pro &middot; Developed by <a href="https://antoniopennino.it/" target="_blank"
+                    class="hover:text-brandOrange transition-colors decoration-dotted underline-offset-4 underline">Antonio
+                    Pennino</a> &middot; Not affiliated with Blackmagic Design.</p>
+            <div class="flex items-center gap-4 text-xs text-gray-600">
+                <a href="/terms.html" class="hover:text-brandOrange transition-colors">Terms &amp; Conditions</a>
+                <span>&middot;</span>
+                <a href="/privacy.html" class="hover:text-brandOrange transition-colors">Privacy Policy</a>
+                <span>&middot;</span>
+                <a href="mailto:antonio.pennino.mail@gmail.com" class="hover:text-brandOrange transition-colors">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
