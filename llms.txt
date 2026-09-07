@@ -1,26 +1,16 @@
 # SmartSubs Pro
 
-> AI-powered word-by-word animated subtitles and 90+ language auto-translate plugin built directly inside DaVinci Resolve (Free & Studio versions).
+> AI-powered subtitle plugin for DaVinci Resolve. It transcribes timeline audio locally with OpenAI Whisper and builds animated, word-by-word captions on your own Fusion Text+ template, can auto-translate foreign-language audio to English, and runs on both DaVinci Resolve Studio and the free edition (any version from 18 onward, Windows and macOS). One-time purchase of $39.99, no subscription, with a 30-day money-back guarantee. Support is handled personally by Antonio Pennino, a working video editor.
 
-## Overview
-SmartSubs Pro is a native plugin for DaVinci Resolve (Windows & macOS, including Apple Silicon M1/M2/M3) that generates viral, animated word-by-word captions (TikTok / Reels / Shorts style) and provides automatic multi-language translation without leaving DaVinci Resolve.
+## Guides
+- [How to Add Automatic Subtitles in DaVinci Resolve (Free & Studio)](https://smartsubspro.com/guide/auto-subtitles-davinci-resolve/): the built-in Studio tool, the manual Fusion Text+ method, and the automated route compared.
+- [Auto Subtitles on the Free Version of DaVinci Resolve](https://smartsubspro.com/guide/davinci-resolve-free-auto-subtitles/): three ways free users can get automatic subtitles.
+- [How to Make Karaoke (Word-by-Word) Captions in DaVinci Resolve](https://smartsubspro.com/guide/karaoke-captions-davinci-resolve/): the TikTok/Reels look, why the native subtitle track cannot do it, and how to build it.
+- [How to Translate Subtitles in DaVinci Resolve](https://smartsubspro.com/guide/translate-subtitles-davinci-resolve/): auto-translate foreign audio to English with Whisper, or translate an SRT into any language and re-import.
+- [How to Customize Your Subtitle Style (Text+ Templates)](https://smartsubspro.com/guide/customize-subtitle-style-davinci-resolve/): edit the Sub_Simple and Sub_Hook Text+ templates for font, colour, size and animation.
+- [How to Install and Activate SmartSubs Pro](https://smartsubspro.com/guide/install-smartsubs-pro-davinci-resolve/): setup on Windows and macOS and license activation.
+- [SmartSubs Pro vs the Alternatives](https://smartsubspro.com/guide/smartsubs-pro-vs-alternatives/): an honest comparison with AutoSubs, Magic Subtitles and the native Studio tool, including when not to buy.
 
-- **Official Website:** https://smartsubspro.com
-- **Pricing:** One-time payment (No subscriptions), lifetime license.
-- **Compatibility:** DaVinci Resolve Free & Studio (v16 through v19+).
-- **Supported OS:** Windows 10/11 & macOS (Intel & Apple Silicon ARM64).
-
-## Key Features
-- **Offline Speech-to-Text (Whisper AI):** 100% offline local transcription powered by OpenAI Whisper models (Tiny, Small, Medium, Large). Privacy-first, zero cloud latency, no credit consumption for base transcription.
-- **Dynamic Emphasis & Multimodal AI (Gemini AI):** Listens to pitch, volume, and speech intonation to identify true emotional emphasis and automatically highlight "Power Words" in Fusion Text+ graphics.
-- **90+ Language Auto-Translate:** Translates transcripts automatically directly inside Resolve timeline using AI translation models.
-- **Native Fusion Text+ Integration:** Generates native DaVinci Resolve Text+ clips and presets (`Sub_Simple` and `Sub_Hook`), allowing full keyframe, font, color, stroke, shadow, and animation customization within Resolve.
-- **Silence & Punctuation Slicing:** Smart silence detection (>0.4s pause) and punctuation splitting to ensure perfect cadence matching human speech.
-
-## Key Pages & Documentation
-- [Homepage](https://smartsubspro.com/): Product features, video demos, pricing, and system requirements.
-- [Guides Index](https://smartsubspro.com/guide/): Tutorials and comparison guides for DaVinci Resolve subtitles.
-- [Auto Subtitles Guide](https://smartsubspro.com/guide/auto-subtitles-davinci-resolve/): Comprehensive comparison between built-in Studio subtitles, manual Fusion Text+, and SmartSubs Pro.
-- [Free Version Subtitles Guide](https://smartsubspro.com/guide/davinci-resolve-free-auto-subtitles/): How to get automatic subtitles on DaVinci Resolve Free.
-- [Privacy Policy](https://smartsubspro.com/privacy.html): Information on offline data processing and security.
-- [Terms & Conditions](https://smartsubspro.com/terms.html): End-user license agreement and refund policy.
+## Main pages
+- [Homepage](https://smartsubspro.com/): product overview, features, pricing and FAQ.
+- [Guides hub](https://smartsubspro.com/guide/): all DaVinci Resolve subtitle guides.

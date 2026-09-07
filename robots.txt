@@ -1,4 +1,5 @@
-User-agent: *
-Allow: /
+# All per-user-agent crawl rules for smartsubspro.com are managed at the edge by
+# Cloudflare, which prepends its own "User-agent: *  Allow: /" block above this file.
+# To avoid a duplicate group, this origin file only declares the sitemap.
 
 Sitemap: https://smartsubspro.com/sitemap.xml
