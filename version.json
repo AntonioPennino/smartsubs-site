@@ -1,10 +1,10 @@
 {
-  "version": "2.9.8",
+  "version": "2.9.9",
   "release_date": "2026-10-08",
-  "title": "SmartSubs Pro v2.9.8",
-  "notes": "Your transcript is now saved per timeline. Captions appear in a new column next to the settings, where you can read and fix them before they go on the timeline. Change template, preset or words per line and the captions update instantly with no new transcription, and your manual fixes are kept. Add to Timeline now replaces the previous SmartSubs track instead of stacking a new one. License activation is fixed on Mac (certificate error) and SmartSubs no longer asks for the license again after network or adapter changes on Windows. The interface opens in its own window more reliably on Windows 10 and on Mac. Also fixed: Remove punctuation no longer strips apostrophes inside words like l'amico, and Power Words no longer stop the captions from generating.",
-  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.8/SmartSubs-Pro-Windows-v2.9.8.zip",
-  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.8/SmartSubs-Pro-Windows-v2.9.8.zip",
-  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.8/SmartSubs-Pro-macOS-arm64-v2.9.8.zip",
-  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.8/SmartSubs-Pro-macOS-x64-v2.9.8.zip"
+  "title": "SmartSubs Pro v2.9.9",
+  "notes": "See your captions in DaVinci before adding them. Click any caption in the captions column and it appears in Resolve's viewer over your footage, styled exactly as it will be on the timeline; change a color, font or position and the viewer updates. The interface got a full redesign: settings are grouped into clear sections with plain-language labels, the sidebar follows the order you work in, presets show what they do and which one is in use, and the Style preview shows your own caption instead of sample text. Scrollbars now match the rest of the app.",
+  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.9/SmartSubs-Pro-Windows-v2.9.9.zip",
+  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.9/SmartSubs-Pro-Windows-v2.9.9.zip",
+  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.9/SmartSubs-Pro-macOS-arm64-v2.9.9.zip",
+  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.9/SmartSubs-Pro-macOS-x64-v2.9.9.zip"
 }
