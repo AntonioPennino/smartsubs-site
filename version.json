@@ -1,10 +1,10 @@
 {
-  "version": "2.9.7",
-  "release_date": "2026-09-17",
-  "title": "SmartSubs Pro v2.9.7",
-  "notes": "A polish and control update. Captions now stay on screen until the phrase is finished (adjustable with 'Hold captions longer'), numbers like 5.000 no longer get a stray space, and hooks stay selective instead of firing on every line. A new Custom Vocabulary teaches the AI your names and brands so they're spelled right, and optional AI Text Correction fixes misheard words while keeping the timing aligned. The interface also got a full pass: one consistent icon set, on/off toggle switches, cleaner inputs and helpful tooltips.",
-  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.7/SmartSubs-Pro-Windows-v2.9.7.zip",
-  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.7/SmartSubs-Pro-Windows-v2.9.7.zip",
-  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.7/SmartSubs-Pro-macOS-arm64-v2.9.7.zip",
-  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.7/SmartSubs-Pro-macOS-x64-v2.9.7.zip"
+  "version": "2.9.8",
+  "release_date": "2026-10-08",
+  "title": "SmartSubs Pro v2.9.8",
+  "notes": "Your transcript is now saved per timeline. Captions appear in a new column next to the settings, where you can read and fix them before they go on the timeline. Change template, preset or words per line and the captions update instantly with no new transcription, and your manual fixes are kept. Add to Timeline now replaces the previous SmartSubs track instead of stacking a new one. License activation is fixed on Mac (certificate error) and SmartSubs no longer asks for the license again after network or adapter changes on Windows. The interface opens in its own window more reliably on Windows 10 and on Mac. Also fixed: Remove punctuation no longer strips apostrophes inside words like l'amico, and Power Words no longer stop the captions from generating.",
+  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.8/SmartSubs-Pro-Windows-v2.9.8.zip",
+  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.8/SmartSubs-Pro-Windows-v2.9.8.zip",
+  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.8/SmartSubs-Pro-macOS-arm64-v2.9.8.zip",
+  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.8/SmartSubs-Pro-macOS-x64-v2.9.8.zip"
 }
