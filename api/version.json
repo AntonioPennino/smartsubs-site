@@ -1,10 +1,10 @@
 {
-  "version": "2.9.9",
-  "release_date": "2026-10-08",
-  "title": "SmartSubs Pro v2.9.9",
-  "notes": "See your captions in DaVinci before adding them. Click any caption in the captions column and it appears in Resolve's viewer over your footage, styled exactly as it will be on the timeline; change a color, font or position and the viewer updates. The interface got a full redesign: settings are grouped into clear sections with plain-language labels, the sidebar follows the order you work in, presets show what they do and which one is in use, and the Style preview shows your own caption instead of sample text. Scrollbars now match the rest of the app.",
-  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.9/SmartSubs-Pro-Windows-v2.9.9.zip",
-  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.9/SmartSubs-Pro-Windows-v2.9.9.zip",
-  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.9/SmartSubs-Pro-macOS-arm64-v2.9.9.zip",
-  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.9/SmartSubs-Pro-macOS-x64-v2.9.9.zip"
+  "version": "2.9.10",
+  "release_date": "2026-10-09",
+  "title": "SmartSubs Pro v2.9.10",
+  "notes": "Captions now land exactly on time: on timelines whose frame rate differs from the caption template (for example 30 fps with the 24 fps templates) every caption after the first started a few frames late, and that is fixed. The Style preview works like a canvas: drag the caption to move it, pull the corner to resize it, snap it to the center, nudge it with the arrow keys, and DaVinci's viewer follows along. Before transcribing, a sample caption at the playhead lets you set up the look on your real footage. The preview now matches DaVinci's size one to one, the playhead no longer jumps to the end after adding captions, and SmartSubs tells you clearly when your template's own look is overriding the Style settings.",
+  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.10/SmartSubs-Pro-Windows-v2.9.10.zip",
+  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.10/SmartSubs-Pro-Windows-v2.9.10.zip",
+  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.10/SmartSubs-Pro-macOS-arm64-v2.9.10.zip",
+  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.10/SmartSubs-Pro-macOS-x64-v2.9.10.zip"
 }
