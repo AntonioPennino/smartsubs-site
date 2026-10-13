@@ -76,7 +76,7 @@
           {
             "@type": "Question",
             "name": "How accurate are DaVinci Resolve automatic subtitles?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Accuracy depends on the transcription engine. SmartSubs Pro uses OpenAI's Whisper model, which reaches around 99% accuracy on clear audio and supports 90+ languages offline, on par with or better than the built-in tool." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Accuracy depends on the transcription engine. SmartSubs Pro uses OpenAI's Whisper model, which is highly accurate on clear speech and supports 90+ languages offline. Accuracy drops with music, noise, overlapping voices or strong accents, so a quick review pass is always worth it." }
           },
           {
             "@type": "Question",
@@ -86,7 +86,7 @@
           {
             "@type": "Question",
             "name": "Do automatic subtitles work offline?",
-            "acceptedAnswer": { "@type": "Answer", "text": "With SmartSubs Pro, yes. Transcription runs 100% locally on your computer with an embedded Whisper engine, so your audio never leaves your machine and no internet connection is required after installation." }
+            "acceptedAnswer": { "@type": "Answer", "text": "With SmartSubs Pro, yes. Transcription runs 100% locally on your computer with an embedded Whisper engine, so your audio never leaves your machine (unless you turn on the optional Gemini feature). An internet connection is only needed to activate the license and for a periodic license check; after that it keeps working offline for up to 14 days." }
           }
         ]
       }
@@ -96,7 +96,7 @@
     <link rel="preload" href="/assets/fonts/Montserrat.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/assets/css/fonts.css?v=1">
 
-    <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
+    <script src="/assets/js/checkout.js" defer></script>
 
     <link rel="stylesheet" href="/assets/css/output.css?v=9">
     <link rel="stylesheet" href="/assets/css/style.css?v=2">
@@ -201,7 +201,7 @@
             </p>
             <ol class="list-decimal list-inside space-y-2 text-gray-400 mb-4 marker:text-brandOrange">
                 <li><strong class="text-white">Transcribe</strong>, Whisper AI runs locally and places every word on
-                    the exact frame it's spoken (99% accuracy, 90+ languages, 100% offline).</li>
+                    the exact frame it's spoken (high accuracy on clear speech, 90+ languages, fully offline).</li>
                 <li><strong class="text-white">Translate</strong> (optional), turn foreign-language audio into
                     English subtitles with Whisper's translation, keeping the original timing.</li>
                 <li><strong class="text-white">Emphasize</strong> (optional), Gemini listens to your voice and
@@ -252,7 +252,7 @@
                             <td class="p-4 text-center us-col" data-label="SmartSubs Pro"><span class="text-green-400">&#10003;</span></td>
                         </tr>
                         <tr class="bg-bgDark/50">
-                            <td class="p-4 text-gray-300">100% offline</td>
+                            <td class="p-4 text-gray-300">Offline transcription</td>
                             <td class="p-4 text-center" data-label="Built-in (Studio)"><span class="text-green-400">&#10003;</span></td>
                             <td class="p-4 text-center" data-label="Manual Text+"><span class="text-green-400">&#10003;</span></td>
                             <td class="p-4 text-center us-col" data-label="SmartSubs Pro"><span class="text-green-400">&#10003;</span></td>
@@ -314,8 +314,9 @@
                     </h3>
                     <div id="faq-ans-2" role="region" aria-labelledby="faq-btn-2" class="faq-answer hidden px-6 pb-6">
                         <p class="text-gray-400 text-sm leading-relaxed">Accuracy depends on the transcription engine.
-                            SmartSubs Pro uses OpenAI's Whisper model, which reaches around 99% accuracy on clear audio
-                            and supports 90+ languages offline, on par with or better than the built-in tool.</p>
+                            SmartSubs Pro uses OpenAI's Whisper model, which is highly accurate on clear speech and supports
+                            90+ languages offline. Accuracy drops with music, noise, overlapping voices or strong accents,
+                            so a quick review pass is always worth it.</p>
                     </div>
                 </div>
                 <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
@@ -351,7 +352,9 @@
                     <div id="faq-ans-4" role="region" aria-labelledby="faq-btn-4" class="faq-answer hidden px-6 pb-6">
                         <p class="text-gray-400 text-sm leading-relaxed">With SmartSubs Pro, yes. Transcription runs 100%
                             locally on your computer with an embedded Whisper engine, so your audio never leaves your
-                            machine and no internet connection is required after installation.</p>
+                            machine (unless you turn on the optional Gemini feature). An internet connection is only
+                            needed to activate the license and for a periodic license check; after that it keeps working
+                            offline for up to 14 days.</p>
                     </div>
                 </div>
             </div>
