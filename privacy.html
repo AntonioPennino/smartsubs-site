@@ -55,7 +55,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                Last updated: September 8, 2026 &middot; Version 1.3
+                Last updated: October 13, 2026 &middot; Version 1.4
             </span>
             <h1>
                 Privacy Policy<br>
@@ -65,7 +65,7 @@
                 This Privacy Policy explains how personal data is processed when you visit our website, use the SmartSubs Pro software, or make a purchase.
             </p>
             <div class="info-box tip">
-                <strong>100% Privacy-First:</strong> The primary function of SmartSubs Pro (transcribing audio) happens entirely offline on your local computer. We do not run servers, nor do we receive your audio or video files.
+                <strong>Privacy-First:</strong> The primary function of SmartSubs Pro (transcribing audio) happens entirely offline on your local computer. We never receive your audio or video files, and we run no servers that process them.
             </div>
         </div>
     </div>
@@ -82,12 +82,13 @@
                         <a href="#controller" class="toc-link">1. Data Controller</a>
                         <a href="#whisper" class="toc-link">2. Local Processing (Whisper)</a>
                         <a href="#gemini" class="toc-link">3. Gemini API Processing</a>
-                        <a href="#checkout" class="toc-link">4. Payments (Lemon Squeezy)</a>
-                        <a href="#reviews" class="toc-link">5. Review Invitations (Trustpilot)</a>
-                        <a href="#hosting" class="toc-link">6. Website Hosting &amp; Logs</a>
-                        <a href="#cookies" class="toc-link">7. Cookie Policy</a>
-                        <a href="#rights" class="toc-link">8. Your GDPR/CCPA Rights</a>
-                        <a href="#contact" class="toc-link">9. Contact Info</a>
+                        <a href="#connections" class="toc-link">4. Software Network Connections</a>
+                        <a href="#checkout" class="toc-link">5. Payments (Lemon Squeezy)</a>
+                        <a href="#reviews" class="toc-link">6. Review Invitations (Trustpilot)</a>
+                        <a href="#hosting" class="toc-link">7. Website Hosting &amp; Logs</a>
+                        <a href="#cookies" class="toc-link">8. Cookie Policy</a>
+                        <a href="#rights" class="toc-link">9. Your GDPR/CCPA Rights</a>
+                        <a href="#contact" class="toc-link">10. Contact Info</a>
                     </div>
                 </div>
             </aside>
@@ -118,9 +119,9 @@
                         The core processing pipeline of the <strong>SmartSubs Pro</strong> software executes exclusively on your local computer.
                     </p>
                     <ul>
-                        <li><strong>Audio/Video Files:</strong> Your project media, client work, and recorded audio are processed locally by the OpenAI Whisper model running on your CPU or GPU.</li>
-                        <li><strong>No Cloud Uploads:</strong> No audio or video data is ever uploaded to the internet, to our servers, or to third-party servers by the Software.</li>
-                        <li><strong>Fully Offline:</strong> Once installed, the transcription pipeline runs entirely offline without requiring an internet connection.</li>
+                        <li><strong>Audio/Video Files:</strong> Your project media, client work, and recorded audio are processed locally by the OpenAI Whisper model running on your computer's CPU.</li>
+                        <li><strong>No Cloud Uploads:</strong> No audio or video data is uploaded to the internet, to our servers, or to third-party servers by the Software, unless you enable the optional Gemini feature described in Section 3.</li>
+                        <li><strong>Fully Offline:</strong> Once installed, the transcription pipeline runs entirely offline. The Software only goes online for the license and update checks described in Section 4.</li>
                     </ul>
                 </section>
 
@@ -139,9 +140,23 @@
                     </ul>
                 </section>
 
+                <!-- 4 Software Network Connections -->
+                <section class="terms-section" id="connections">
+                    <p class="section-number">Section 4</p>
+                    <h2 class="section-title">Software Network Connections</h2>
+                    <p>
+                        Apart from the optional Gemini feature (Section 3), the Software connects to the internet only for licensing and update checks. No audio, video, transcripts or project files are included in these connections.
+                    </p>
+                    <ul>
+                        <li><strong>License activation and validation (Lemon Squeezy, USA):</strong> When you activate, the Software sends your license key and a device label to the Lemon Squeezy License API (api.lemonsqueezy.com). The device label is made of your operating system, your computer's name (hostname) and a 4-character code derived from your network adapter, so you can recognise your activations; if your computer's name contains your own name, you can rename the computer before activating. While you use the Software it re-validates the license online at most once every 12 hours (license key and activation ID) and keeps working offline for up to 14 days between checks. Deactivating a computer sends the license key and activation ID. Lemon Squeezy's handling of this data is described in its <a href="https://www.lemonsqueezy.com/privacy" target="_blank" rel="noopener" class="highlight">Privacy Policy</a>.</li>
+                        <li><strong>Local license file:</strong> To bind the license to your computer, the Software computes a hardware fingerprint and stores it, together with the license key, activation ID and last validation time, only in a file on your computer. The fingerprint is never transmitted.</li>
+                        <li><strong>Update check:</strong> Each time the Software's interface opens, and when you press "Check for updates", it downloads a public version file from smartsubspro.com and, if that is unavailable, from GitHub (raw.githubusercontent.com). No license key or personal data is sent; as with any web request, these servers receive your IP address and the Software version.</li>
+                    </ul>
+                </section>
+
                 <!-- 4 Payments -->
                 <section class="terms-section" id="checkout">
-                    <p class="section-number">Section 4</p>
+                    <p class="section-number">Section 5</p>
                     <h2 class="section-title">Payment Processing (Lemon Squeezy)</h2>
                     <p>
                         Our checkout transactions are handled securely by <strong>Lemon Squeezy, LLC</strong> (Merchant of Record).
@@ -156,7 +171,7 @@
 
                 <!-- 5 Review invitations -->
                 <section class="terms-section" id="reviews">
-                    <p class="section-number">Section 5</p>
+                    <p class="section-number">Section 6</p>
                     <h2 class="section-title">Review Invitations (Trustpilot)</h2>
                     <p>
                         After a purchase we may invite you to leave a public review of the Software on
@@ -183,7 +198,7 @@
 
                 <!-- 6 Hosting -->
                 <section class="terms-section" id="hosting">
-                    <p class="section-number">Section 6</p>
+                    <p class="section-number">Section 7</p>
                     <h2 class="section-title">Website Hosting &amp; Server Logs</h2>
                     <p>
                         Our website is hosted on the <strong>Cloudflare Pages</strong> platform. When you browse this site, Cloudflare automatically collects standard technical logs from your browser.
@@ -195,7 +210,7 @@
 
                 <!-- 6 Cookies -->
                 <section class="terms-section" id="cookies">
-                    <p class="section-number">Section 7</p>
+                    <p class="section-number">Section 8</p>
                     <h2 class="section-title">Cookie Policy</h2>
                     <p>
                         Our website uses a minimal number of cookies, primarily to manage the shopping cart and ensure checkout integrity.
@@ -239,7 +254,7 @@
 
                 <!-- 7 GDPR/CCPA Rights -->
                 <section class="terms-section" id="rights">
-                    <p class="section-number">Section 8</p>
+                    <p class="section-number">Section 9</p>
                     <h2 class="section-title">Your Data Protection Rights (GDPR &amp; CCPA)</h2>
                     <p>
                         Depending on your location (e.g., if you reside within the European Union or California), you hold legal rights regarding your personal data:
@@ -254,7 +269,7 @@
 
                 <!-- 8 Contact -->
                 <section class="terms-section" id="contact">
-                    <p class="section-number">Section 9</p>
+                    <p class="section-number">Section 10</p>
                     <h2 class="section-title">Contact Information</h2>
                     <p>
                         If you have any questions about this Privacy Policy, your data, or want to exercise your rights, please reach out directly:
