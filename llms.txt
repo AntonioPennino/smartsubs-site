@@ -1,6 +1,6 @@
 # SmartSubs Pro
 
-> AI-powered subtitle plugin for DaVinci Resolve. It transcribes timeline audio locally with OpenAI Whisper and builds animated, word-by-word captions on your own Fusion Text+ template, can auto-translate foreign-language audio to English, and runs on both DaVinci Resolve Studio and the free edition (any version from 18 onward, Windows and macOS). One-time purchase of $39.99, no subscription, with a 30-day money-back guarantee. Support is handled personally by Antonio Pennino, a working video editor.
+> AI-powered subtitle plugin for DaVinci Resolve. It transcribes timeline audio locally with OpenAI Whisper and builds animated, word-by-word captions on your own Fusion Text+ template, can auto-translate foreign-language audio to English, and runs on both DaVinci Resolve Studio and the free edition (any version from 18 onward, Windows and macOS). One-time purchase of €39.99, no subscription, with a 30-day money-back guarantee. Support is handled personally by Antonio Pennino, a working video editor.
 
 ## Guides
 - [How to Add Automatic Subtitles in DaVinci Resolve (Free & Studio)](https://smartsubspro.com/guide/auto-subtitles-davinci-resolve/): the built-in Studio tool, the manual Fusion Text+ method, and the automated route compared.
