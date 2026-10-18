@@ -65,3 +65,11 @@ if (mobileBtn && mobileMenu) {
         });
     });
 }
+
+// ─── Hero video: respect reduced motion ─────────────────────────────────────
+var heroVideo = document.querySelector('video[autoplay]');
+if (heroVideo && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    heroVideo.removeAttribute('autoplay');
+    heroVideo.pause();
+    heroVideo.controls = true;
+}

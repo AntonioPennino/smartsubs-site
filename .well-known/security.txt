@@ -1,0 +1,5 @@
+Contact: mailto:security@smartsubspro.com
+Expires: 2027-10-17T23:59:59.000Z
+Preferred-Languages: en, it
+Policy: https://smartsubspro.com/security
+Canonical: https://smartsubspro.com/.well-known/security.txt

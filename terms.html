@@ -431,7 +431,7 @@
                             a positive outcome;</li>
                         <li>The Seller may request supporting evidence (screenshots, error logs) for the purposes of
                             product improvement;</li>
-                        <li>Approved refunds are processed by Lemon Squeezy within 5â€“10 business days, via the original
+                        <li>Approved refunds are processed by Lemon Squeezy within 5&ndash;10 business days, via the original
                             payment method;</li>
                         <li>Upon refund, the License is immediately revoked and the User is required to uninstall and
                             destroy all copies of the Software in their possession.</li>
@@ -625,7 +625,7 @@
                                 href="mailto:antonio.pennino.mail@gmail.com"
                                 class="highlight">antonio.pennino.mail@gmail.com</a></li>
                         <li><strong >Language:</strong> English and Italian</li>
-                        <li><strong >Indicative response time:</strong> 1â€“5 business days (not
+                        <li><strong >Indicative response time:</strong> 1&ndash;5 business days (not
                             guaranteed; the Seller is an independent developer)</li>
                         <li><strong >Scope:</strong> Installation issues, reproducible Software bugs
                             within the declared system requirements, and usage questions related to documented features
@@ -803,30 +803,12 @@
     <footer>
         <div class="wrap foot">
             <div class="brand" style="opacity:.7"><img src="assets/images/Logo.svg" alt=""><span>SmartSubs<span style="color:var(--brand-orange)"> Pro</span></span></div>
-            <p style="margin:0">© 2026 SmartSubs Pro · Built by Antonio Pennino · <a href="terms.html">Terms &amp; Conditions</a> · <a href="privacy.html">Privacy Policy</a> · P.IVA / VAT IT01896160627 · Not affiliated with Blackmagic Design.</p>
+            <p style="margin:0">© 2026 SmartSubs Pro · Built by Antonio Pennino · <a href="terms.html">Terms &amp; Conditions</a> · <a href="privacy.html">Privacy Policy</a> · <a href="eula.html">License (EULA)</a> · <a href="security.html">Security</a> · Via Padre Pio 86, 82100 Benevento (BN), Italy · P.IVA / VAT IT01896160627 · Not affiliated with Blackmagic Design.</p>
             <p style="margin:0;color:var(--ink-3)">Payments securely handled by Lemon Squeezy.</p>
         </div>
     </footer>
 
-    <!-- ═══════════════════════════════════════════
-         TOC ACTIVE STATE SCRIPT
-    ═══════════════════════════════════════════ -->
-    <script>
-        const sections = document.querySelectorAll('.terms-section[id]');
-        const tocLinks = document.querySelectorAll('.toc-link');
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    tocLinks.forEach(link => link.classList.remove('active'));
-                    const activeLink = document.querySelector(`.toc-link[href="#${entry.target.id}"]`);
-                    if (activeLink) activeLink.classList.add('active');
-                }
-            });
-        }, { rootMargin: '-20% 0% -70% 0%' });
-
-        sections.forEach(section => observer.observe(section));
-    </script>
+    <script src="/assets/js/toc.js?v=1" defer></script>
 
 </body>
 

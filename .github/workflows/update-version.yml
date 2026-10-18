@@ -15,6 +15,12 @@ on:
         description: 'Release notes / changelog'
         required: false
 
+permissions: {}
+
+concurrency:
+  group: update-version
+  cancel-in-progress: false
+
 jobs:
   update-version-files:
     runs-on: ubuntu-latest
@@ -22,52 +28,80 @@ jobs:
       contents: write
     steps:
       - name: Checkout site repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
-      - name: Update version.json and api/version.json
-        uses: actions/github-script@v7
+      - name: Validate input and update version.json and api/version.json
+        id: build
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
         with:
           script: |
             const fs = require('fs');
-            
+
             const payload = context.payload.client_payload || {};
             const inputs = context.payload.inputs || {};
-            
-            const rawVersion = payload.version || inputs.version || '2.8.5';
-            const cleanVersion = rawVersion.replace(/^v/, '');
-            const title = payload.title || inputs.title || `SmartSubs Pro v${cleanVersion}`;
-            const notes = payload.notes || inputs.notes || '';
-            const today = new Date().toISOString().split('T')[0];
-            
-            const download_url_win = payload.download_url_win || `https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v${cleanVersion}/SmartSubs-Pro-Windows-v${cleanVersion}.zip`;
-            const download_url_mac_arm64 = payload.download_url_mac_arm64 || `https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v${cleanVersion}/SmartSubs-Pro-macOS-arm64-v${cleanVersion}.zip`;
-            const download_url_mac_x64 = payload.download_url_mac_x64 || `https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v${cleanVersion}/SmartSubs-Pro-macOS-x64-v${cleanVersion}.zip`;
-            const download_url = payload.download_url || download_url_win;
-            
+            const fail = (msg) => { throw new Error(`Rejected: ${msg}`); };
+
+            // Version: X.Y.Z with an optional leading "v". No default.
+            const rawVersion = String(payload.version || inputs.version || '').trim();
+            const m = /^v?(\d{1,4})\.(\d{1,4})\.(\d{1,4})$/.exec(rawVersion);
+            if (!m) fail(`version "${rawVersion}" is not in the vX.Y.Z format`);
+            const cleanVersion = `${m[1]}.${m[2]}.${m[3]}`;
+
+            // Refuse downgrades: a lower version would hide a real update from users.
+            const cmp = (a, b) => { for (let i = 0; i < 3; i++) { if (a[i] !== b[i]) return a[i] - b[i]; } return 0; };
+            const current = JSON.parse(fs.readFileSync('version.json', 'utf8')).version;
+            if (cmp(cleanVersion.split('.').map(Number), String(current).split('.').map(Number)) < 0) {
+              fail(`version ${cleanVersion} is lower than the published ${current}`);
+            }
+
+            // Download links: only the official release assets or Lemon Squeezy.
+            const RELEASES = 'https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/';
+            const LEMON = 'https://app.lemonsqueezy.com/';
+            const checkUrl = (name, value) => {
+              if (typeof value !== 'string' || value.length === 0 || value.length > 500) fail(`${name} is missing or too long`);
+              if (/[\s\\@\u0000-\u001f]/.test(value) || value.includes('..')) fail(`${name} contains forbidden characters`);
+              let u;
+              try { u = new URL(value); } catch (e) { fail(`${name} is not a valid URL`); }
+              if (u.protocol !== 'https:' || u.username || u.password || u.port || u.href !== value) fail(`${name} is not a plain https URL`);
+              if (!value.startsWith(RELEASES) && !value.startsWith(LEMON)) fail(`${name} points outside the allowed download locations`);
+              if (value.startsWith(RELEASES) && !value.startsWith(`${RELEASES}v${cleanVersion}/`)) fail(`${name} does not match release v${cleanVersion}`);
+              return value;
+            };
+
+            // Text fields: plain strings with a length limit, control characters removed.
+            const cleanText = (name, value, max) => {
+              const s = String(value).replace(/[\u0000-\u0008\u000b-\u001f\u007f]/g, '').trim();
+              if (s.length > max) fail(`${name} is longer than ${max} characters`);
+              return s;
+            };
+
+            const base = `${RELEASES}v${cleanVersion}`;
+            const download_url_win = checkUrl('download_url_win', payload.download_url_win || `${base}/SmartSubs-Pro-Windows-v${cleanVersion}.zip`);
+            const download_url_mac_arm64 = checkUrl('download_url_mac_arm64', payload.download_url_mac_arm64 || `${base}/SmartSubs-Pro-macOS-arm64-v${cleanVersion}.zip`);
+            const download_url_mac_x64 = checkUrl('download_url_mac_x64', payload.download_url_mac_x64 || `${base}/SmartSubs-Pro-macOS-x64-v${cleanVersion}.zip`);
+            const download_url = checkUrl('download_url', payload.download_url || download_url_win);
+
             const versionData = {
               version: cleanVersion,
-              release_date: today,
-              title: title,
-              notes: notes,
-              download_url: download_url,
-              download_url_win: download_url_win,
-              download_url_mac_arm64: download_url_mac_arm64,
-              download_url_mac_x64: download_url_mac_x64
+              release_date: new Date().toISOString().split('T')[0],
+              title: cleanText('title', payload.title || inputs.title || `SmartSubs Pro v${cleanVersion}`, 120),
+              notes: cleanText('notes', payload.notes || inputs.notes || '', 4000),
+              download_url,
+              download_url_win,
+              download_url_mac_arm64,
+              download_url_mac_x64
             };
 
             const jsonString = JSON.stringify(versionData, null, 2) + '\n';
-            
             fs.writeFileSync('version.json', jsonString);
-            
-            if (!fs.existsSync('api')) {
-              fs.mkdirSync('api', { recursive: true });
-            }
+            fs.mkdirSync('api', { recursive: true });
             fs.writeFileSync('api/version.json', jsonString);
 
+            core.setOutput('version', cleanVersion);
             console.log('Updated version.json and api/version.json with:', versionData);
 
       - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@b863ae1933cb653a53c021fe36dbb774e1fb9403 # v5
         with:
-          commit_message: "chore: auto-update version.json to v${{ github.event.client_payload.version || github.event.inputs.version }}"
+          commit_message: "chore: auto-update version.json to v${{ steps.build.outputs.version }}"
           file_pattern: "version.json api/version.json"

@@ -314,30 +314,12 @@
     <footer>
         <div class="wrap foot">
             <div class="brand" style="opacity:.7"><img src="assets/images/Logo.svg" alt=""><span>SmartSubs<span style="color:var(--brand-orange)"> Pro</span></span></div>
-            <p style="margin:0">© 2026 SmartSubs Pro · Built by Antonio Pennino · <a href="terms.html">Terms &amp; Conditions</a> · <a href="privacy.html">Privacy Policy</a> · P.IVA / VAT IT01896160627 · Not affiliated with Blackmagic Design.</p>
+            <p style="margin:0">© 2026 SmartSubs Pro · Built by Antonio Pennino · <a href="terms.html">Terms &amp; Conditions</a> · <a href="privacy.html">Privacy Policy</a> · <a href="eula.html">License (EULA)</a> · <a href="security.html">Security</a> · Via Padre Pio 86, 82100 Benevento (BN), Italy · P.IVA / VAT IT01896160627 · Not affiliated with Blackmagic Design.</p>
             <p style="margin:0;color:var(--ink-3)">Payments securely handled by Lemon Squeezy.</p>
         </div>
     </footer>
 
-    <!-- TOC Active Highlighter -->
-    <script>
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                const id = entry.target.getAttribute('id');
-                const link = document.querySelector(`.toc-link[href="#${id}"]`);
-                if (link) {
-                    if (entry.intersectionRatio > 0) {
-                        document.querySelectorAll('.toc-link').forEach(l => l.classList.remove('active'));
-                        link.classList.add('active');
-                    }
-                }
-            });
-        }, { rootMargin: '-20% 0px -60% 0px' });
-
-        document.querySelectorAll('section[id]').forEach(section => {
-            observer.observe(section);
-        });
-    </script>
+    <script src="/assets/js/toc.js?v=1" defer></script>
 </body>
 
 </html>
