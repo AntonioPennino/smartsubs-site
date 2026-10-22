@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="assets/images/Logo.svg">
+    <link rel="shortcut icon" href="assets/images/Logo.svg">
+    <title>Withdraw from Contract | SmartSubs Pro</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Withdraw from Contract | SmartSubs Pro">
+    <meta name="description"
+        content="Withdraw from your SmartSubs Pro purchase within 14 days and get a full refund. Fill in the form and confirm: you receive an acknowledgement by email.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://smartsubspro.com/withdraw.html">
+
+    <!-- Geo Metadata -->
+    <meta name="geo.region" content="IT" />
+    <meta name="geo.placename" content="Italy" />
+
+    <link rel="preload" href="/assets/fonts/Montserrat.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Design System Tokens -->
+    <link rel="stylesheet" href="./styles.css?v=2">
+
+    <!-- Document Layout Stylesheet -->
+    <link rel="stylesheet" href="assets/css/terms.css?v=1.4">
+    <link rel="stylesheet" href="assets/css/withdraw.css?v=1">
+    <!-- Umami: privacy-friendly, cookieless analytics (Umami Cloud, GDPR-compliant) -->
+    <script src="/assets/js/checkout.js?v=2" defer></script>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="ea0b081b-f6ec-41f0-9c6b-7089dd37f3c4"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script src="/assets/js/withdraw.js?v=1" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="nav-in">
+            <a href="index.html" class="brand">
+                <img src="assets/images/Logo.svg" alt=""><span>SmartSubs<span style="color:var(--brand-orange)"> Pro</span></span>
+            </a>
+            <div class="nav-actions">
+                <a href="index.html" class="nav-back">&larr; Back to site</a>
+                <a href="https://smartsubspro.lemonsqueezy.com/checkout/buy/18469eff-5cea-49fa-a6ff-a3da442cb30a"
+                    data-track="cta-nav" class="btn btn-primary btn-sm lemonsqueezy-button">
+                    Buy for €39.99
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="terms-hero">
+        <div class="terms-container">
+            <h1>
+                Withdraw from<br>
+                <span class="gradient-text">your contract</span>
+            </h1>
+            <p>
+                If you bought SmartSubs Pro as a consumer, you can withdraw from the contract within 14 days of
+                purchase, without giving any reason, and get a full refund. This applies even if you have already
+                downloaded, installed or activated the software.
+            </p>
+        </div>
+    </div>
+
+    <!-- MAIN LAYOUT -->
+    <div class="terms-wrap">
+        <main class="terms-main" style="max-width:720px;margin:0 auto">
+            <section class="terms-section" id="withdraw">
+                <h2 class="section-title">Your withdrawal statement</h2>
+                <p>
+                    Fill in the details below and press <strong>Confirm withdrawal</strong>. You will immediately
+                    receive an acknowledgement by email with the content of your statement and the date and time it
+                    was sent. A statement sent before the 14 days end is on time.
+                </p>
+
+                <form id="withdraw-form" class="withdraw-form" action="/api/withdraw" method="post" novalidate>
+                    <div class="statement">
+                        I hereby withdraw from my contract for the supply of the SmartSubs Pro license.
+                    </div>
+                    <label>Your name
+                        <input type="text" name="name" autocomplete="name" required minlength="2" maxlength="120">
+                    </label>
+                    <label>Email address used at checkout
+                        <span class="hint">We send the acknowledgement here.</span>
+                        <input type="email" name="email" autocomplete="email" required maxlength="254">
+                    </label>
+                    <label>Order number
+                        <span class="hint">It is in your Lemon Squeezy receipt email. If you cannot find it, write "not available".</span>
+                        <input type="text" name="order" required maxlength="64">
+                    </label>
+                    <label>Purchase date (optional)
+                        <input type="date" name="purchased">
+                    </label>
+                    <div class="cf-turnstile" data-sitekey="0x4AAAAAAFga4YbyGsxcDh9p"></div>
+                    <button type="submit" id="withdraw-submit" class="btn btn-primary">Confirm withdrawal</button>
+                </form>
+                <div id="withdraw-status" class="form-status" role="status" aria-live="polite" hidden></div>
+
+                <div id="withdraw-done" class="withdraw-done" tabindex="-1" hidden>
+                    <div class="info-box tip"><strong id="withdraw-done-message"></strong></div>
+                    <pre id="withdraw-done-summary"></pre>
+                    <p>
+                        We refund the full amount through Lemon Squeezy, using the same payment method, within 14 days
+                        at no cost to you. When the refund is issued, your license is deactivated. You can print or
+                        save this page for your records.
+                    </p>
+                </div>
+            </section>
+
+            <section class="terms-section" id="other-ways">
+                <h2 class="section-title">Other ways and more information</h2>
+                <ul>
+                    <li>You can also withdraw by email to
+                        <a href="mailto:antonio.pennino.mail@gmail.com">antonio.pennino.mail@gmail.com</a>, with or
+                        without the model form in <a href="terms.html#withdrawal">Section 8 of the Terms</a>.</li>
+                    <li>After 14 days and up to 30 days from purchase, every buyer can still get a refund under the
+                        <a href="terms.html#refund">30-day money-back guarantee</a>: just email us.</li>
+                    <li>The details you enter are used only to handle your withdrawal and refund, as explained in the
+                        <a href="privacy.html#withdrawals">Privacy Policy</a>.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="wrap foot">
+            <div class="brand" style="opacity:.7"><img src="assets/images/Logo.svg" alt=""><span>SmartSubs<span style="color:var(--brand-orange)"> Pro</span></span></div>
+            <p style="margin:0">© 2026 SmartSubs Pro · Built by Antonio Pennino · <a href="terms.html">Terms &amp; Conditions</a> · <a href="privacy.html">Privacy Policy</a> · <a href="eula.html">License (EULA)</a> · <a href="security.html">Security</a> · <a href="withdraw.html"><strong>Withdraw from contract here</strong></a> · Via Padre Pio 86, 82100 Benevento (BN), Italy · P.IVA / VAT IT01896160627 · Not affiliated with Blackmagic Design.</p>
+            <p style="margin:0;color:var(--ink-3)">Payments securely handled by Lemon Squeezy.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

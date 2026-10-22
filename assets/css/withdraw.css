@@ -1,0 +1,102 @@
+/* Withdrawal form (withdraw.html) */
+.withdraw-form[hidden],
+.form-status[hidden],
+.withdraw-done[hidden] {
+    display: none;
+}
+
+.withdraw-form {
+    display: grid;
+    gap: 1.1rem;
+    margin-top: 1.5rem;
+}
+
+.withdraw-form label {
+    display: grid;
+    gap: 0.4rem;
+    font-weight: 600;
+    color: var(--text-strong);
+    font-size: 0.95rem;
+}
+
+.withdraw-form .hint {
+    font-weight: 400;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.withdraw-form input {
+    width: 100%;
+    box-sizing: border-box;
+    font: inherit;
+    font-weight: 400;
+    color: var(--text-strong);
+    background: var(--surface-input);
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.6rem;
+    padding: 0.7rem 0.85rem;
+}
+
+.withdraw-form input:focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 2px;
+}
+
+.withdraw-form .statement {
+    padding: 1rem 1.25rem;
+    border-radius: 0.75rem;
+    background: var(--surface-raised);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-body);
+}
+
+.withdraw-form button {
+    justify-self: start;
+    height: 48px;
+    padding: 0 28px;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.withdraw-form button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.form-status {
+    margin-top: 1rem;
+    padding: 0.85rem 1.1rem;
+    border-radius: 0.6rem;
+    font-size: 0.92rem;
+}
+
+.form-status.is-error {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.35);
+    color: var(--danger);
+}
+
+.form-status.is-info {
+    background: var(--tint-purple-soft);
+    border: 1px solid var(--border-purple);
+    color: var(--text-body);
+}
+
+.withdraw-done {
+    margin-top: 1.5rem;
+    outline: none;
+}
+
+.withdraw-done pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    font: inherit;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    padding: 1rem 1.25rem;
+    border-radius: 0.75rem;
+    background: var(--surface-raised);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-body);
+}

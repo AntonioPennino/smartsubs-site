@@ -56,7 +56,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                Last updated: October 15, 2026 &middot; Version 1.7
+                Last updated: October 22, 2026 &middot; Version 1.8
             </span>
             <h1>
                 Privacy Policy<br>
@@ -173,6 +173,9 @@
                     <p>
                         <strong>Emails to customers:</strong> If you buy SmartSubs Pro, we may email you about updates, new versions and related products similar to the one you bought, as permitted by Art. 130(4) of the Italian Privacy Code (Legislative Decree 196/2003). You can object at any time, free of charge, using the unsubscribe link in every email or by writing to us. We do not use these emails to track whether you open them.
                     </p>
+                    <p id="withdrawals">
+                        <strong>Withdrawal requests:</strong> If you withdraw from your purchase using the form at <a href="withdraw.html" class="highlight">smartsubspro.com/withdraw.html</a>, we process the name, email address, order number and purchase date you enter, together with the date and time of your request, to handle the withdrawal and the refund and to be able to prove that we did so. The legal basis is compliance with a legal obligation (Art. 6(1)(c) GDPR, in connection with Articles 52&ndash;59 and 54-bis of the Italian Consumer Code). The acknowledgement and our copy of the request are sent by email through <strong>Resend</strong> (Plus Five Five, Inc., USA), which acts as our data processor. The form is protected against spam by <strong>Cloudflare Turnstile</strong>, which analyses technical signals from your browser and your IP address for that purpose only. We keep withdrawal records in our email archive for 10 years, the ordinary limitation period under Italian law (Art. 2946 of the Civil Code), and then delete them.
+                    </p>
                 </section>
 
                 <!-- 5 Review invitations -->
@@ -240,6 +243,11 @@
                                 <td>Used for routing security and content delivery load balancing.</td>
                                 <td>Essential / Functional</td>
                             </tr>
+                            <tr>
+                                <td>Cloudflare Turnstile</td>
+                                <td>Anti-spam check on the withdrawal form only (withdraw.html). It may use technical storage strictly necessary for this security check.</td>
+                                <td>Essential / Security</td>
+                            </tr>
                         </tbody>
                     </table>
                     <p>
@@ -268,7 +276,8 @@
                     <ul>
                         <li><strong>Lemon Squeezy</strong> (Link, LLC, formerly Lemon Squeezy LLC, USA): purchases, which it handles as Merchant of Record under its own privacy policy (Section 5), and license activation and validation (Section 4). Safeguard: Standard Contractual Clauses, as set out in Lemon Squeezy's Data Processing Agreement.</li>
                         <li><strong>Umami Software, Inc.</strong> (USA): anonymous website analytics (Section 8). Safeguard: Standard Contractual Clauses incorporated in Umami's Data Processing Agreement.</li>
-                        <li><strong>Cloudflare, Inc.</strong> (USA): website hosting and delivery (Section 7). Safeguard: certification under the EU-U.S. Data Privacy Framework, with Standard Contractual Clauses as a fallback.</li>
+                        <li><strong>Cloudflare, Inc.</strong> (USA): website hosting and delivery (Section 7), and the anti-spam check on the withdrawal form (Section 8). Safeguard: certification under the EU-U.S. Data Privacy Framework, with Standard Contractual Clauses as a fallback.</li>
+                        <li><strong>Resend</strong> (Plus Five Five, Inc., USA): sending the acknowledgement of withdrawal requests (Section 5). Safeguard: certification under the EU-U.S. Data Privacy Framework, with the Standard Contractual Clauses in Resend's Data Processing Agreement.</li>
                         <li><strong>GitHub, Inc.</strong> (USA): hosting of the public update file and of update downloads (Section 4). Safeguard: certification under the EU-U.S. Data Privacy Framework.</li>
                         <li><strong>Google LLC</strong> (USA): only if you enable the optional Gemini feature with your own API key (Section 3). Safeguard: certification under the EU-U.S. Data Privacy Framework.</li>
                     </ul>
@@ -314,7 +323,7 @@
     <footer>
         <div class="wrap foot">
             <div class="brand" style="opacity:.7"><img src="assets/images/Logo.svg" alt=""><span>SmartSubs<span style="color:var(--brand-orange)"> Pro</span></span></div>
-            <p style="margin:0">© 2026 SmartSubs Pro · Built by Antonio Pennino · <a href="terms.html">Terms &amp; Conditions</a> · <a href="privacy.html">Privacy Policy</a> · <a href="eula.html">License (EULA)</a> · <a href="security.html">Security</a> · Via Padre Pio 86, 82100 Benevento (BN), Italy · P.IVA / VAT IT01896160627 · Not affiliated with Blackmagic Design.</p>
+            <p style="margin:0">© 2026 SmartSubs Pro · Built by Antonio Pennino · <a href="terms.html">Terms &amp; Conditions</a> · <a href="privacy.html">Privacy Policy</a> · <a href="eula.html">License (EULA)</a> · <a href="security.html">Security</a> · <a href="withdraw.html"><strong>Withdraw from contract here</strong></a> · Via Padre Pio 86, 82100 Benevento (BN), Italy · P.IVA / VAT IT01896160627 · Not affiliated with Blackmagic Design.</p>
             <p style="margin:0;color:var(--ink-3)">Payments securely handled by Lemon Squeezy.</p>
         </div>
     </footer>
