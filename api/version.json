@@ -1,10 +1,10 @@
 {
-  "version": "2.9.11",
-  "release_date": "2026-10-18",
-  "title": "SmartSubs Pro v2.9.11",
-  "notes": "Save your own looks: set up the animation, style, position and timing you like and save it as a preset to reuse on every project. Fixed a bug where clicking a built-in preset reset your colors, font and position. While captions are generating you can work in other apps: the SmartSubs icon shows the progress on the Windows taskbar (and in the Dock on the Mac native window), and you get a notification when your captions are ready. Privacy and security: the interface no longer loads fonts from Google, updates are only accepted from the official download locations, every release comes with a SHA-256 checksum, and the installer now shows the License Agreement. The Gemini guide explains Google's terms, including that users in the EU, Switzerland and the UK need a paid key.",
-  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.11/SmartSubs-Pro-Windows-v2.9.11.zip",
-  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.11/SmartSubs-Pro-Windows-v2.9.11.zip",
-  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.11/SmartSubs-Pro-macOS-arm64-v2.9.11.zip",
-  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.11/SmartSubs-Pro-macOS-x64-v2.9.11.zip"
+  "version": "2.9.12",
+  "release_date": "2026-10-24",
+  "title": "SmartSubs Pro v2.9.12",
+  "notes": "A new style gallery: pick a look and get the animation, font, colors, effects, position and timing in one click, with a live preview on every card. Ten looks to start, from Viral Karaoke to Comic Pop and Bebas Cinema, and your own saved presets show their preview too. The installer now adds the caption fonts the looks use (Montserrat, Poppins, Anton, Bebas Neue, Bangers, Luckiest Guy) so DaVinci Resolve can use them. New automatic emoji: turn them on in Style and SmartSubs adds a matching emoji to captions with key words like money, secret or fire, one at a time and never on two captions in a row. The License Agreement now states that all future updates, including major versions, are included at no extra cost.",
+  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.12/SmartSubs-Pro-Windows-v2.9.12.zip",
+  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.12/SmartSubs-Pro-Windows-v2.9.12.zip",
+  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.12/SmartSubs-Pro-macOS-arm64-v2.9.12.zip",
+  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.12/SmartSubs-Pro-macOS-x64-v2.9.12.zip"
 }
