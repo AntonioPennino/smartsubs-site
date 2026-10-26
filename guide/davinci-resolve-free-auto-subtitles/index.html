@@ -86,7 +86,7 @@
           {
             "@type": "Question",
             "name": "How do I get animated word-by-word captions on the free version?",
-            "acceptedAnswer": { "@type": "Answer", "text": "The native subtitle track shows one static line at a time, so animated word-by-word captions require Fusion Text+ nodes. You can build them by hand, which is slow, or use a plugin such as SmartSubs Pro that places each word on the frame it is spoken using your own animated Text+ template. SmartSubs Pro runs on free Resolve, any version from 18 onward, including 19.1, 20 and later. Its interface opens in your web browser, so it does not need the Fusion UI Manager that Blackmagic removed from free 19.1." }
+            "acceptedAnswer": { "@type": "Answer", "text": "The plain subtitle track shows one static line at a time, so animated word-by-word captions in your own style are built with Fusion Text+ nodes. You can build them by hand, which is slow, or use a plugin such as SmartSubs Pro that places each word on the frame it is spoken using your own animated Text+ template. SmartSubs Pro runs on free Resolve, any version from 18 onward, including 19.1, 20 and later. Its interface opens in your web browser, so it does not need the Fusion UI Manager that Blackmagic removed from free 19.1." }
           }
         ]
       }
@@ -212,7 +212,7 @@
             <h2 class="font-display text-2xl font-bold text-white mt-12 mb-4">Option 3, animated word-by-word captions with a paid plugin</h2>
             <p class="text-gray-400 leading-relaxed mb-4">
                 If you are chasing the caption style you see on Reels and TikTok, where each word pops onto the screen
-                as it is spoken, the native subtitle track cannot do it at all. It shows one static line at a time.
+                as it is spoken, the plain subtitle track cannot do it on its own: it shows one static line at a time.
                 Those captions are made of <strong class="text-white">Fusion Text+ nodes</strong>, and Text+ is
                 available in the free version, so the ingredient you need is already there. The work is placing one node
                 per word on exactly the right frame.
@@ -364,8 +364,7 @@
                         </button>
                     </h3>
                     <div id="faq-ans-4" role="region" aria-labelledby="faq-btn-4" class="faq-answer hidden px-6 pb-6">
-                        <p class="text-gray-400 text-sm leading-relaxed">The native subtitle track shows one static line
-                            at a time, so animated word-by-word captions require Fusion Text+ nodes. You can build them
+                        <p class="text-gray-400 text-sm leading-relaxed">The plain subtitle track shows one static line at a time, so animated word-by-word captions in your own style are built with Fusion Text+ nodes. You can build them
                             by hand, which is slow, or use a plugin such as SmartSubs Pro that places each word on the
                             frame it is spoken using your own animated Text+ template. It runs on free Resolve,
                             <strong class="text-white">any version</strong>, including 19.1, 20 and later, because its
