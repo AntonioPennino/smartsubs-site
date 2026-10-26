@@ -56,7 +56,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                Last updated: October 22, 2026 &middot; Version 1.8
+                Last updated: October 24, 2026 &middot; Version 1.9
             </span>
             <h1>
                 Privacy Policy<br>
@@ -131,15 +131,16 @@
                 <!-- 3 Gemini API Processing -->
                 <section class="terms-section" id="gemini">
                     <p class="section-number">Section 3</p>
-                    <h2 class="section-title">Optional AI Services (Google Gemini API)</h2>
+                    <h2 class="section-title">Optional AI Features (Google Gemini API)</h2>
                     <p>
-                        The Software offers an optional "Gemini Hook Detection" feature to automatically highlight high-impact words in your timeline by analyzing vocal intonation and emphasis.
+                        SmartSubs Pro has two optional features that use Google's Gemini API. Both are off by default and work only with your own Gemini API key, which is stored only on your computer, in the Software's settings file. We never receive your key.
                     </p>
                     <ul>
-                        <li><strong>Multimodal Audio Processing:</strong> If (and only if) you enable this feature, the Software exports a temporary, localized <code>.wav</code> audio file of the voice track from your DaVinci Resolve timeline and uploads it directly to Google Gemini APIs. This allows Gemini to analyze actual speech features (pitch variations, volume shifts, syllable elongation, and speed) rather than relying on a simple text-only script scan.</li>
-                        <li><strong>Immediate Data Deletion:</strong> The temporary audio file is protected under strict <code>try...finally</code> script blocks and is deleted permanently from Google's servers immediately after the emphasis analysis completes. We do not store, access, or log any audio files.</li>
-                        <li><strong>API Keys:</strong> You must configure the Software with your own Google Gemini API key. We do not collect, store, or have access to your API key.</li>
-                        <li><strong>Third-Party Terms:</strong> Google processes this audio data as an independent processor. By using this optional feature, you agree to the <a href="https://ai.google.dev/terms" target="_blank" rel="noopener" class="highlight">Google AI Terms of Service</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="highlight">Google Privacy Policy</a>.</li>
+                        <li><strong>Gemini Hook Detection:</strong> the Software exports a temporary <code>.wav</code> file of the voice track from your timeline and uploads it to the Gemini API, together with the transcript and the analysis prompt, so that Gemini can find the words you emphasise.</li>
+                        <li><strong>Fix misheard words:</strong> the Software sends the transcript text (the list of transcribed words) to the Gemini API to correct misheard words and spelling. No audio is sent for this feature.</li>
+                        <li><strong>Deletion:</strong> as soon as the analysis is done, the Software asks Google to delete the uploaded audio file. We cannot control or guarantee what Google does with the data it receives: that is governed by Google's terms.</li>
+                        <li><strong>Google's terms:</strong> Google requires users of the Gemini API to be at least 18 years old. Users in the European Economic Area, Switzerland and the United Kingdom may use only Google's paid service, that is a key from a Google Cloud project with billing enabled. With an unpaid key, Google may use what you send to improve its products, and human reviewers may read it. For users in the EEA, Switzerland and the UK, Google states that its paid-service data terms apply to unpaid quota too. Do not send confidential or personal content with an unpaid key.</li>
+                        <li><strong>Who handles the data:</strong> the audio and the transcript go directly from your computer to Google, under your own agreement with Google. We do not receive, store or have access to them, or to Google's response. See the <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener" class="highlight">Gemini API Additional Terms of Service</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="highlight">Google Privacy Policy</a>.</li>
                     </ul>
                 </section>
 
@@ -183,25 +184,16 @@
                     <p class="section-number">Section 6</p>
                     <h2 class="section-title">Review Invitations (Trustpilot)</h2>
                     <p>
-                        After a purchase we may invite you to leave a public review of the Software on
-                        <strong>Trustpilot</strong>. To do this, a copy of the welcome email we send you is forwarded to
-                        Trustpilot A/S, which then sends the invitation on our behalf.
+                        A few days after your purchase, Trustpilot sends you one invitation to leave a public review of SmartSubs Pro on <strong>Trustpilot</strong>. To make this possible, the welcome email we send you after your purchase, with links to get started, is also sent as a hidden copy to Trustpilot A/S (Denmark).
                     </p>
                     <ul>
-                        <li><strong>What is shared:</strong> your email address, and your name where you provided it.
-                            No payment data, no audio, and no video is ever shared with Trustpilot.</li>
-                        <li><strong>Why:</strong> to collect genuine feedback from real customers. Our legitimate
-                            interest under Article 6(1)(f) GDPR is to improve the Software and to let prospective
-                            customers read honest, verified opinions.</li>
-                        <li><strong>Invitations are neutral:</strong> every customer receives the same invitation. We do
-                            not select who is invited, we do not offer any reward in exchange for a review, and we
-                            cannot edit or delete the reviews you write.</li>
-                        <li><strong>Opting out:</strong> if you would rather not be invited, reply to any of our emails
-                            and we will exclude you. You can also ignore the invitation, it is only sent once.</li>
+                        <li><strong>What is shared:</strong> your email address, your name and your order number. No payment data, no audio and no video is ever shared with Trustpilot.</li>
+                        <li><strong>Why:</strong> to collect genuine feedback from real customers. Our legitimate interest under Article 6(1)(f) GDPR is to improve the Software and to let prospective customers read honest, verified opinions.</li>
+                        <li><strong>Invitations are neutral:</strong> every customer receives the same invitation, automatically. We do not select who is invited, we do not offer any reward in exchange for a review, and we cannot edit or delete the reviews you write.</li>
+                        <li><strong>Opting out:</strong> you can object at any time, without giving a reason: reply to the welcome email or write to us and we will cancel your invitation if it has not been sent yet. You can also ignore the invitation: it is sent only once.</li>
                     </ul>
                     <p>
-                        Trustpilot acts as an independent Data Controller for the reviews and account data you provide
-                        to them. See the <a href="https://legal.trustpilot.com/end-user-privacy-terms" target="_blank" rel="noopener" class="highlight">Trustpilot Privacy Policy</a> for details.
+                        For sending the invitation, Trustpilot acts on our behalf. For the reviews you write and your Trustpilot account, Trustpilot is an independent data controller: see the <a href="https://legal.trustpilot.com/end-user-privacy-terms" target="_blank" rel="noopener" class="highlight">Trustpilot Privacy Policy</a>.
                     </p>
                 </section>
 
@@ -279,7 +271,7 @@
                         <li><strong>Cloudflare, Inc.</strong> (USA): website hosting and delivery (Section 7), and the anti-spam check on the withdrawal form (Section 8). Safeguard: certification under the EU-U.S. Data Privacy Framework, with Standard Contractual Clauses as a fallback.</li>
                         <li><strong>Resend</strong> (Plus Five Five, Inc., USA): sending the acknowledgement of withdrawal requests (Section 5). Safeguard: certification under the EU-U.S. Data Privacy Framework, with the Standard Contractual Clauses in Resend's Data Processing Agreement.</li>
                         <li><strong>GitHub, Inc.</strong> (USA): hosting of the public update file and of update downloads (Section 4). Safeguard: certification under the EU-U.S. Data Privacy Framework.</li>
-                        <li><strong>Google LLC</strong> (USA): only if you enable the optional Gemini feature with your own API key (Section 3). Safeguard: certification under the EU-U.S. Data Privacy Framework.</li>
+                        <li><strong>Google LLC</strong> (USA): only if you turn on an optional Gemini feature with your own API key. The data then goes from your computer to Google under your own agreement with Google (Section 3), not through us. Google is certified under the EU-U.S. Data Privacy Framework.</li>
                     </ul>
                     <p>
                         You can ask us for more information about these safeguards, or for a copy of the relevant clauses, using the contact details in Section 11.
@@ -291,14 +283,23 @@
                     <p class="section-number">Section 10</p>
                     <h2 class="section-title">Your Data Protection Rights (GDPR &amp; CCPA)</h2>
                     <p>
-                        Depending on your location (e.g., if you reside within the European Union or California), you hold legal rights regarding your personal data:
+                        If you are in the European Union or the European Economic Area, you have the following rights over the personal data we process (Articles 15&ndash;22 GDPR). We apply them to all our customers.
                     </p>
                     <ul>
-                        <li><strong>Right of Access:</strong> You can request a copy of the personal data we hold about you.</li>
-                        <li><strong>Right of Rectification:</strong> You can request correction of inaccurate data.</li>
-                        <li><strong>Right to Erasure (Deletion):</strong> You can ask us to delete your contact or support email logs.</li>
-                        <li><strong>Transaction Data:</strong> For requests regarding purchase receipts, billing invoices, or transaction refunds, you should contact Lemon Squeezy support directly, as they manage the billing database.</li>
+                        <li><strong>Access:</strong> you can ask whether we process your data and receive a copy of it.</li>
+                        <li><strong>Rectification:</strong> you can ask us to correct inaccurate or incomplete data.</li>
+                        <li><strong>Erasure:</strong> you can ask us to delete your data, unless we must keep it to comply with the law (for example withdrawal and accounting records) or to defend a legal claim.</li>
+                        <li><strong>Restriction:</strong> you can ask us to limit the use of your data while a request or a dispute is being checked.</li>
+                        <li><strong>Portability:</strong> you can receive the data you gave us, which we process to perform our contract with you, in a structured, machine-readable format, or ask us to send it to someone else.</li>
+                        <li><strong>Objection:</strong> you can object at any time, for reasons related to your situation, to processing based on our legitimate interest (Article 21 GDPR). You can object to emails about updates and similar products, and to review invitations, at any time and without giving a reason.</li>
+                        <li><strong>Complaint:</strong> you can lodge a complaint with a supervisory authority, in particular in the EU country where you live or work or where you believe the infringement took place. In Italy this is the Garante per la protezione dei dati personali, Piazza Venezia 11, 00187 Roma (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener" class="highlight">garanteprivacy.it</a>).</li>
                     </ul>
+                    <p>
+                        To exercise your rights, write to us using the contact details in Section 11. It is free of charge. We answer within one month, which can be extended by two further months for complex requests, in which case we tell you why (Article 12(3) GDPR). We may ask you to confirm your identity, for example by writing from the email address used for your purchase.
+                    </p>
+                    <p>
+                        <strong>Purchase data:</strong> for receipts, invoices, payment details and other data held by Lemon Squeezy as Merchant of Record, you can also contact Lemon Squeezy directly. <strong>California residents:</strong> we do not sell your personal information or share it for cross-context behavioural advertising.
+                    </p>
                 </section>
 
                 <!-- 8 Contact -->
@@ -307,6 +308,9 @@
                     <h2 class="section-title">Contact Information</h2>
                     <p>
                         If you have any questions about this Privacy Policy, your data, or want to exercise your rights, please reach out directly:
+                    </p>
+                    <p>
+                        <strong>Support requests:</strong> when you write to us, we use your email address, your name, your message and any logs or screenshots you send to answer you. The legal basis is our contract with you (Art. 6(1)(b) GDPR) or, for questions before a purchase, our legitimate interest in answering them (Art. 6(1)(f)). We keep support emails for 24 months after our last exchange and then delete them, unless they are needed for a withdrawal, a refund or a legal claim.
                     </p>
                     <div class="contact-card">
                         <p><strong>Antonio Pennino</strong></p>
