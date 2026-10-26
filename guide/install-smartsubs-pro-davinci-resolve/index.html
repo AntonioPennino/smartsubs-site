@@ -143,7 +143,7 @@
                 <h1 class="font-display text-3xl md:text-5xl font-extrabold text-white leading-tight mb-5">
                     How to Install and Activate SmartSubs Pro in DaVinci Resolve
                 </h1>
-                <p class="text-sm text-gray-400">By Antonio Pennino &middot; Updated September 2026 &middot; 5 min read</p>
+                <p class="text-sm text-gray-400">By Antonio Pennino &middot; Updated October 2026 &middot; 5 min read</p>
             </header>
 
             <!-- Direct answer -->
@@ -245,6 +245,25 @@
             </ul>
 
             <!-- Trouble -->
+            <h2 id="verify" class="font-display text-2xl font-bold text-white mt-12 mb-4">Optional: check that your download is genuine</h2>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                Every release on the
+                <a href="https://github.com/AntonioPennino/SmartSubs-Releases/releases" target="_blank" rel="noopener"
+                    class="text-brandOrange underline">SmartSubs-Releases page</a> has a <span
+                    class="text-gray-200">.sha256</span> file next to each zip. It holds the file's fingerprint: if
+                yours matches, the zip is exactly the one we published.
+            </p>
+            <ol class="list-decimal list-inside space-y-2 text-gray-400 mb-4 marker:text-brandOrange">
+                <li>Open the <span class="text-gray-200">.sha256</span> file for your zip on the releases page: it
+                    shows a long code followed by the file name.</li>
+                <li><strong class="text-white">Windows:</strong> open PowerShell and run
+                    <span class="font-mono text-gray-200">Get-FileHash "$HOME\Downloads\&lt;zip name&gt;" -Algorithm SHA256</span>.</li>
+                <li><strong class="text-white">macOS:</strong> open Terminal and run
+                    <span class="font-mono text-gray-200">shasum -a 256 ~/Downloads/&lt;zip name&gt;</span>.</li>
+                <li>Compare the two codes. If they are different, do not install the file and write to
+                    <a href="mailto:security@smartsubspro.com" class="text-brandOrange underline">security@smartsubspro.com</a>.</li>
+            </ol>
+
             <h2 class="font-display text-2xl font-bold text-white mt-12 mb-4">If something does not line up</h2>
             <div class="overflow-x-auto rounded-2xl border border-white/10 mb-6">
                 <table class="w-full text-sm cmp-table">
@@ -413,7 +432,7 @@
         </div>
     </footer>
 
-    <script src="/assets/js/main.js?v=2"></script>
+    <script src="/assets/js/main.js?v=3"></script>
 </body>
 
 </html>

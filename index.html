@@ -116,6 +116,11 @@
             "@type": "Question",
             "name": "What happens after I buy SmartSubs Pro?",
             "acceptedAnswer": { "@type": "Answer", "text": "You'll get an instant download link via email from Lemon Squeezy. Inside the zip you'll find the installer, the SmartSubs script, and a quick-start guide. The install guide walks you through setup step by step." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the download safe and genuine?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Official downloads come only from your Lemon Squeezy order page and from the SmartSubs-Releases page on GitHub, and the plugin only accepts updates from those two places. Every release has a SHA-256 checksum, so you can check that your file is exactly the one we published. Found a security problem? The security policy explains how to report it." }
           }
         ]
       },
@@ -826,6 +831,33 @@
                                 script, and a quick-start guide. The install guide walks you through setup step by step.</p>
                         </div>
                     </div>
+
+                    <div class="faq-item bg-bgPanel rounded-2xl border border-white/5 overflow-hidden">
+                        <h3 class="m-0">
+                            <button id="faq-btn-10" aria-expanded="false" aria-controls="faq-ans-10"
+                                class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-200">
+                                <span class="text-base font-bold text-white">Is the download safe and genuine?</span>
+                                <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                        </h3>
+                        <div id="faq-ans-10" role="region" aria-labelledby="faq-btn-10"
+                            class="faq-answer hidden px-6 pb-6">
+                            <p class="text-gray-400 text-sm leading-relaxed">Official downloads come only from your
+                                Lemon Squeezy order page and from the
+                                <a href="https://github.com/AntonioPennino/SmartSubs-Releases/releases" target="_blank" rel="noopener"
+                                    class="text-brandOrange underline">SmartSubs-Releases page on GitHub</a>, and the
+                                plugin only accepts updates from those two places. Every release has a SHA-256
+                                checksum, so you can check that your file is exactly the one we published:
+                                <a href="/guide/install-smartsubs-pro-davinci-resolve/#verify"
+                                    class="text-brandOrange underline">how to verify your download</a>. Found a
+                                security problem? The <a href="/security.html" class="text-brandOrange underline">security
+                                    policy</a> explains how to report it.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -942,7 +974,11 @@
                         <span class="text-4xl sm:text-5xl font-extrabold text-white">€39.99</span>
                         <span class="text-gray-400 whitespace-nowrap">/one-time</span>
                     </div>
-                    <p class="text-gray-400 text-xs mb-8">One-time payment &middot; taxes included</p>
+                    <div class="mb-8">
+                        <p class="text-gray-400 text-xs">One-time payment &middot; taxes included</p>
+                        <p class="text-gray-400 text-xs" style="margin-top:4px" data-version hidden>Latest version
+                            <span data-version-number></span>, released <span data-version-date></span></p>
+                    </div>
 
                     <ul class="text-left space-y-4 mb-10 text-gray-300">
                         <li class="flex items-center gap-3">
@@ -1085,7 +1121,7 @@
         </footer>
 
         <!-- FAQ Accordion Script -->
-        <script src="assets/js/main.js?v=2"></script>
+        <script src="assets/js/main.js?v=3"></script>
 
 </body>
 
