@@ -1,10 +1,10 @@
 {
-  "version": "2.9.13",
-  "release_date": "2026-10-24",
-  "title": "SmartSubs Pro v2.9.13",
-  "notes": "Security update. The speech engine now includes cryptography 49 (48.0.1 on Intel Macs), which fixes known vulnerabilities in the previous version. The risk was low, because SmartSubs only uses it for the optional Gemini features, but we recommend updating. Everything from 2.9.12 is included: the style gallery, the caption fonts installed with SmartSubs and automatic emoji.",
-  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.13/SmartSubs-Pro-Windows-v2.9.13.zip",
-  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.13/SmartSubs-Pro-Windows-v2.9.13.zip",
-  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.13/SmartSubs-Pro-macOS-arm64-v2.9.13.zip",
-  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.13/SmartSubs-Pro-macOS-x64-v2.9.13.zip"
+  "version": "2.9.14",
+  "release_date": "2026-10-30",
+  "title": "SmartSubs Pro v2.9.14",
+  "notes": "Fixes from customer feedback. Captions made from an In/Out range are now placed where that range is on the timeline, instead of at the beginning (re-transcribe timelines you transcribed with In/Out points). A new Text case option (Timing & Hooks) keeps the case as spoken or makes captions all lowercase or all uppercase, and lowercase corrections made in the captions column are now kept. Hook options, hook words and the minimum duration are now saved, so they no longer switch themselves back on after a restart or a transcription.",
+  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.14/SmartSubs-Pro-Windows-v2.9.14.zip",
+  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.14/SmartSubs-Pro-Windows-v2.9.14.zip",
+  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.14/SmartSubs-Pro-macOS-arm64-v2.9.14.zip",
+  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.14/SmartSubs-Pro-macOS-x64-v2.9.14.zip"
 }
