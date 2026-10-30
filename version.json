@@ -1,10 +1,10 @@
 {
-  "version": "2.9.14",
+  "version": "2.9.15",
   "release_date": "2026-10-30",
-  "title": "SmartSubs Pro v2.9.14",
-  "notes": "Fixes from customer feedback. Captions made from an In/Out range are now placed where that range is on the timeline, instead of at the beginning (re-transcribe timelines you transcribed with In/Out points). A new Text case option (Timing & Hooks) keeps the case as spoken or makes captions all lowercase or all uppercase, and lowercase corrections made in the captions column are now kept. Hook options, hook words and the minimum duration are now saved, so they no longer switch themselves back on after a restart or a transcription.",
-  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.14/SmartSubs-Pro-Windows-v2.9.14.zip",
-  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.14/SmartSubs-Pro-Windows-v2.9.14.zip",
-  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.14/SmartSubs-Pro-macOS-arm64-v2.9.14.zip",
-  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.14/SmartSubs-Pro-macOS-x64-v2.9.14.zip"
+  "title": "SmartSubs Pro v2.9.15",
+  "notes": "Fixes and improvements. The live preview in Resolve's viewer now shows the sample caption even at the very start of the timeline, and works correctly on 29.97 and 59.94 drop-frame timelines. Captions can no longer be dragged partly outside the frame, and a caption placed at the left or bottom edge is now added exactly where the preview shows it. Closing the preview now leaves your caption tracks on every timeline exactly as you set them. Automatic emoji no longer appear on unrelated words, and symbols you type in a correction (such as → or ✓) are kept. Security updates for the speech engine.",
+  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.15/SmartSubs-Pro-Windows-v2.9.15.zip",
+  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.15/SmartSubs-Pro-Windows-v2.9.15.zip",
+  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.15/SmartSubs-Pro-macOS-arm64-v2.9.15.zip",
+  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.15/SmartSubs-Pro-macOS-x64-v2.9.15.zip"
 }
