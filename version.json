@@ -1,10 +1,10 @@
 {
-  "version": "2.9.15",
-  "release_date": "2026-10-30",
-  "title": "SmartSubs Pro v2.9.15",
-  "notes": "Fixes and improvements. The live preview in Resolve's viewer now shows the sample caption even at the very start of the timeline, and works correctly on 29.97 and 59.94 drop-frame timelines. Captions can no longer be dragged partly outside the frame, and a caption placed at the left or bottom edge is now added exactly where the preview shows it. Closing the preview now leaves your caption tracks on every timeline exactly as you set them. Automatic emoji no longer appear on unrelated words, and symbols you type in a correction (such as → or ✓) are kept. Security updates for the speech engine.",
-  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.15/SmartSubs-Pro-Windows-v2.9.15.zip",
-  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.15/SmartSubs-Pro-Windows-v2.9.15.zip",
-  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.15/SmartSubs-Pro-macOS-arm64-v2.9.15.zip",
-  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.9.15/SmartSubs-Pro-macOS-x64-v2.9.15.zip"
+  "version": "2.10.0",
+  "release_date": "2026-11-02",
+  "title": "SmartSubs Pro v2.10.0",
+  "notes": "Edit your captions before they go on the timeline: remove and restore them, add new ones (at the playhead or in a pause), split and merge them, and find and replace a word in every caption. Captions now stay inside the frame automatically: long ones go on balanced lines with a margin from the edges, and continue in the next caption if they still don't fit. You choose the number of lines and the margin in Timing & Hooks. Export SRT, VTT or text at any time, and see where the files are saved with a button to open the folder. New font search: type and pick from the list. The live preview in Resolve is much faster, and closing the SmartSubs window now removes it automatically. The letter spacing setting now works (it had no effect before).",
+  "download_url": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.10.0/SmartSubs-Pro-Windows-v2.10.0.zip",
+  "download_url_win": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.10.0/SmartSubs-Pro-Windows-v2.10.0.zip",
+  "download_url_mac_arm64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.10.0/SmartSubs-Pro-macOS-arm64-v2.10.0.zip",
+  "download_url_mac_x64": "https://github.com/AntonioPennino/SmartSubs-Releases/releases/download/v2.10.0/SmartSubs-Pro-macOS-x64-v2.10.0.zip"
 }
